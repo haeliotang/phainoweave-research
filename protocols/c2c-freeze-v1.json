@@ -1,0 +1,1776 @@
+{
+ "adequacy_protocol": {
+  "candidate_local_threshold_changes": {
+   "B2": true,
+   "B3": true
+  },
+  "decision_margin_fraction": 0.1,
+  "frozen_protocol_object_mutated": false,
+  "frozen_thresholds_used_by": [
+   "B0",
+   "B1"
+  ],
+  "protocol_digest": "c86cb63d487e72a2c9964bfdaf41aa8adfa84199ce1515071eeceb1b78d9f029",
+  "protocol_version": "adeq-1.0.0",
+  "python_file": {
+   "path": "python/phaino_acoustics/adequacy_protocol.py",
+   "sha256": "c5c0427207436ae8c3a4562ab71d7f92ff4f61f8db6eaec77bf0980b55ea6b17"
+  }
+ },
+ "adr_0023_b_diagnostics": {
+  "artifact_path": "/tmp/c2selfcheck-final/selfcheck.json",
+  "artifact_sha256": "9cc967681259454b96c48a6f9afe3eed948b8330905e2112e593b666910b7225",
+  "artifact_version": "1.0.0",
+  "code_files": [
+   {
+    "path": "python/phaino_acoustics/repair_selfcheck.py",
+    "sha256": "195cc4ee4ef9a000edfba9d95548a91028151250791d6ead24a8eed71c6baf96"
+   },
+   {
+    "path": "python/tests/test_repair_selfcheck.py",
+    "sha256": "f22104211650346ee573acd420732b7979bf7bb5e1a0ec8054bc420a7b2cc7e4"
+   }
+  ],
+  "note": "ADR 0023 B diagnostics are present and referenced by hash/digest only in this manifest; the Lead must read the selfcheck artifact (especially its time-block holdout part) when adjudicating the conditional approval. No selfcheck numeric outcome is embedded in this manifest.",
+  "sealed_grid_file_read": false,
+  "sealed_grid_opened": false,
+  "seed_base": 92000000,
+  "status": "present_in_worktree",
+  "verdict_digest": "77c5ff5752a1f8c997e599c8d97c868dae9b07af2e1d33e9aa165806b1fcef2a"
+ },
+ "authority": [
+  "ADR 0020",
+  "ADR 0021",
+  "ADR 0022",
+  "ADR 0023"
+ ],
+ "authority_documents": [
+  {
+   "note": "authority/context document; hashed working-tree content, no git commit available",
+   "path": "docs/decisions/0020-measurement-model-and-c2-repair.md",
+   "sha256": "b2fc9822f86f39f26fb3902b0b94d0c3461d8c9250f9007144afc1970b13816e"
+  },
+  {
+   "note": "authority/context document; hashed working-tree content, no git commit available",
+   "path": "docs/decisions/0021-conditional-measurement-error-and-predictive-acceptance.md",
+   "sha256": "e5deb7a44d60bdd128df9ca671e17bcb845e01205210706e7fdf9f441fa7e4d2"
+  },
+  {
+   "note": "authority/context document; hashed working-tree content, no git commit available",
+   "path": "docs/decisions/0022-candidate-classification-and-sealed-run.md",
+   "sha256": "1c9304f1e3ff289f8fe2f70cac260bb649258aa6248e209c1c79fa79c6c715da"
+  },
+  {
+   "note": "authority/context document; hashed working-tree content, no git commit available",
+   "path": "docs/decisions/0023-three-operations-and-sealed-protocol.md",
+   "sha256": "c1e5c9241780b167d7dc6b5ce06df9daec312d8838661b0291bf280543712273"
+  },
+  {
+   "note": "authority/context document; hashed working-tree content, no git commit available",
+   "path": "docs/experiments/2026-11-05-c2-repair-dev.md",
+   "sha256": "db6c23acf7043595ef3378a92423c5fe7af8a8454cc75acd17dfc9b1d135ae59"
+  },
+  {
+   "note": "authority/context document; hashed working-tree content, no git commit available",
+   "path": "docs/experiments/2026-11-05-c2m2-conditional-error.md",
+   "sha256": "1f6e4a6aefd7ca9d632cb7db86dc640b8a9d84ae449a0179c62db12c8c87355b"
+  },
+  {
+   "note": "authority/context document; hashed working-tree content, no git commit available",
+   "path": "docs/experiments/pr4e-c2-repair-plan.md",
+   "sha256": "e30ed3e294578b2cb95a17f314a90d3d425f863ee4c6b49a7418d746152fff70"
+  }
+ ],
+ "calibration": {
+  "conditions": [
+   {
+    "condition_index": 0,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b120_v100_s10",
+    "scenario": {
+     "accel": 0.0,
+     "b": 120.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 10.0,
+     "t0": 20.0,
+     "v": 100.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 1,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b120_v100_s20",
+    "scenario": {
+     "accel": 0.0,
+     "b": 120.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 20.0,
+     "t0": 20.0,
+     "v": 100.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 2,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b120_v250_s10",
+    "scenario": {
+     "accel": 0.0,
+     "b": 120.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 10.0,
+     "t0": 20.0,
+     "v": 250.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 3,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b120_v250_s20",
+    "scenario": {
+     "accel": 0.0,
+     "b": 120.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 20.0,
+     "t0": 20.0,
+     "v": 250.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 4,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b170_v100_s10",
+    "scenario": {
+     "accel": 0.0,
+     "b": 170.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 10.0,
+     "t0": 20.0,
+     "v": 100.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 5,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b170_v100_s20",
+    "scenario": {
+     "accel": 0.0,
+     "b": 170.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 20.0,
+     "t0": 20.0,
+     "v": 100.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 6,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b170_v250_s10",
+    "scenario": {
+     "accel": 0.0,
+     "b": 170.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 10.0,
+     "t0": 20.0,
+     "v": 250.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 7,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b170_v250_s20",
+    "scenario": {
+     "accel": 0.0,
+     "b": 170.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 20.0,
+     "t0": 20.0,
+     "v": 250.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 8,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b240_v100_s10",
+    "scenario": {
+     "accel": 0.0,
+     "b": 240.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 10.0,
+     "t0": 20.0,
+     "v": 100.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 9,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b240_v100_s20",
+    "scenario": {
+     "accel": 0.0,
+     "b": 240.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 20.0,
+     "t0": 20.0,
+     "v": 100.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 10,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b240_v250_s10",
+    "scenario": {
+     "accel": 0.0,
+     "b": 240.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 10.0,
+     "t0": 20.0,
+     "v": 250.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 11,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b240_v250_s20",
+    "scenario": {
+     "accel": 0.0,
+     "b": 240.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 20.0,
+     "t0": 20.0,
+     "v": 250.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 12,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b350_v100_s10",
+    "scenario": {
+     "accel": 0.0,
+     "b": 350.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 10.0,
+     "t0": 20.0,
+     "v": 100.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 13,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b350_v100_s20",
+    "scenario": {
+     "accel": 0.0,
+     "b": 350.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 20.0,
+     "t0": 20.0,
+     "v": 100.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 14,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b350_v250_s10",
+    "scenario": {
+     "accel": 0.0,
+     "b": 350.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 10.0,
+     "t0": 20.0,
+     "v": 250.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 15,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b350_v250_s20",
+    "scenario": {
+     "accel": 0.0,
+     "b": 350.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 20.0,
+     "t0": 20.0,
+     "v": 250.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 16,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b550_v100_s10",
+    "scenario": {
+     "accel": 0.0,
+     "b": 550.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 10.0,
+     "t0": 20.0,
+     "v": 100.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 17,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b550_v100_s20",
+    "scenario": {
+     "accel": 0.0,
+     "b": 550.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 20.0,
+     "t0": 20.0,
+     "v": 100.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 18,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b550_v250_s10",
+    "scenario": {
+     "accel": 0.0,
+     "b": 550.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 10.0,
+     "t0": 20.0,
+     "v": 250.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 19,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b550_v250_s20",
+    "scenario": {
+     "accel": 0.0,
+     "b": 550.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 20.0,
+     "t0": 20.0,
+     "v": 250.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 20,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b800_v100_s10",
+    "scenario": {
+     "accel": 0.0,
+     "b": 800.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 10.0,
+     "t0": 20.0,
+     "v": 100.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 21,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b800_v100_s20",
+    "scenario": {
+     "accel": 0.0,
+     "b": 800.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 20.0,
+     "t0": 20.0,
+     "v": 100.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 22,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b800_v250_s10",
+    "scenario": {
+     "accel": 0.0,
+     "b": 800.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 10.0,
+     "t0": 20.0,
+     "v": 250.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 23,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b800_v250_s20",
+    "scenario": {
+     "accel": 0.0,
+     "b": 800.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 20.0,
+     "t0": 20.0,
+     "v": 250.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 24,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b1200_v100_s10",
+    "scenario": {
+     "accel": 0.0,
+     "b": 1200.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 10.0,
+     "t0": 20.0,
+     "v": 100.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 25,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b1200_v100_s20",
+    "scenario": {
+     "accel": 0.0,
+     "b": 1200.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 20.0,
+     "t0": 20.0,
+     "v": 100.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 26,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b1200_v250_s10",
+    "scenario": {
+     "accel": 0.0,
+     "b": 1200.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 10.0,
+     "t0": 20.0,
+     "v": 250.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 27,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b1200_v250_s20",
+    "scenario": {
+     "accel": 0.0,
+     "b": 1200.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 20.0,
+     "t0": 20.0,
+     "v": 250.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 28,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b2000_v100_s10",
+    "scenario": {
+     "accel": 0.0,
+     "b": 2000.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 10.0,
+     "t0": 20.0,
+     "v": 100.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 29,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b2000_v100_s20",
+    "scenario": {
+     "accel": 0.0,
+     "b": 2000.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 20.0,
+     "t0": 20.0,
+     "v": 100.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 30,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b2000_v250_s10",
+    "scenario": {
+     "accel": 0.0,
+     "b": 2000.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 10.0,
+     "t0": 20.0,
+     "v": 250.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 31,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b2000_v250_s20",
+    "scenario": {
+     "accel": 0.0,
+     "b": 2000.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 20.0,
+     "t0": 20.0,
+     "v": 250.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 32,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b3500_v100_s10",
+    "scenario": {
+     "accel": 0.0,
+     "b": 3500.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 10.0,
+     "t0": 20.0,
+     "v": 100.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 33,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b3500_v100_s20",
+    "scenario": {
+     "accel": 0.0,
+     "b": 3500.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 20.0,
+     "t0": 20.0,
+     "v": 100.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 34,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b3500_v250_s10",
+    "scenario": {
+     "accel": 0.0,
+     "b": 3500.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 10.0,
+     "t0": 20.0,
+     "v": 250.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 35,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b3500_v250_s20",
+    "scenario": {
+     "accel": 0.0,
+     "b": 3500.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 20.0,
+     "t0": 20.0,
+     "v": 250.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 36,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b5500_v100_s10",
+    "scenario": {
+     "accel": 0.0,
+     "b": 5500.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 10.0,
+     "t0": 20.0,
+     "v": 100.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 37,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b5500_v100_s20",
+    "scenario": {
+     "accel": 0.0,
+     "b": 5500.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 20.0,
+     "t0": 20.0,
+     "v": 100.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 38,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b5500_v250_s10",
+    "scenario": {
+     "accel": 0.0,
+     "b": 5500.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 10.0,
+     "t0": 20.0,
+     "v": 250.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   },
+   {
+    "condition_index": 39,
+    "label": "correct-model calibration cell",
+    "mechanism": "correct_cv",
+    "n_trials": 2,
+    "name": "cal_b5500_v250_s20",
+    "scenario": {
+     "accel": 0.0,
+     "b": 5500.0,
+     "c": 343.0,
+     "duration": 60.0,
+     "emit_signal": true,
+     "f0": 500.0,
+     "fs": 8000.0,
+     "snr_db": 20.0,
+     "t0": 20.0,
+     "v": 250.0
+    },
+    "seed_base": 91000000,
+    "stratum": "calibration"
+   }
+  ],
+  "development_run_reference": {
+   "dev_admissible_calibration_trials": 80,
+   "dev_artifact_path": "/tmp/c2-repair-final/c2-repair.json",
+   "dev_artifact_sha256": "b32d91f8f5b787f73d261e65633e0d537e4d2154009905b272a5f7015a9c9dcd",
+   "dev_development_summary_digest": "c70037a04d65b4c55909fc07f94580cb9fa9709606cf1c49059e74da960d40b5",
+   "dev_environment_id": "dev-f3766ef64295",
+   "dev_frozen_grid_digest": "b0e381fa0458b92a0669705a1bf9f3e7d93acaf68b82f55770f97cd5f94f1dbe",
+   "dev_protocol_digest": "1f80b7a42b559bb56f9416e2f5a519add9f8a0faaa018e052d4ca4ea96cccd97",
+   "label": "development provenance only; not an acceptance result"
+  },
+  "inclusion_rule": "correct-model calibration trial with converged optimization, finite positive sigma_f and finite adequacy statistics; no truth or label used",
+  "recomputation_rule": "B2 AR coefficients/thresholds and B3 conditional thresholds are recomputed from the frozen calibration sample at run time by the frozen code; the development-derived reference values recorded above are provenance, never constants substituted into a run",
+  "sample_definition_digest": "e0cf48f4bdf6aa2f89cbaf748fbb981623cb3cf5c5805a71498066a03d854c85",
+  "seed_base": 91000000,
+  "seed_formula": "SEED_BASE + 1000*condition_index + trial",
+  "seeds_disjoint_from_sealed_grid": true,
+  "seeds_reused_from_c2_diagnosis": false,
+  "total_trials": 80,
+  "trials_per_condition": 2
+ },
+ "candidates": {
+  "B0": {
+   "adequacy_protocol_digest": "c86cb63d487e72a2c9964bfdaf41aa8adfa84199ce1515071eeceb1b78d9f029",
+   "class": "baseline",
+   "front_end": "e0-frontend-hann-stft-512-256@1.0.0",
+   "physical_fit": "fit_hardened (unchanged)",
+   "thresholds_changed": false
+  },
+  "B1": {
+   "class": "measurement_representation_repair",
+   "dechirped": "B0 fitted constant-velocity model's predicted frequency history only, via phi(t)=2*pi*integral f_pred dt",
+   "demod_band_hz": 400.0,
+   "frame_len": 512,
+   "hop": 256,
+   "not_removed": "unmodelled acceleration and all other data-model discrepancy; residual values are never smoothed",
+   "physical_fit": "same fit_hardened estimator re-applied to the reconstructed track (params differ from B0)",
+   "thresholds_changed": false
+  },
+  "B2": {
+   "ar_order": 8,
+   "calibration_method": "Yule-Walker on pooled correct-model calibration residuals normalized by sigma_f",
+   "class": "test_dependence_correction",
+   "development_derived_reference_values": {
+    "label": "development-derived reference only; the sealed run recomputes from the frozen calibration sample and records any difference",
+    "n_calibration": 80,
+    "phi": [
+     0.06961291482906673,
+     0.2590967436081349,
+     0.1932129783900944,
+     0.11464561261016505,
+     0.0639245518580839,
+     0.036366141496380885,
+     0.0357429211478618,
+     0.0366361746480669
+    ],
+    "phi_l1": 0.8092380385878546,
+    "whitened_ljung_box_statistic_max": 12683.370835120173,
+    "whitened_max_abs_acf_max": 0.8359747055808963,
+    "whitened_median_lb": 215.44856743532523
+   },
+   "effective_threshold_rule": "max(whitened calibration Ljung-Box statistic) * 1.3",
+   "other_tests": "frozen B0 tests unchanged",
+   "tests_modified": [
+    "autocorrelation"
+   ],
+   "thresholds_changed": true
+  },
+  "B3": {
+   "chirp_edges_hz_s": [
+    0.0,
+    50.0,
+    150.0,
+    400.0,
+    1000000000000.0
+   ],
+   "class": "conditional_calibration_not_measurement_repair",
+   "development_derived_reference_cells": [
+    {
+     "abs_corr_time_max": 0.14048059907399663,
+     "abs_phase_correlation_max": 0.07232532719971635,
+     "abs_quadratic_coefficient_max": 0.46114370873917643,
+     "chirp_bin": 0,
+     "heldout_normalized_rmse_max": 1.798173225380944,
+     "ljung_box_statistic_max": 63312.35931002376,
+     "max_abs_acf_max": 1.1230933073517995,
+     "n_calibration": 36,
+     "snr_bin": 1
+    },
+    {
+     "abs_corr_time_max": 0.23083380927951638,
+     "abs_phase_correlation_max": 0.04910946507974906,
+     "abs_quadratic_coefficient_max": 0.3933192271055536,
+     "chirp_bin": 1,
+     "heldout_normalized_rmse_max": 1.5644613712889779,
+     "ljung_box_statistic_max": 28806.896012248042,
+     "max_abs_acf_max": 0.9510677064792155,
+     "n_calibration": 20,
+     "snr_bin": 1
+    },
+    {
+     "abs_corr_time_max": 0.08856588642151562,
+     "abs_phase_correlation_max": 0.0454834956562558,
+     "abs_quadratic_coefficient_max": 0.1797154051409958,
+     "chirp_bin": 2,
+     "heldout_normalized_rmse_max": 1.537060766972391,
+     "ljung_box_statistic_max": 11536.433826484505,
+     "max_abs_acf_max": 0.8232121841746224,
+     "n_calibration": 8,
+     "snr_bin": 1
+    },
+    {
+     "abs_corr_time_max": 0.1861440113153989,
+     "abs_phase_correlation_max": 0.06977296096813801,
+     "abs_quadratic_coefficient_max": 0.23354715537129234,
+     "chirp_bin": 3,
+     "heldout_normalized_rmse_max": 2.402779127262962,
+     "ljung_box_statistic_max": 33614.56165657885,
+     "max_abs_acf_max": 0.9070133710157842,
+     "n_calibration": 16,
+     "snr_bin": 1
+    }
+   ],
+   "forbidden_inputs": [
+    "true_closest_approach_b",
+    "true_speed",
+    "true_acceleration",
+    "true_b",
+    "true_v",
+    "true_accel",
+    "scenario_label",
+    "mechanism_label",
+    "stratum",
+    "condition",
+    "within_tolerance",
+    "estimate_within_tolerance",
+    "truth"
+   ],
+   "label": "development-derived reference only; the sealed run recomputes from the frozen calibration sample; an unexercised SNR branch is declared unverified",
+   "margin": 1.3,
+   "min_calibration_cell": 4,
+   "selection_inputs": [
+    "estimated_chirp_rate_hz_s",
+    "estimated_snr_db",
+    "signal_quality_improvement_ratio",
+    "fit_uncertainty_worst_rel_se"
+   ],
+   "snr_edges_db": [
+    -1000000000000.0,
+    10.0,
+    1000000000000.0
+   ],
+   "tests_modified": [
+    "autocorrelation (ljung_box_statistic_max, max_abs_acf_max)",
+    "time_structure (abs_corr_time_max, abs_quadratic_coefficient_max, abs_phase_correlation_max)",
+    "block_prediction (heldout_normalized_rmse_max)"
+   ],
+   "thresholds_changed": true
+  },
+  "descriptions": {
+   "B0": "original front end + frozen adequacy protocol (paired baseline)",
+   "B1": "coherent de-chirp: demodulate by the B0 model-predicted phase, re-extract the residual IF with the same STFT front end, add the prediction back, and refit with the same hardened estimator",
+   "B2": "AR(p) residual pre-whitening of the Ljung-Box autocorrelation test, with the whitened null calibrated on correct-model development residuals",
+   "B3": "geometry-conditioned calibration of the Ljung-Box and time-structure thresholds from runtime-observable estimated chirp rate and estimated SNR bins"
+  },
+  "params_schema": {
+   "B0": [
+    "f0",
+    "v",
+    "t0",
+    "b",
+    "sigma_f_hz"
+   ],
+   "B1": [
+    "f0",
+    "v",
+    "t0",
+    "b",
+    "sigma_f_hz",
+    "demod_band_hz",
+    "demod_frames",
+    "transform_failed"
+   ],
+   "B2": [
+    "f0",
+    "v",
+    "t0",
+    "b",
+    "sigma_f_hz",
+    "ar_order",
+    "whitened_ljung_box_statistic",
+    "whitened_max_abs_acf",
+    "whitened_ljung_box_threshold",
+    "b0_ljung_box_statistic"
+   ],
+   "B3": [
+    "f0",
+    "v",
+    "t0",
+    "b",
+    "sigma_f_hz",
+    "estimated_chirp_rate_hz_s",
+    "estimated_snr_db",
+    "calibration_n",
+    "ljung_box_statistic_max",
+    "abs_corr_time_max",
+    "abs_quadratic_coefficient_max",
+    "abs_phase_correlation_max",
+    "heldout_normalized_rmse_max"
+   ]
+  },
+  "shared_files": [
+   {
+    "path": "python/phaino_acoustics/repair_candidates.py",
+    "sha256": "3803b0e5f3ee415d1b8fa30c264967d22cceb96d6dec0768d75a8cd1582cd5ff"
+   },
+   {
+    "path": "python/phaino_acoustics/experiment_repair.py",
+    "sha256": "3d51004c7c37bfb2fba18d7d09c25018f369bf6237a96db2b565d341f611c2ca"
+   },
+   {
+    "path": "python/tests/test_repair_candidates.py",
+    "sha256": "ec10f76ef1f8b13506da2a2cf34d80229a1a76e1a3e36775938963ee8ee25f22"
+   }
+  ]
+ },
+ "canonicalization": {
+  "algorithm": "SHA-256 over UTF-8 canonical JSON",
+  "digest_field_excluded": "frozen_manifest_digest",
+  "json_rules": "object keys sorted lexicographically, separators ',' and ':' without spaces, no NaN/Infinity, no duplicate keys (Python json.dumps(sort_keys=True, separators=(',',':'), allow_nan=False))",
+  "verifier": "recompute over this file with frozen_manifest_digest removed"
+ },
+ "claim_gate": {
+  "allowed_claim_statuses": [
+   "contradicted",
+   "supported_conditional",
+   "undetermined"
+  ],
+  "claim_integrity_rule": "claim statuses must be within the allowed set; supported_invariant or unknown status is a violation and is never rewritten; adequacy acceptance is never equated with a supported physical claim",
+  "evidence_digest": "3d21670a5890443feb6d2ed0ae71020d688f079e46157c3f8c4f4334c71c7ace",
+  "evidence_gate": {
+   "blocked": false,
+   "certificate_conflicts": {
+    "blocking": [],
+    "conflicts": [
+     {
+      "certificate_claim": "b/f0",
+      "claim_id": "b_over_f0",
+      "max_relative_mismatch": 0.04937500000000005,
+      "numeric_verdict": "not_invariant",
+      "symbolic_verdict": "invariant"
+     }
+    ],
+    "reconciled": [
+     {
+      "certificate_claim": "b/f0",
+      "claim_id": "b_over_f0",
+      "max_relative_mismatch": 0.04937500000000005,
+      "numeric_verdict": "not_invariant",
+      "symbolic_verdict": "invariant"
+     }
+    ]
+   },
+   "certificate_status": "recorded",
+   "l1_completeness": {
+    "l1_proven": true,
+    "missing_generators": [],
+    "proven_generators": [
+     "clock_offset",
+     "clock_rate"
+    ],
+    "required_generators": [
+     "clock_offset",
+     "clock_rate"
+    ],
+    "status": "complete"
+   },
+   "nuisance_contradictions": [],
+   "supported_invariant_allowed": false,
+   "withheld_claims": {}
+  },
+  "gate_policy_digest": "b1379457562af446a4136e560200c7e551247668b886a017bfde0ab2c47710da",
+  "mathematical_evidence": {
+   "applicable": true,
+   "claims_protocol_evidence_digest": "3d21670a5890443feb6d2ed0ae71020d688f079e46157c3f8c4f4334c71c7ace",
+   "independent_verification_record": {
+    "available": true,
+    "certificate_builtin_protocol_digest": "8203c2f7bc0085507d8122de746753a0b7655b8cf1eae985dffd8f2bebbe5568",
+    "certificate_sha256": "5b1a5337c9667d6554f25009d249bedf04fdd834de9651e10c53fa98687d7742",
+    "certificate_version": "1.0.0",
+    "note": "recorded in the frozen C1 protocol; no new independent verification was run for this C2 repair artifact, and no digest is cited as proof",
+    "verification_for_this_repair": false
+   },
+   "proof_artifact_digest": "b251848244c44044d5bda47e8dc7cb34c909c05326af7fe35d3fc4bd63cf9eb2",
+   "proof_artifact_scope": "symbolic proof artifact digest recorded by the frozen claims protocol; the digest alone is not cited as proof",
+   "semantic_claim_digest": "193e70ab42cd1c953d89c735ee6fa4c19bc7aed98d11e2af8cba751c9191e52f",
+   "semantic_claim_digest_scope": "frozen claims protocol: proposition, assumptions, L1/L2 statuses; a matching digest does not prove derivation correctness"
+  },
+  "protocol_digest": "193e70ab42cd1c953d89c735ee6fa4c19bc7aed98d11e2af8cba751c9191e52f",
+  "protocol_file_sha256": "16c62ca63577668b4dfb45f542db97214d1275a2b0dcd95c3e23734871dcbfa6",
+  "protocol_path": "protocols/pr4e-claims-1.3.0.json",
+  "supported_invariant_allowed": false,
+  "version": "pr4e-claims-1.3.0"
+ },
+ "comparison_rules": {
+  "abstention": "decision == undetermined",
+  "analysis_labels": {
+   "primary": [
+    "primary_endpoint"
+   ],
+   "reproducibility_dimension": [
+    "cross_environment"
+   ],
+   "secondary": [
+    "candidate_metrics",
+    "paired_overall",
+    "paired_by_mechanism",
+    "paired_by_geometry",
+    "supported_coverage",
+    "misspecification_taxonomy",
+    "null_noise_only",
+    "chirp_power",
+    "reference"
+   ]
+  },
+  "claim_integrity": "allowed set {supported_conditional, undetermined, contradicted}; supported_invariant/unknown flagged, never rewritten",
+  "detection": "acceleration trials with adequacy discrepancy or decision reject; undetermined is not detection",
+  "false_rejection": "truth-correct correct-CV trials with adequacy discrepancy or decision reject",
+  "family_reporting": "no aggregate average may hide a mechanism-family or geometry-stratum failure",
+  "geometry_strata": "evaluator geometry bins [0,200,400,800,1600,3200,6400,12800) m; mechanism and geometry results always reported",
+  "interval_method": {
+   "interval": "d +/- 1.959963984540054 * sqrt(Var(d)), clipped to [-1,1]",
+   "name": "paired_wald_95",
+   "note": "documented paired Wald alternative to Newcombe; descriptive, not a hypothesis test; no multiplicity adjustment",
+   "risk_difference": "d = (n10 - n01)/n",
+   "variance": "Var(d) = (n10 + n01 - (n10 - n01)^2/n) / n^2",
+   "z": 1.959963984540054
+  },
+  "misspecification_taxonomy": "acceleration outcomes split into discrepancy_detected, undetermined, false_supported, rejected_without_discrepancy; never pooled with correct-CV",
+  "negative_result": "evaluator point-estimate rule: FRR gain, no point-estimate detection loss, no abstention-gaming pattern (FRR gain via increased abstention without more correct accepted); no candidate recommendation",
+  "null_noise_only": "noise-only trials promoted to accepted or validly supported; zero-intent with Wilson upper bounds; zero counts are not zero probability",
+  "pairing": {
+   "equal_paired_observations": "all candidates are nested records of the same trial/observation; primary comparison uses paired trials where both candidates are defined",
+   "key": "explicit trial pair_id; evaluator trial identity = (condition, seed)",
+   "paired": true,
+   "require_paired": "used for cross-environment sets; primary confirmation is the primary environment only"
+  },
+  "supported_coverage": "truth-correct correct-CV trials with a validly-supported candidate record",
+  "valid_retention": "truth-correct trials with decision accept (secondary; not the primary metric)",
+  "validly_supported": "at least one supported_conditional claim and no claim status outside the frozen C1 allowed set; adequacy accept alone is never treated as support",
+  "zero_event_policy": "observed zero counts are reported with upper bounds, never as a zero probability"
+ },
+ "created_utc": "2026-11-05T04:54:39Z",
+ "dependencies": {
+  "dependency_bundle_digest": "9a04f0ccc3eb324d7341aacb586d9d6946160249129da4c3d005fe00c60c3ee9",
+  "evaluator_package_digest": "b8ffb2459adcaf6bf1f480c48da35459bedc8fad38a69ace51447505aeb968d5",
+  "files": [
+   {
+    "path": "protocols/pr4e-claims-1.3.0.json",
+    "role": "frozen C1 claim protocol payload",
+    "sha256": "16c62ca63577668b4dfb45f542db97214d1275a2b0dcd95c3e23734871dcbfa6"
+   },
+   {
+    "path": "python/phaino_acoustics/adequacy.py",
+    "role": "model-adequacy tests and decision precedence",
+    "sha256": "75f036e387cf3bb67c5c47fabd83b4fae7d83c88c7f951ef8f1cd3d832cf8c0d"
+   },
+   {
+    "path": "python/phaino_acoustics/adequacy_protocol.py",
+    "role": "frozen adequacy protocol/thresholds",
+    "sha256": "c5c0427207436ae8c3a4562ab71d7f92ff4f61f8db6eaec77bf0980b55ea6b17"
+   },
+   {
+    "path": "python/phaino_acoustics/experiment.py",
+    "role": "shared E0 scenario constants and pre-registered tolerances",
+    "sha256": "9d8b51eb32fa6e3e653bd87ede0489b14a42ec7e1d17a67279ab4b96836537e1"
+   },
+   {
+    "path": "python/phaino_acoustics/experiment_c2m2.py",
+    "role": "C2-M2 development experiment (not used by B0-B3)",
+    "sha256": "57d8c266889ded8e840fdcfe5ab24237fce25502a45779ec46e5e9d4eca98840"
+   },
+   {
+    "path": "python/phaino_acoustics/experiment_repair.py",
+    "role": "candidate implementation + artifact producer",
+    "sha256": "3d51004c7c37bfb2fba18d7d09c25018f369bf6237a96db2b565d341f611c2ca"
+   },
+   {
+    "path": "python/phaino_acoustics/features.py",
+    "role": "measurement front end (STFT/Hann/parabolic)",
+    "sha256": "2fc0b3469c908d8b6ab3fd6c40eb7454fd2f884b8dbd184580040d8bbb20219c"
+   },
+   {
+    "path": "python/phaino_acoustics/fit_hardened.py",
+    "role": "physical estimator",
+    "sha256": "0fbb7721034d6728be46d9c5ba50e8d19aa35eaa1508f82e0821b1a3bccd07f6"
+   },
+   {
+    "path": "python/phaino_acoustics/measurement_error_models.py",
+    "role": "C2-M2 error-model implementations (not used by B0-B3)",
+    "sha256": "38135463edb0e990e7a377259067b0ee94ec651be227dab2361fdd5d01b0783f"
+   },
+   {
+    "path": "python/phaino_acoustics/measurement_model.py",
+    "role": "measurement-model record and error-model id",
+    "sha256": "6c52d9b2c9ccbca52db72f2b2d56609881650e9db95ad1d596db5d2e2b6e471c"
+   },
+   {
+    "path": "python/phaino_acoustics/measurement_model_reference.py",
+    "role": "reference estimator (outside competition)",
+    "sha256": "6b78b63345eb38f4d4e0d483ce105908d483b93552803dc7ae57f736d3ae14f2"
+   },
+   {
+    "path": "python/phaino_acoustics/repair_candidates.py",
+    "role": "candidate implementations (B0-B3 primitives)",
+    "sha256": "3803b0e5f3ee415d1b8fa30c264967d22cceb96d6dec0768d75a8cd1582cd5ff"
+   },
+   {
+    "path": "python/phaino_acoustics/repair_selfcheck.py",
+    "role": "ADR 0023 B/C self-confirmation diagnostics",
+    "sha256": "195cc4ee4ef9a000edfba9d95548a91028151250791d6ead24a8eed71c6baf96"
+   },
+   {
+    "path": "python/phaino_acoustics/synthetic.py",
+    "role": "synthetic observation generator",
+    "sha256": "8bede6e595a7a878cf97ddc81462d31a70627c44de3dbae44a0233685508d9ac"
+   },
+   {
+    "path": "python/phaino_c2_eval/__init__.py",
+    "role": "independent paired evaluator",
+    "sha256": "93a5f0f42068326d8db64918ed5f7955c1d59d98ebb1f27e98150b6ec560416e"
+   },
+   {
+    "path": "python/phaino_c2_eval/__main__.py",
+    "role": "independent paired evaluator",
+    "sha256": "9eeca4e8512f12432f6d98484bbf37a32b757510330f8bef564eeca2646f0438"
+   },
+   {
+    "path": "python/phaino_c2_eval/artifacts.py",
+    "role": "independent paired evaluator",
+    "sha256": "399c221ac1a62783ec2056a7ba4359b1d6872fe125b9a952791d4942ba0c5d7a"
+   },
+   {
+    "path": "python/phaino_c2_eval/cli.py",
+    "role": "independent paired evaluator",
+    "sha256": "65d5d2c9aaa6669ff92385edb8e98a412bce444beddb029fae484077b1c014af"
+   },
+   {
+    "path": "python/phaino_c2_eval/evaluate.py",
+    "role": "independent paired evaluator",
+    "sha256": "66557f0e909cea0d0b71b2644da7a96dabae9dc21986d9cec0945e7273de9f27"
+   },
+   {
+    "path": "python/phaino_c2_eval/metrics.py",
+    "role": "independent paired evaluator",
+    "sha256": "594c0ec49190deaf6c5443a45d583e094b0e4cc7a5d489dfcd5349acd8e7ba99"
+   },
+   {
+    "path": "python/phaino_c2_eval/report.py",
+    "role": "independent paired evaluator",
+    "sha256": "47995050ec57402c2d2dfa69d28213517eea57308070f37e053f00d2c2f3c8ea"
+   },
+   {
+    "path": "python/phaino_claims/claims.py",
+    "role": "C1 claim metrics and frozen gate application",
+    "sha256": "c7eee9ba48f796baddc701d7ea0cd6e7b3ef4f6579e3ddcebba10027dd5143ac"
+   },
+   {
+    "path": "python/phaino_claims/claims_protocol.py",
+    "role": "C1 claim protocol loader/digests",
+    "sha256": "208f99f5c93af98527cf1253383a6445a22f0a2c88b4fbbf8b748336bc9c687a"
+   },
+   {
+    "path": "python/tests/test_c2_eval.py",
+    "role": "evaluator contract tests",
+    "sha256": "6022d8b9c3c3e6252894b52dac91c3ffa3ea1050b30ae37ae4ec4b768f6036fc"
+   },
+   {
+    "path": "python/tests/test_repair_candidates.py",
+    "role": "candidate/artifact contract tests",
+    "sha256": "ec10f76ef1f8b13506da2a2cf34d80229a1a76e1a3e36775938963ee8ee25f22"
+   },
+   {
+    "path": "python/tests/test_repair_selfcheck.py",
+    "role": "selfcheck tests",
+    "sha256": "f22104211650346ee573acd420732b7979bf7bb5e1a0ec8054bc420a7b2cc7e4"
+   }
+  ],
+  "note": "runtime python/numpy versions are environment metadata recorded per artifact, not frozen code"
+ },
+ "detection_loss_and_undecided_policy": {
+  "alternative_sensitivity_policy": "excluded",
+  "bound_units": "absolute paired detection-rate difference",
+  "detection_loss_bound": 0.1,
+  "known_development_undecided_pattern": "In development, some acceleration trials were undetermined because the frozen distribution test returned insufficient_evidence; such trials are carried as undecided, not as candidate-caused detection loss. No development outcome count is embedded in this manifest; see the development/selfcheck artifacts.",
+  "undecided_policy": "not_detected",
+  "undecided_policy_rationale": "Undetermined is neither acceptance nor detection (ADR 0022 \u00a73): acceleration denominator includes every acceleration trial, an undetermined trial is not counted as detected; the excluded-policy analysis is reported as sensitivity only"
+ },
+ "detection_loss_bound": 0.1,
+ "development_provenance": {
+  "dev_artifact_path": "/tmp/c2-repair-final/c2-repair.json",
+  "dev_artifact_sha256": "b32d91f8f5b787f73d261e65633e0d537e4d2154009905b272a5f7015a9c9dcd",
+  "dev_environment_id": "dev-f3766ef64295",
+  "dev_frozen_grid_digest": "b0e381fa0458b92a0669705a1bf9f3e7d93acaf68b82f55770f97cd5f94f1dbe",
+  "dev_protocol_digest": "1f80b7a42b559bb56f9416e2f5a519add9f8a0faaa018e052d4ca4ea96cccd97",
+  "dev_report_path": "docs/experiments/2026-11-05-c2-repair-dev.md",
+  "dev_run_scope": "development",
+  "dev_summary_digest": "c70037a04d65b4c55909fc07f94580cb9fa9709606cf1c49059e74da960d40b5",
+  "label": "development provenance only; no development outcome value is used as a sealed acceptance result"
+ },
+ "evaluator": {
+  "comparison_code_is_frozen_by_hash": true,
+  "contract_tests": {
+   "path": "python/tests/test_c2_eval.py",
+   "sha256": "6022d8b9c3c3e6252894b52dac91c3ffa3ea1050b30ae37ae4ec4b768f6036fc"
+  },
+  "files": [
+   {
+    "path": "python/phaino_c2_eval/__init__.py",
+    "role": "independent paired evaluator",
+    "sha256": "93a5f0f42068326d8db64918ed5f7955c1d59d98ebb1f27e98150b6ec560416e"
+   },
+   {
+    "path": "python/phaino_c2_eval/__main__.py",
+    "role": "independent paired evaluator",
+    "sha256": "9eeca4e8512f12432f6d98484bbf37a32b757510330f8bef564eeca2646f0438"
+   },
+   {
+    "path": "python/phaino_c2_eval/artifacts.py",
+    "role": "independent paired evaluator",
+    "sha256": "399c221ac1a62783ec2056a7ba4359b1d6872fe125b9a952791d4942ba0c5d7a"
+   },
+   {
+    "path": "python/phaino_c2_eval/cli.py",
+    "role": "independent paired evaluator",
+    "sha256": "65d5d2c9aaa6669ff92385edb8e98a412bce444beddb029fae484077b1c014af"
+   },
+   {
+    "path": "python/phaino_c2_eval/evaluate.py",
+    "role": "independent paired evaluator",
+    "sha256": "66557f0e909cea0d0b71b2644da7a96dabae9dc21986d9cec0945e7273de9f27"
+   },
+   {
+    "path": "python/phaino_c2_eval/metrics.py",
+    "role": "independent paired evaluator",
+    "sha256": "594c0ec49190deaf6c5443a45d583e094b0e4cc7a5d489dfcd5349acd8e7ba99"
+   },
+   {
+    "path": "python/phaino_c2_eval/report.py",
+    "role": "independent paired evaluator",
+    "sha256": "47995050ec57402c2d2dfa69d28213517eea57308070f37e053f00d2c2f3c8ea"
+   }
+  ],
+  "package": "python/phaino_c2_eval",
+  "package_digest": "b8ffb2459adcaf6bf1f480c48da35459bedc8fad38a69ace51447505aeb968d5",
+  "schema_version": "1.0.0",
+  "version_note": "no separate semantic package version; schema_version 1.0.0 plus file hashes is the identity"
+ },
+ "experiment": "c2-repair",
+ "failure_handling": {
+  "cross_environment_rule": "separate reproducibility dimension; not a second confirmation of the primary endpoint",
+  "execution_failure_action": "record the run as invalid for confirmation, keep the first record, do not rerun for a better result; a new revision protocol/manifest is required (ADR 0023 E2/E4)",
+  "execution_failure_conditions": [
+   "any dependency file hash differs from this manifest;",
+   "frozen adequacy/claims/gate digest mismatch;",
+   "sealed grid id/digest/trial-count mismatch at load;",
+   "artifact fails the evaluator strict contract (missing/duplicate trial, non-finite value, missing candidate);",
+   "candidate raises on any trial or the run exits non-zero;",
+   "primary_endpoint/undecided_policy/detection_loss_bound in the artifact differ from this manifest;",
+   "output artifact already exists (single-run rule)."
+  ],
+  "implementation_error_rule": "keep the first record, declare it invalid for confirmation, create a new revision protocol; never silently replace the run",
+  "no_post_freeze_change": "no candidate parameter, calibration sample, evaluator or rule may change after the grid is opened",
+  "run_preconditions": [
+   "Lead has committed this manifest;",
+   "dependency hashes verified;",
+   "sealed grid verified against declared digest/count at the single load;",
+   "environment id recorded in the artifact;",
+   "no pre-existing sealed artifact in the output directory."
+  ],
+  "scientific_negative": "a valid artifact whose pre-registered primary rule is not met is a scientific negative result, published in full; it is not an execution failure and is not retried",
+  "single_run_rule": "one execution per frozen manifest/candidate set; no rerun for a better result, no selecting an output, no changing tests after opening the grid"
+ },
+ "frozen_manifest_digest": "23ad3dd10a3940336f6bbb880ec45b3be8226c990770ada9f2465193dd89f8ca",
+ "generated_by": "fabric-pr3 (method side, stage 1)",
+ "implementation_change_disclosure": {
+  "changes_since_development_report": [
+   "The independent evaluator artifact contract was updated during stage-1 preparation to require primary_endpoint, undecided_policy, primary_metric and reporting bins, and trial-level estimated chirp/SNR observables; the candidate artifact producer now emits them.",
+   "run_repair gained optional grid_override/run_scope plumbing so the frozen sealed runner can pass the sealed grid document without changing any candidate decision logic.",
+   "No candidate decision logic, threshold rule, calibration sample or truth tolerance changed. The development summary digest is identical before and after the metadata/plumbing update (see dev_summary_digest)."
+  ],
+  "dev_report_reconciliation_needed": true,
+  "dev_summary_digest_before_and_after": "c70037a04d65b4c55909fc07f94580cb9fa9709606cf1c49059e74da960d40b5",
+  "development_report_cited_artifact_sha256": "1392b3d28b54cf554a4da175c58c6b7d4a476583f798af6d35c51ec90aae0457",
+  "final_frozen_development_artifact_sha256": "b32d91f8f5b787f73d261e65633e0d537e4d2154009905b272a5f7015a9c9dcd",
+  "note": "docs were not edited (stage-1 scope); the Lead should reconcile the development report's artifact sha and the metadata-only change before/at commit."
+ },
+ "manifest_schema": "c2c-freeze-v1",
+ "manifest_version": "1.0.0",
+ "measurement_model": {
+  "declared_error_model_id": "e0-c2a-empirical-bias-ar1-v1",
+  "error_model_used_by_candidates": false,
+  "error_model_version_note": "measurement_model.py declares error_model_id 'e0-c2a-empirical-bias-ar1-v1' but no separate semantic error-model version field. C2-M2 accepted model M3 (conditional covariance) is referenced by the C2-M2 acceptance contract version 1.0.0 / digest c9b18996... as declared in the C2-M2 report; it is not recomputed in stage 1 and is NOT used by B0-B3.",
+  "id": "e0-frontend-hann-stft-512-256",
+  "python_file": {
+   "path": "python/phaino_acoustics/measurement_model.py",
+   "sha256": "6c52d9b2c9ccbca52db72f2b2d56609881650e9db95ad1d596db5d2e2b6e471c"
+  },
+  "record": {
+   "error_model_id": "e0-c2a-empirical-bias-ar1-v1",
+   "front_end": {
+    "f_max_hz": 2800.0,
+    "f_min_hz": 180.0,
+    "frame_len": 512,
+    "hop": 256,
+    "interpolation": "log-magnitude parabolic peak interpolation",
+    "sample_rate_hz": 8000.0,
+    "window": "hann"
+   },
+   "id": "e0-frontend-hann-stft-512-256",
+   "notes": "truth is used only in synthetic diagnosis to define e(t); the front end itself is unchanged and no runtime/decision path imports this module",
+   "validity_conditions": [
+    "narrowband single-source Doppler track within the 180-2800 Hz search band",
+    "analysis frame 512 samples (64 ms) at 8 kHz, Hann window, hop 256",
+    "per-sample SNR >= 5 dB as used in the C2-A design",
+    "straight-line constant-velocity trajectory (no acceleration) for the error-model calibration"
+   ],
+   "version": "1.0.0"
+  },
+  "record_digest": "326d548c731753c33ab273fa8aea5ba6957d4a937de5f651015749438db31dc2",
+  "version": "1.0.0"
+ },
+ "primary_endpoint": {
+  "baseline": "B0",
+  "candidate": "B1",
+  "candidate_comparison": "B1 vs B0 (paired on the same observation; B0 is the paired baseline)",
+  "candidates": [
+   "B1",
+   "B0"
+  ],
+  "decision_rule": "B1 primary confirmation requires all of: (1) paired false-rejection risk difference (B1-B0) < 0; (2) paired valid supported coverage increases (B1 > B0); (3) zero claim-integrity violations for B1 (all claim statuses within {supported_conditional, undetermined, contradicted}; no supported_invariant); (4) the detection non-inferiority rule below holds. The evaluator numeric primary_result checks (1) and (4); (2) and (3) are mandatory pre-declared guardrails reported as secondary metrics and must both hold for confirmation.",
+  "definition": "On identical paired sealed-grid observations, B1 vs B0: increase correct-CV valid supported coverage (equivalently reduce correct-CV false rejection) without losing acceleration discrepancy detection beyond the pre-registered bound. Supported coverage is the fraction of truth-correct correct-CV trials whose candidate record is validly supported by the frozen C1 claim gate.",
+  "detection_non_inferiority_rule": "Paired acceleration discrepancy-detected risk difference (B1-B0) >= -0.10 (detection_loss_bound), under undecided_policy=not_detected: an undetermined acceleration trial is not counted as detected. The alternative excluded-policy analysis is a reported sensitivity, not the primary rule.",
+  "final_confirmation_rule": "Confirmation requires all of: evaluator primary_result == pass; the two-sided 95% paired Wald interval for the supported-coverage risk difference has lower bound > 0; paired false-rejection risk difference (B1-B0) <= 0; zero claim-integrity violations for B1 (all claim statuses in the frozen C1 allowed set; no supported_invariant). Otherwise the pre-defined negative-result statement applies. The evaluator reports these components; the Lead applies the final rule on the single sealed run.",
+  "level": "primary",
+  "multiplicity": "single pre-declared primary comparison; all other endpoints are secondary and descriptive, with no alpha adjustment claimed",
+  "name": "correct_cv_supported_coverage_and_detection_B1_vs_B0",
+  "numeric_evaluation_rule": "evaluator primary_result: paired supported-coverage risk difference (B1-B0) > 0 and paired acceleration discrepancy-detected risk difference >= -detection_loss_bound under undecided_policy=not_detected; alternative excluded-policy analysis reported as sensitivity",
+  "primary_metric": "supported_coverage"
+ },
+ "rationale_document": {
+  "note": "short rationale; this JSON is authoritative for hashes and rules",
+  "path": "protocols/c2c-freeze-v1.md"
+ },
+ "results_dependency_declaration": {
+  "development_derived_calibration_reference_values_included": true,
+  "development_outcome_metrics_included": false,
+  "sealed_outcome_values_included": false,
+  "sealed_results_used_for_parameters": false,
+  "statement": "This manifest contains candidate code/data hashes, frozen rules, declared sealed-grid metadata, and development-derived calibration reference values only. It contains no sealed-grid outcome, no sealed decision count and no value computed from the sealed run."
+ },
+ "scope": {
+  "candidates": [
+   "B0",
+   "B1",
+   "B2",
+   "B3"
+  ],
+  "decision_vocabulary": {
+   "accept": "measurement-model adequate",
+   "physical_epistemic_decision": "stored separately per candidate (clock-conditional under the frozen C1 gate); never equated with adequacy acceptance",
+   "reject": "measurement-model discrepancy",
+   "undetermined": "insufficient_evidence or indeterminate"
+  },
+  "operations_labels": {
+   "B0": "paired baseline (original front end + frozen adequacy)",
+   "B1": "measurement-representation repair (de-chirp; same estimator re-fit on repaired track)",
+   "B2": "test-dependence correction (AR pre-whitening of the Ljung-Box test only)",
+   "B3": "decision calibration (conditional thresholds/zero distributions; NOT a measurement repair)"
+  },
+  "sealed_grid_id": "pr4e-c2c-v1"
+ },
+ "sealed_grid": {
+  "declared_by": [
+   "ADR 0020 \u00a7D / ADR 0022 \u00a74",
+   "docs/experiments/2026-11-05-c2-measurement-model.md \u00a73",
+   "Lead stage-1 freeze message (2026-11-05)"
+  ],
+  "declared_condition_count": 59,
+  "declared_grid_digest": "cb8d869d85f41743d3cbaecf0214892d60ae24e1ac1ced5bee15891bff8cd431",
+  "declared_seed_base": 60000000,
+  "declared_seed_formula": "SEED_BASE + 1000*condition_index + trial",
+  "declared_strata_counts": {
+   "acceleration_misspecification": 120,
+   "correct_cv_continuum": 330,
+   "correct_cv_low_snr": 96,
+   "noise_only_null": 20
+  },
+  "declared_trial_count": 566,
+  "grid_id": "pr4e-c2c-v1",
+  "grid_version": "1.0.0",
+  "hashed_in_stage_1": false,
+  "note": "stage 1 preserves the seal: the grid file was not opened, parsed or hashed. The declared digest/count/seed base above are the accepted values from the authority documents; the sealed runner verifies them against the file exactly once at run.",
+  "path": "protocols/c2c-grid-v1.json",
+  "read_in_stage_1": false
+ },
+ "sealed_grid_non_use_evidence": {
+  "c2_diagnosis_seed_reuse": false,
+  "candidate_and_development_files_checked": [
+   "python/phaino_acoustics/repair_candidates.py",
+   "python/phaino_acoustics/experiment_repair.py",
+   "python/phaino_acoustics/repair_selfcheck.py",
+   "python/tests/test_repair_candidates.py",
+   "python/tests/test_repair_selfcheck.py"
+  ],
+  "declaration": "The sealed grid was never opened, parsed, hashed or used in candidate implementation, calibration, development runs or this stage-1 manifest. Only the accepted declared id/digest/count/seed base from the authority documents are recorded. The frozen sealed runner is the only code path that will read the file, exactly once after the manifest commit.",
+  "sealed_grid_file_hashed_in_stage_1": false,
+  "sealed_grid_file_read_in_stage_1": false,
+  "seed_literals_observed_in_candidate_code": {
+   "calibration_seed_base": 91000000,
+   "evaluation_seed_base": 90000000,
+   "sealed_declared_seed_base": 60000000,
+   "sealed_seed_present_in_candidate_code": false,
+   "selfcheck_seed_base": 92000000
+  },
+  "static_checks": [
+   {
+    "command": "grep -nE 'c2c-grid|c2_grid|cb8d869d|5bec5ef1|60_000_000|60000000' python/phaino_acoustics/repair_candidates.py python/phaino_acoustics/experiment_repair.py python/phaino_acoustics/repair_selfcheck.py",
+    "matches": [],
+    "note": "no sealed-grid reference or sealed seed base in candidate/development implementation",
+    "observed_exit_code": 1
+   },
+   {
+    "command": "grep -rnE 'c2c-grid-v1' python/phaino_acoustics/",
+    "matches": [],
+    "note": "the sealed grid JSON filename does not appear in the acoustics package",
+    "observed_exit_code": 1
+   },
+   {
+    "command": "PYTHONPATH=python python3 -m pytest python/tests/test_repair_candidates.py::test_development_run_does_not_open_or_import_the_sealed_grid -q",
+    "note": "existing source-scan test (no sealed-grid literal/import in experiment_repair.py)",
+    "result": "1 passed"
+   },
+   {
+    "command": "AST import scan of candidate/development modules",
+    "note": "the only sealed-grid reader is the frozen runner below",
+    "result": "no import of phaino_acoustics.c2_grid"
+   }
+  ]
+ },
+ "sealed_run_authorized": false,
+ "sealed_run_count": 0,
+ "sealed_runner": {
+  "entry": "stdin (PYTHONPATH=python python3 - ...)",
+  "jobs_rule": "min(8, os.cpu_count())",
+  "kind": "inline_python_program_frozen_by_hash",
+  "language": "python",
+  "note": "The runner verifies this manifest digest, every dependency hash and frozen digest before loading the grid; no frozen parameter is retuned after the run.",
+  "output_directory": "/tmp/c2-repair-sealed-v1",
+  "outputs": [
+   "c2-repair.json",
+   "run-record.json"
+  ],
+  "preflight_command": "PYTHONPATH=python python3 - --verify-only  # pipe program below",
+  "program": "import hashlib, json, os, sys\nfrom pathlib import Path\n\nREPO = Path.cwd()\nMANIFEST_PATH = REPO / \"protocols/c2c-freeze-v1.json\"\nGRID_PATH = REPO / \"protocols/c2c-grid-v1.json\"\nOUT_DIR = Path(\"/tmp/c2-repair-sealed-v1\")\nVERIFY_ONLY = \"--verify-only\" in sys.argv\n\ndef canonical(value):\n    return json.dumps(value, sort_keys=True, separators=(\",\", \":\"), allow_nan=False).encode(\"utf-8\")\n\nraw = MANIFEST_PATH.read_bytes()\ndocument = json.loads(raw)\ndeclared = document.pop(\"frozen_manifest_digest\")\ncomputed = hashlib.sha256(canonical(document)).hexdigest()\nif declared != computed:\n    raise SystemExit(f\"manifest digest mismatch: declared {declared}, computed {computed}\")\nprint(f\"manifest_digest: {computed}\")\nprint(f\"status: {document['status']}\")\n\nfor item in document[\"dependencies\"][\"files\"]:\n    path = REPO / item[\"path\"]\n    actual = hashlib.sha256(path.read_bytes()).hexdigest()\n    if actual != item[\"sha256\"]:\n        raise SystemExit(f\"dependency hash mismatch for {item['path']}: {actual} != {item['sha256']}\")\nprint(f\"dependency_hashes_ok: {len(document['dependencies']['files'])}\")\n\nfrom phaino_acoustics import adequacy_protocol\nif adequacy_protocol.PROTOCOL_DIGEST != document[\"adequacy_protocol\"][\"protocol_digest\"]:\n    raise SystemExit(\"frozen adequacy protocol digest mismatch\")\nfrom phaino_claims.claims_protocol import load_protocol, verify_protocol_digest\nclaims = load_protocol(str(REPO / document[\"claim_gate\"][\"protocol_path\"]))\nif not verify_protocol_digest(claims):\n    raise SystemExit(\"frozen C1 claims protocol self-digest mismatch\")\nif claims[\"protocol_digest\"] != document[\"claim_gate\"][\"protocol_digest\"]:\n    raise SystemExit(\"frozen C1 claims protocol digest mismatch\")\nfrom phaino_acoustics.experiment_repair import (\n    PRIMARY_ENDPOINT, UNDECIDED_POLICY, DETECTION_LOSS_BOUND,\n    canonical_digest, gate_policy_document, run_repair,\n)\nfor key in (\n    \"name\",\n    \"definition\",\n    \"candidate_comparison\",\n    \"decision_rule\",\n    \"detection_non_inferiority_rule\",\n    \"primary_metric\",\n):\n    if canonical(PRIMARY_ENDPOINT.get(key)) != canonical(document[\"primary_endpoint\"].get(key)):\n        raise SystemExit(f\"primary endpoint field {key!r} differs from frozen implementation\")\nif UNDECIDED_POLICY != document[\"undecided_policy\"]:\n    raise SystemExit(\"undecided policy differs from frozen implementation\")\nif abs(float(DETECTION_LOSS_BOUND) - float(document[\"detection_loss_bound\"])) > 0.0:\n    raise SystemExit(\"detection loss bound differs from frozen implementation\")\nif canonical_digest(gate_policy_document(claims)) != document[\"claim_gate\"][\"gate_policy_digest\"]:\n    raise SystemExit(\"gate policy digest mismatch\")\nfrom phaino_acoustics.measurement_model import measurement_model_record\nif canonical_digest(measurement_model_record()) != document[\"measurement_model\"][\"record_digest\"]:\n    raise SystemExit(\"measurement-model record digest mismatch\")\nfrom phaino_acoustics.experiment_repair import (\n    CAL_TRIALS_PER_CONDITION as CAL_N,\n    CALIBRATION_SEED_BASE as CAL_SEED,\n    build_calibration_conditions,\n)\ncal_conditions = build_calibration_conditions()\ncalibration_definition = {\n    \"seed_base\": CAL_SEED,\n    \"seed_formula\": \"SEED_BASE + 1000*condition_index + trial\",\n    \"trials_per_condition\": CAL_N,\n    \"total_trials\": sum(int(c[\"n_trials\"]) for c in cal_conditions),\n    \"conditions\": cal_conditions,\n    \"inclusion_rule\": (\n        \"correct-model calibration trial with converged optimization, finite positive \"\n        \"sigma_f and finite adequacy statistics; no truth or label used\"\n    ),\n}\nif canonical_digest(calibration_definition) != document[\"calibration\"][\"sample_definition_digest\"]:\n    raise SystemExit(\"calibration sample-definition digest mismatch\")\nprint(\"frozen protocol and calibration digests ok\")\n\nif VERIFY_ONLY:\n    print(\"verify_only: preflight passed; sealed grid not opened\")\n    raise SystemExit(0)\n\nif (OUT_DIR / \"c2-repair.json\").exists():\n    raise SystemExit(\"single-run rule: sealed artifact already exists; do not rerun\")\n\nimport phaino_acoustics.c2_grid as grid_module\ngrid = grid_module.load_grid(str(GRID_PATH))\nsealed = document[\"sealed_grid\"]\nif grid[\"grid_id\"] != sealed[\"grid_id\"]:\n    raise SystemExit(\"sealed grid id mismatch\")\nif grid[\"grid_digest\"] != sealed[\"declared_grid_digest\"]:\n    raise SystemExit(\"sealed grid definition digest mismatch\")\nif grid_module.trial_count(grid) != int(sealed[\"declared_trial_count\"]):\n    raise SystemExit(\"sealed grid trial count mismatch\")\nFAMILY_TO_MECHANISM = {\n    \"cv_continuum\": \"correct_cv\",\n    \"cv_continuum_low_snr\": \"correct_cv\",\n    \"acceleration_continuum\": \"acceleration\",\n    \"null\": \"null\",\n}\nSEED_BASE = int(sealed[\"declared_seed_base\"])\nconditions = []\nfor condition in grid[\"conditions\"]:\n    family = condition[\"family\"]\n    if family not in FAMILY_TO_MECHANISM:\n        raise SystemExit(f\"unknown sealed-grid family {family!r}\")\n    index = int(condition[\"condition_index\"])\n    converted = {\n        \"condition_index\": index,\n        \"name\": condition[\"name\"],\n        \"mechanism\": FAMILY_TO_MECHANISM[family],\n        \"stratum\": condition[\"stratum\"],\n        \"n_trials\": int(condition[\"n_trials\"]),\n        \"seed_base\": SEED_BASE,\n        \"label\": condition.get(\"label\", \"\"),\n        \"scenario\": dict(condition[\"scenario\"]),\n    }\n    for trial in (0, int(condition[\"n_trials\"]) - 1):\n        expected = SEED_BASE + 1000 * index + trial\n        actual = grid_module.condition_seed(condition, trial)\n        if expected != actual:\n            raise SystemExit(f\"seed mapping mismatch for {condition['name']}: {expected} != {actual}\")\n    conditions.append(converted)\nsealed_grid = dict(grid)\nsealed_grid.update({\n    \"development_grid\": False,\n    \"sealed_grid_used\": True,\n    \"sealed_grid_opened\": True,\n    \"c2_diagnosis_seeds_reused\": False,\n})\njobs = min(8, os.cpu_count() or 1)\nresult = run_repair(\n    jobs=jobs,\n    condition_override=conditions,\n    grid_override=sealed_grid,\n    output_dir=str(OUT_DIR),\n    quiet=True,\n)\nartifact = result[\"artifact\"]\nif artifact[\"grid_id\"] != sealed[\"grid_id\"]:\n    raise SystemExit(\"artifact grid id mismatch\")\nif artifact[\"frozen_grid_digest\"] != sealed[\"declared_grid_digest\"]:\n    raise SystemExit(\"artifact frozen grid digest mismatch\")\nfrom phaino_c2_eval.artifacts import load_artifact\nloaded = load_artifact(result[\"artifact_path\"])\nif loaded.primary_endpoint[\"name\"] != document[\"primary_endpoint\"][\"name\"]:\n    raise SystemExit(\"artifact primary endpoint mismatch\")\nrun_record = {\n    \"manifest_digest\": computed,\n    \"manifest_path\": str(MANIFEST_PATH),\n    \"artifact_path\": result[\"artifact_path\"],\n    \"artifact_sha256\": result[\"artifact_sha256\"],\n    \"grid_id\": artifact[\"grid_id\"],\n    \"frozen_grid_digest\": artifact[\"frozen_grid_digest\"],\n    \"protocol_digest\": artifact[\"protocol_digest\"],\n    \"environment_id\": artifact[\"environment_id\"],\n    \"trials\": len(artifact[\"trials\"]),\n    \"jobs\": jobs,\n    \"sealed_run_count\": 1,\n    \"note\": \"first and only sealed run for this frozen manifest; no rerun for a better result\",\n}\n(OUT_DIR / \"run-record.json\").write_text(\n    json.dumps(run_record, indent=1, sort_keys=True, allow_nan=False) + \"\\n\", encoding=\"utf-8\"\n)\nprint(f\"artifact: {result['artifact_path']}\")\nprint(f\"artifact_sha256: {result['artifact_sha256']}\")\nprint(f\"protocol_digest: {artifact['protocol_digest']}\")\nprint(f\"grid: {artifact['grid_id']} {artifact['frozen_grid_digest']}\")\nprint(f\"environment_id: {artifact['environment_id']}\")\nprint(f\"trials: {len(artifact['trials'])}\")\n",
+  "program_sha256": "1afec8c2e8acd7571bc53127d29d6e961edaa6a52fb7e6a0e1755302468a192c",
+  "refuses_existing_artifact": true,
+  "run_command": "PYTHONPATH=python python3 -  # pipe program below; executes exactly once",
+  "single_run": true
+ },
+ "secondary_endpoints": [
+  {
+   "definition": "paired FRR delta vs B0, overall and by geometry/chirp bin",
+   "id": "S1",
+   "label": "false rejection"
+  },
+  {
+   "definition": "paired validly-supported coverage delta vs B0 (primary metric, also reported as secondary component)",
+   "id": "S2",
+   "label": "supported coverage"
+  },
+  {
+   "definition": "acceleration discrepancy-detected, undetermined, false-supported counts; never pooled with correct-CV",
+   "id": "S3",
+   "label": "misspecification taxonomy"
+  },
+  {
+   "definition": "paired undetermined-rate delta vs B0; abstention-gaming flag",
+   "id": "S4",
+   "label": "abstention"
+  },
+  {
+   "definition": "promotion to accepted or validly supported; zero-intent counts with upper bounds, not zero probability",
+   "id": "S5",
+   "label": "null/noise-only"
+  },
+  {
+   "definition": "per-claim supported_conditional/undetermined/contradicted counts and claim integrity per candidate",
+   "id": "S6",
+   "label": "claim statuses"
+  },
+  {
+   "definition": "per-observable-chirp-bin CV FRR and acceleration detection, including CV-vs-acceleration at the same chirp",
+   "id": "S7",
+   "label": "B3 chirp-conditioned power"
+  },
+  {
+   "definition": "declared SNR branches; unexercised branch declared unverified (ADR 0023 C)",
+   "id": "S8",
+   "label": "SNR conditioning"
+  },
+  {
+   "definition": "B0 vs B1 parameter errors against evaluation-only truth; B1 refit parameters are not directly comparable",
+   "id": "S9",
+   "label": "B1 parameter correctness"
+  },
+  {
+   "definition": "separate reproducibility dimension; descriptive claim-status agreement, not a second confirmation",
+   "id": "S10",
+   "label": "cross-environment"
+  }
+ ],
+ "stage": "freeze_manifest",
+ "status": "stage1_frozen_not_run",
+ "tolerances": {
+  "adequacy_indeterminate_margin_fraction": 0.1,
+  "detection_loss_bound": 0.1,
+  "interval_confidence": 0.95,
+  "truth_within_tolerance": {
+   "b_rel": 0.05,
+   "f0_rel": 0.01,
+   "f0_times_b_rel": 0.05,
+   "note": "evaluation-only truth labels; baseline B0 fit defines the labels; evaluator truth_correct = all listed flags true",
+   "t0_abs_s": 0.25,
+   "v_rel": 0.02
+  }
+ },
+ "undecided_policy": "not_detected",
+ "unfrozen_gaps": [
+  "The evaluator package was edited by another workstream during stage-1 preparation (observed mtime/hash changes); this manifest freezes the working-tree state at generation time. If evaluator files change before the Lead commits, the manifest must be regenerated and re-frozen.",
+  "The sealed grid file itself was not opened or hashed in stage 1 (sealing); only the accepted declared grid digest/count/seed base are recorded. The frozen runner verifies them against the file exactly once at run.",
+  "ADR 0023 B selfcheck exists and is referenced by digest; its time-block-holdout finding must be adjudicated by the Lead as part of the conditional approval. This manifest does not convert that development finding into acceptance.",
+  "B3's SNR conditioning branch is unverified: the calibration sample has zero admissible trials in the low estimated-SNR reporting bin, so the artifact declares that branch unexercised (ADR 0023 C).",
+  "The C2-M2 M3 error model has no separate semantic version field; its acceptance-contract version/digest is declared in the C2-M2 report and not recomputed here. It is not used by B0-B3.",
+  "Cross-platform reproducibility of repair artifacts is not frozen or claimed; only environment_id is recorded per artifact.",
+  "No repository commit hash is available (git operations were not performed); authority documents are frozen by working-tree sha256 instead of a commit id.",
+  "The development report (`docs/experiments/2026-11-05-c2-repair-dev.md`) still cites the pre-metadata-update artifact sha; docs were not edited in stage 1 (reconciliation listed above).",
+  "The sealed runner is an inline program frozen by hash rather than a committed file; if the Lead prefers a file, this manifest must be revised.",
+  "Development-derived B2/B3 calibration reference floats are environment-dependent; the sealed run recomputes calibration from the frozen sample and any difference is reported, not retuned."
+ ]
+}

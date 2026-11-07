@@ -1,0 +1,606 @@
+{
+  "contract_version": 2,
+  "description": "Contract-v2 cross-platform protocol for the E0 artifact. A-class fields are exact, B-class numeric fields are tolerance-compared only on trials the reference-side identifiability rule marks identifiable, C-class diagnostics are compared by semantics, and D-class decisions use declared boundaries. Tolerances are a measured draft, not frozen.",
+  "field_classes": {
+    "A_discrete_identity": [
+      "experiment",
+      "config.*",
+      "conditions[].condition",
+      "conditions[].group",
+      "conditions[].note",
+      "conditions[].n",
+      "conditions[].scenario.*",
+      "conditions[].success.n",
+      "trials[].condition",
+      "trials[].trial",
+      "trials[].seed"
+    ],
+    "B_identifiable_numeric": [
+      {
+        "abs_tol": 1e-09,
+        "path": "trials[].if_rms_hz",
+        "rel_tol": 1e-05,
+        "scope": "trial"
+      },
+      {
+        "abs_tol": 1e-09,
+        "path": "trials[].if_median_abs_hz",
+        "rel_tol": 1e-05,
+        "scope": "trial"
+      },
+      {
+        "abs_tol": 1e-09,
+        "path": "trials[].if_p95_abs_hz",
+        "rel_tol": 1e-05,
+        "scope": "trial"
+      },
+      {
+        "abs_tol": 0.005,
+        "path": "trials[].b1.params.f0",
+        "rel_tol": 1e-05,
+        "scope": "trial"
+      },
+      {
+        "abs_tol": 0.0025,
+        "path": "trials[].b1.params.v",
+        "rel_tol": 1e-05,
+        "scope": "trial"
+      },
+      {
+        "abs_tol": 0.0002,
+        "path": "trials[].b1.params.t0",
+        "rel_tol": 1e-05,
+        "scope": "trial"
+      },
+      {
+        "abs_tol": 0.03,
+        "path": "trials[].b1.params.b",
+        "rel_tol": 1e-05,
+        "scope": "trial"
+      },
+      {
+        "abs_tol": 1e-06,
+        "path": "trials[].b1.rel.f0",
+        "rel_tol": 0.0,
+        "scope": "trial"
+      },
+      {
+        "abs_tol": 1e-06,
+        "path": "trials[].b1.rel.v",
+        "rel_tol": 0.0,
+        "scope": "trial"
+      },
+      {
+        "abs_tol": 1e-06,
+        "path": "trials[].b1.rel.t0",
+        "rel_tol": 0.0,
+        "scope": "trial"
+      },
+      {
+        "abs_tol": 1e-06,
+        "path": "trials[].b1.rel.t0_abs",
+        "rel_tol": 0.0,
+        "scope": "trial"
+      },
+      {
+        "abs_tol": 1e-06,
+        "path": "trials[].b1.rel.b",
+        "rel_tol": 0.0,
+        "scope": "trial"
+      },
+      {
+        "abs_tol": 1e-12,
+        "path": "trials[].b1.sse",
+        "rel_tol": 1e-05,
+        "scope": "trial"
+      },
+      {
+        "abs_tol": 1e-12,
+        "path": "trials[].b1.rms_hz",
+        "rel_tol": 1e-05,
+        "scope": "trial"
+      },
+      {
+        "abs_tol": 1e-12,
+        "path": "trials[].b1.sigma_f_hz",
+        "rel_tol": 1e-05,
+        "scope": "trial"
+      },
+      {
+        "abs_tol": 1e-06,
+        "path": "trials[].b1.improvement_ratio",
+        "rel_tol": 0.0,
+        "scope": "trial"
+      },
+      {
+        "abs_tol": 0.03,
+        "path": "trials[].b0.params.*",
+        "rel_tol": 1e-05,
+        "scope": "trial"
+      },
+      {
+        "abs_tol": 1e-06,
+        "path": "trials[].b0.rel.*",
+        "rel_tol": 0.0,
+        "scope": "trial"
+      },
+      {
+        "abs_tol": 1e-09,
+        "path": "trials[].b0.rms_hz",
+        "rel_tol": 1e-05,
+        "scope": "trial"
+      },
+      {
+        "abs_tol": 1e-06,
+        "path": "trials[].b0.improvement_ratio",
+        "rel_tol": 0.0,
+        "scope": "trial"
+      },
+      {
+        "abs_tol": 1e-06,
+        "path": "conditions[].b1.rel.*.*",
+        "rel_tol": 0.0,
+        "scope": "condition"
+      },
+      {
+        "abs_tol": 1e-06,
+        "path": "conditions[].b1.rel_abs.*.*",
+        "rel_tol": 0.0,
+        "scope": "condition"
+      },
+      {
+        "abs_tol": 1e-06,
+        "path": "conditions[].b1.t0_abs_err.*",
+        "rel_tol": 0.0,
+        "scope": "condition"
+      },
+      {
+        "abs_tol": 1e-12,
+        "path": "conditions[].b1.rms_hz.*",
+        "rel_tol": 1e-05,
+        "scope": "condition"
+      },
+      {
+        "abs_tol": 1e-06,
+        "path": "conditions[].b1.improvement_ratio.*",
+        "rel_tol": 0.0,
+        "scope": "condition"
+      },
+      {
+        "abs_tol": 1e-06,
+        "path": "conditions[].b0.rel.*.*",
+        "rel_tol": 0.0,
+        "scope": "condition"
+      },
+      {
+        "abs_tol": 1e-06,
+        "path": "conditions[].b0.rel_abs.*.*",
+        "rel_tol": 0.0,
+        "scope": "condition"
+      },
+      {
+        "abs_tol": 1e-06,
+        "path": "conditions[].b0.t0_abs_err.*",
+        "rel_tol": 0.0,
+        "scope": "condition"
+      },
+      {
+        "abs_tol": 1e-12,
+        "path": "conditions[].b0.rms_hz.*",
+        "rel_tol": 1e-05,
+        "scope": "condition"
+      },
+      {
+        "abs_tol": 1e-09,
+        "path": "conditions[].front_end.*.*",
+        "rel_tol": 1e-05,
+        "scope": "condition"
+      }
+    ],
+    "C_unidentifiable_diagnostic": [
+      {
+        "decades": 0,
+        "path": "trials[].b1.iterations",
+        "semantics": "magnitude_class",
+        "sign_sensitive": false
+      },
+      {
+        "decades": 0,
+        "path": "trials[].b1.n_starts_ranked",
+        "semantics": "magnitude_class",
+        "sign_sensitive": false
+      },
+      {
+        "decades": 0,
+        "path": "trials[].b1.n_starts",
+        "semantics": "magnitude_class",
+        "sign_sensitive": false
+      },
+      {
+        "decades": 1,
+        "path": "trials[].b1.grad_norm",
+        "semantics": "magnitude_class",
+        "sign_sensitive": false
+      },
+      {
+        "decades": 1,
+        "path": "trials[].b1.se.*",
+        "semantics": "magnitude_class",
+        "sign_sensitive": false
+      },
+      {
+        "decades": 1,
+        "path": "trials[].b1.corr.*",
+        "semantics": "magnitude_class",
+        "sign_sensitive": true
+      },
+      {
+        "decades": 1,
+        "path": "trials[].b1.corr_abs.*",
+        "semantics": "magnitude_class",
+        "sign_sensitive": false
+      },
+      {
+        "decades": 1,
+        "path": "trials[].b1.worst_rel_se",
+        "semantics": "magnitude_class",
+        "sign_sensitive": false
+      },
+      {
+        "decades": 1,
+        "path": "trials[].b1.condition_number",
+        "semantics": "magnitude_class",
+        "sign_sensitive": false
+      },
+      {
+        "decades": 1,
+        "path": "trials[].b1.worst_dir.*",
+        "semantics": "magnitude_class",
+        "sign_sensitive": false
+      },
+      {
+        "decades": 0,
+        "path": "conditions[].b1.iterations.*",
+        "semantics": "magnitude_class",
+        "sign_sensitive": false
+      },
+      {
+        "decades": 1,
+        "path": "conditions[].b1.grad_norm.*",
+        "semantics": "magnitude_class",
+        "sign_sensitive": false
+      },
+      {
+        "decades": 1,
+        "path": "conditions[].b1.worst_rel_se.*",
+        "semantics": "magnitude_class",
+        "sign_sensitive": false
+      },
+      {
+        "decades": 1,
+        "path": "conditions[].b1.condition_number.*",
+        "semantics": "magnitude_class",
+        "sign_sensitive": false
+      },
+      {
+        "decades": 1,
+        "path": "conditions[].b1.corr_abs.*.*",
+        "semantics": "magnitude_class",
+        "sign_sensitive": false
+      },
+      {
+        "decades": 1,
+        "path": "conditions[].b1.corr_signed.*.*",
+        "semantics": "magnitude_class",
+        "sign_sensitive": true
+      },
+      {
+        "decades": 1,
+        "path": "conditions[].b1.worst_dir.*.*",
+        "semantics": "magnitude_class",
+        "sign_sensitive": false
+      },
+      {
+        "decades": 1,
+        "path": "conditions[].b1.cov_available_rate",
+        "semantics": "magnitude_class",
+        "sign_sensitive": false
+      },
+      {
+        "decades": 1,
+        "path": "conditions[].success.wilson_lo",
+        "semantics": "magnitude_class",
+        "sign_sensitive": false
+      },
+      {
+        "decades": 1,
+        "path": "conditions[].success.wilson_hi",
+        "semantics": "magnitude_class",
+        "sign_sensitive": false
+      },
+      {
+        "decades": 1,
+        "path": "trials[].b1.se",
+        "semantics": "magnitude_class",
+        "sign_sensitive": false
+      },
+      {
+        "decades": 1,
+        "path": "trials[].b1.corr",
+        "semantics": "magnitude_class",
+        "sign_sensitive": true
+      },
+      {
+        "decades": 1,
+        "path": "trials[].b1.corr_abs",
+        "semantics": "magnitude_class",
+        "sign_sensitive": false
+      },
+      {
+        "decades": 1,
+        "path": "trials[].b1.worst_dir",
+        "semantics": "magnitude_class",
+        "sign_sensitive": false
+      }
+    ],
+    "D_decision": [
+      {
+        "comparison": "lt",
+        "justification": "LM stationarity threshold is grad_norm < 1e-6; a normalized gradient within half the threshold is a numerical boundary, not a scientific difference.",
+        "kind": "threshold",
+        "margin": 5e-07,
+        "name": "b1.converged",
+        "path": "trials[].b1.converged",
+        "statistic": "trials[].b1.grad_norm",
+        "threshold": 1e-06
+      },
+      {
+        "comparison": "abs_lt",
+        "justification": "Pre-declared E0 f0 tolerance is 1%; margin is 1% of that threshold.",
+        "kind": "threshold",
+        "margin": 0.0001,
+        "name": "b1.within_tol.f0",
+        "path": "trials[].b1.within_tol.f0",
+        "statistic": "trials[].b1.rel.f0",
+        "threshold": 0.01
+      },
+      {
+        "comparison": "abs_lt",
+        "justification": "Pre-declared E0 v tolerance is 2%; margin is 1% of that threshold.",
+        "kind": "threshold",
+        "margin": 0.0002,
+        "name": "b1.within_tol.v",
+        "path": "trials[].b1.within_tol.v",
+        "statistic": "trials[].b1.rel.v",
+        "threshold": 0.02
+      },
+      {
+        "comparison": "abs_lt",
+        "justification": "Pre-declared E0 t0 tolerance is 0.25 s; margin is 1% of that threshold.",
+        "kind": "threshold",
+        "margin": 0.0025,
+        "name": "b1.within_tol.t0",
+        "path": "trials[].b1.within_tol.t0",
+        "statistic": "trials[].b1.rel.t0_abs",
+        "threshold": 0.25
+      },
+      {
+        "comparison": "abs_lt",
+        "justification": "Pre-declared E0 b tolerance is 5%; margin is 1% of that threshold.",
+        "kind": "threshold",
+        "margin": 0.0005,
+        "name": "b1.within_tol.b",
+        "path": "trials[].b1.within_tol.b",
+        "statistic": "trials[].b1.rel.b",
+        "threshold": 0.05
+      },
+      {
+        "dependencies": [
+          "b1.converged",
+          "b1.within_tol.f0",
+          "b1.within_tol.v",
+          "b1.within_tol.t0",
+          "b1.within_tol.b"
+        ],
+        "justification": "success = converged AND all four pre-declared parameter tolerances.",
+        "kind": "derived",
+        "name": "b1.success",
+        "path": "trials[].b1.success"
+      },
+      {
+        "comparison": "ge",
+        "dependencies": [
+          "b1.converged"
+        ],
+        "justification": "accepted = converged AND improvement_ratio >= 0.5 (pre-declared acceptance floor).",
+        "kind": "derived",
+        "margin": 0.001,
+        "name": "b1.accepted",
+        "path": "trials[].accepted",
+        "statistic": "trials[].b1.improvement_ratio",
+        "threshold": 0.5
+      },
+      {
+        "justification": "Naive inversion has no scalar deciding statistic in the artifact; validity is a structural flag.",
+        "kind": "exact",
+        "name": "b0.valid",
+        "path": "trials[].b0.valid"
+      },
+      {
+        "comparison": "abs_lt",
+        "justification": "B0 uses the same pre-declared 1% f0 tolerance; margin is 1% of it.",
+        "kind": "threshold",
+        "margin": 0.0001,
+        "name": "b0.within_tol.f0",
+        "path": "trials[].b0.within_tol.f0",
+        "statistic": "trials[].b0.rel.f0",
+        "threshold": 0.01
+      },
+      {
+        "comparison": "abs_lt",
+        "justification": "B0 uses the same pre-declared 2% v tolerance; margin is 1% of it.",
+        "kind": "threshold",
+        "margin": 0.0002,
+        "name": "b0.within_tol.v",
+        "path": "trials[].b0.within_tol.v",
+        "statistic": "trials[].b0.rel.v",
+        "threshold": 0.02
+      },
+      {
+        "comparison": "abs_lt",
+        "justification": "B0 uses the same pre-declared 0.25 s t0 tolerance; margin is 1% of it.",
+        "kind": "threshold",
+        "margin": 0.0025,
+        "name": "b0.within_tol.t0",
+        "path": "trials[].b0.within_tol.t0",
+        "statistic": "trials[].b0.rel.t0_abs",
+        "threshold": 0.25
+      },
+      {
+        "comparison": "abs_lt",
+        "justification": "B0 uses the same pre-declared 5% b tolerance; margin is 1% of it.",
+        "kind": "threshold",
+        "margin": 0.0005,
+        "name": "b0.within_tol.b",
+        "path": "trials[].b0.within_tol.b",
+        "statistic": "trials[].b0.rel.b",
+        "threshold": 0.05
+      },
+      {
+        "dependencies": [
+          "b0.valid",
+          "b0.within_tol.f0",
+          "b0.within_tol.v",
+          "b0.within_tol.t0",
+          "b0.within_tol.b"
+        ],
+        "justification": "success = valid AND all four pre-declared B0 tolerances.",
+        "kind": "derived",
+        "name": "b0.success",
+        "path": "trials[].b0.success"
+      }
+    ]
+  },
+  "identifiability": {
+    "all_of": [
+      {
+        "check": "true",
+        "field": "b1.converged"
+      },
+      {
+        "check": "le",
+        "field": "b1.worst_rel_se",
+        "value": 0.01
+      },
+      {
+        "check": "le",
+        "field": "b1.condition_number",
+        "value": 10000.0
+      },
+      {
+        "check": "all_finite",
+        "field": "b1.params"
+      }
+    ],
+    "description": "Fixed before comparison and evaluated on the reference artifact only: the trial must have converged, worst-direction relative standard error <= 1e-2, condition number <= 1e4, and finite f0/v/t0/b. Trials failing this rule have B-class differences reported as not-applicable diagnostics, never as numeric mismatch.",
+    "rule_id": "e0-b1-identifiable-v1"
+  },
+  "ignored_fields": [
+    "generated_at_utc",
+    "elapsed_s",
+    "config.jobs",
+    "records_sha256",
+    "environment.python",
+    "environment.numpy",
+    "environment.platform",
+    "environment.machine",
+    "environment.cpu_count",
+    "environment"
+  ],
+  "levels": {
+    "r0_execution": "Both artifacts parse and contain every required structure, condition, and (condition, trial) exactly once.",
+    "r1_decision_equivalence": "Every decidable D-class decision matches; near-boundary decisions are indeterminate and reported; material condition-level rate changes fail.",
+    "r1_numerical_equivalence": "A-class fields exact; B-class numeric fields within abs+rel tolerance for every trial the reference-side identifiability rule marks identifiable.",
+    "r2_bitwise_identity": "PCJ-0 canonical JSON after ignored-field removal is byte-identical."
+  },
+  "protocol_id": "e0-cross-platform-v2",
+  "rate_checks": [
+    {
+      "justification": "Strict materiality: any change in a reported rate or count is material, even when the individual decision was masked as indeterminate. Masking explains the mechanism; it does not restore the unchanged reported output.",
+      "material_abs_change": 0.0,
+      "path": "conditions[].success.rate"
+    },
+    {
+      "justification": "Strict materiality: any change in a reported rate or count is material, even when the individual decision was masked as indeterminate. Masking explains the mechanism; it does not restore the unchanged reported output.",
+      "material_abs_change": 0.0,
+      "path": "conditions[].success.k"
+    },
+    {
+      "justification": "Strict materiality: any change in a reported rate or count is material, even when the individual decision was masked as indeterminate. Masking explains the mechanism; it does not restore the unchanged reported output.",
+      "material_abs_change": 0.0,
+      "path": "conditions[].success.fail_components.*"
+    },
+    {
+      "justification": "Strict materiality: any change in a reported rate or count is material, even when the individual decision was masked as indeterminate. Masking explains the mechanism; it does not restore the unchanged reported output.",
+      "material_abs_change": 0.0,
+      "path": "conditions[].accepted_rate"
+    },
+    {
+      "justification": "Strict materiality: any change in a reported rate or count is material, even when the individual decision was masked as indeterminate. Masking explains the mechanism; it does not restore the unchanged reported output.",
+      "material_abs_change": 0.0,
+      "path": "conditions[].converged_rate"
+    },
+    {
+      "justification": "Strict materiality: any change in a reported rate or count is material, even when the individual decision was masked as indeterminate. Masking explains the mechanism; it does not restore the unchanged reported output.",
+      "material_abs_change": 0.0,
+      "path": "conditions[].b0.success.rate"
+    },
+    {
+      "justification": "Strict materiality: any change in a reported rate or count is material, even when the individual decision was masked as indeterminate. Masking explains the mechanism; it does not restore the unchanged reported output.",
+      "material_abs_change": 0.0,
+      "path": "conditions[].b0.success.k"
+    },
+    {
+      "justification": "Strict materiality: any change in a reported rate or count is material, even when the individual decision was masked as indeterminate. Masking explains the mechanism; it does not restore the unchanged reported output.",
+      "material_abs_change": 0.0,
+      "path": "conditions[].b0.valid_rate"
+    }
+  ],
+  "structural_rules": {
+    "condition_key": "condition",
+    "conditions_key": "conditions",
+    "exactly_once": true,
+    "no_duplicates": true,
+    "no_extra": true,
+    "no_missing": true,
+    "required_keys": [
+      "experiment",
+      "generated_at_utc",
+      "config",
+      "environment",
+      "elapsed_s",
+      "records_sha256",
+      "conditions",
+      "trials"
+    ],
+    "required_trial_keys": [
+      "condition",
+      "trial",
+      "seed",
+      "b1",
+      "b0",
+      "accepted"
+    ],
+    "same_condition_order": true,
+    "same_condition_set": true,
+    "trial_key": [
+      "condition",
+      "trial"
+    ],
+    "trials_key": "trials"
+  },
+  "tolerance_note": "Derived from docs/experiments/2026-11-05-cross-platform-e0.md: identifiable parameter differences measured <=2.3e-7 rel; bounds below are ~40x the measured worst and ~1000x below the E0 decision thresholds. Not frozen: freezing requires a second platform pair (three-environment validation) and the protocol digest recorded with the report.",
+  "tolerance_status": "measured_draft_not_frozen",
+  "unclassified_field_policy": "exact",
+  "version": 2
+}

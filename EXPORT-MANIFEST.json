@@ -1,0 +1,2168 @@
+{
+  "release": {
+    "name": "PhainoWeave Research \u2014 Reproducible Physical Inference Studies",
+    "version": "0.1.0-research-candidate",
+    "public_repository": "haeliotang/phainoweave-research",
+    "source_repository": "haeliotang/phainoweave (private engineering repository)",
+    "source_commit": "4572302ff1d56cf06d4612c569fe0a2454d4bb90",
+    "status": "candidate_not_published",
+    "public_eval_set": {
+      "id": "pr4e-c2c-v1",
+      "trials": 566,
+      "disclosure": "The C2-C sealed results are public in this snapshot. They may be used for comparison but must not be described as an unseen sealed set for future confirmation."
+    }
+  },
+  "source_commit": "317da92b2d78825467a69f60ffbe1c1348854b50",
+  "default_policy": "deny",
+  "files": [
+    {
+      "source": "release/phase1/CITATION.cff",
+      "dest": "CITATION.cff",
+      "sha256": "75d487850a18314a1c1782097a886f966f65a7efe92bf2036d44ad2cca9c23bf",
+      "bytes": 1019,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "release/phase1/DISPOSITIONS.json",
+      "dest": "DISPOSITIONS.json",
+      "sha256": "b7b529cf976eb8b6882f5ecc67e9b46d823ee9a2715dc06fd296a2bf7a78f77d",
+      "bytes": 14325,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "release/phase1/DISPOSITIONS.md",
+      "dest": "DISPOSITIONS.md",
+      "sha256": "3d567ba25dda413fd3560a06d243a599502649f58bf6acefb7f97ca38c995603",
+      "bytes": 9659,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "LICENSE",
+      "dest": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "release/phase1/LICENSING.md",
+      "dest": "LICENSING.md",
+      "sha256": "69a892e1aebb8ed10f4af8b111986060f989743870155d369313f51439c5b6f2",
+      "bytes": 2414,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "release/phase1/LIMITATIONS.md",
+      "dest": "LIMITATIONS.md",
+      "sha256": "7452bc2f7defe7f394d0c14bd065aaf71698e08b1459ac20719fae0d5dee9d6d",
+      "bytes": 3016,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "NOTICE",
+      "dest": "NOTICE",
+      "sha256": "1319ad54c5589791d1539c668b81a13b3119e08267216434680dd3457bb879bc",
+      "bytes": 338,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "release/phase1/README.public.md",
+      "dest": "README.md",
+      "sha256": "ac51b6065b20b0b685233088189151d1890cfa33f5e4e45c3fb95483a3a3dd67",
+      "bytes": 3427,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "release/phase1/RELEASE-AUDIT.md",
+      "dest": "RELEASE-AUDIT.md",
+      "sha256": "462e8a1a428404e6864ffda53a8a4c204abbd35eec7695d6ff056569038ca8de",
+      "bytes": 5609,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "release/phase1/RELEASE-READINESS.md",
+      "dest": "RELEASE-READINESS.md",
+      "sha256": "4c2ceda7df6192baf1b633d522d4653de8dba95223b4a5550a0b5b4ee29f242e",
+      "bytes": 3556,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "release/phase1/REPRODUCTION.md",
+      "dest": "REPRODUCTION.md",
+      "sha256": "292e9a80dd2aa6d1c1b011e1cd473a0ed63a66643b511ccd101caa208adc405f",
+      "bytes": 3270,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "release/phase1/RIGHTS-CONFIRMATION.md",
+      "dest": "RIGHTS-CONFIRMATION.md",
+      "sha256": "5d968bd05ab655ffc54223ea2c1b116e4da381c4899c500c80e61d0b56f36431",
+      "bytes": 1224,
+      "license": "CC-BY-4.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "release/phase1/SECURITY.md",
+      "dest": "SECURITY.md",
+      "sha256": "90f2e34d763d400f8e97c86e005451c98ad9e675e66c97942d718678235ad60c",
+      "bytes": 646,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "release/phase1/THIRD_PARTY.md",
+      "dest": "THIRD_PARTY.md",
+      "sha256": "2e3bc9feb158aa2dc8311f6a296eff13f846ab5c5ce6950e488a03a3eabb8fe7",
+      "bytes": 1265,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "containers/repro/Dockerfile",
+      "dest": "containers/repro/Dockerfile",
+      "sha256": "3f8073714bfc6b8e594cbd95292f924911124d88b69f198ba08e131b06a0278c",
+      "bytes": 757,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/README.md",
+      "dest": "docs/README.md",
+      "sha256": "ed6ebdd8260c5cb808f56642677b6b722dfdc6eb4dead53d9a2e8e2639ed9ed9",
+      "bytes": 3577,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/architecture/overview.md",
+      "dest": "docs/architecture/overview.md",
+      "sha256": "d264116b9ffb58bade293b5754f4201523b4a0ad41d77c32e40966101d360331",
+      "bytes": 17598,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/decisions/0001-brand-scope-and-non-goals.md",
+      "dest": "docs/decisions/0001-brand-scope-and-non-goals.md",
+      "sha256": "c636d02bdb855512ff0fd80a37227726e6510297631817694ffa7be63eb691f3",
+      "bytes": 2950,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/decisions/0002-verification-first-inference.md",
+      "dest": "docs/decisions/0002-verification-first-inference.md",
+      "sha256": "a6e7f034856c99a589946e3cf1ea1b17ac836bcca94214791660bfc33db0891b",
+      "bytes": 3978,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/decisions/0003-world-ontology-and-provenance.md",
+      "dest": "docs/decisions/0003-world-ontology-and-provenance.md",
+      "sha256": "3f9629a22d1ce98bf7b0b8296c6424361ade9aa105ea3c6d367ec3dccef8e45b",
+      "bytes": 9569,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/decisions/0004-rust-core-python-inference-boundary.md",
+      "dest": "docs/decisions/0004-rust-core-python-inference-boundary.md",
+      "sha256": "846db8f88fd27ccfcfc9d4e9a63cc7acd83c32dd656b22237b63efcabf805e87",
+      "bytes": 7055,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/decisions/0005-privacy-and-dual-use.md",
+      "dest": "docs/decisions/0005-privacy-and-dual-use.md",
+      "sha256": "6b22ef3d99ee0f5ec33103a14d900e47ff49ccc4e23aaa2edd4d05a874e93b2b",
+      "bytes": 5712,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/decisions/0006-canonical-json-and-digests.md",
+      "dest": "docs/decisions/0006-canonical-json-and-digests.md",
+      "sha256": "b545ae5953d72a676ad2aeeb19ae749c8e4c929da762858d23c6845c5aaab785",
+      "bytes": 5170,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/decisions/0007-federated-world-data-infrastructure.md",
+      "dest": "docs/decisions/0007-federated-world-data-infrastructure.md",
+      "sha256": "8398c0e031b40c785082705c550ebe34d7157195ea59e0db948e6c0b7641fa2a",
+      "bytes": 9401,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/decisions/0008-two-track-execution.md",
+      "dest": "docs/decisions/0008-two-track-execution.md",
+      "sha256": "8ccdf30a0d75ed8e057e0d3304d547d185e27254f77ea2d8412f4ac7d33fbeac",
+      "bytes": 6028,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/decisions/0009-evidence-store-guarantees.md",
+      "dest": "docs/decisions/0009-evidence-store-guarantees.md",
+      "sha256": "81314bf50d44effbadebefdb9e039f60a59aec98b05d598f9f1ed42f42b105c9",
+      "bytes": 6839,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/decisions/0010-m1-identifiability-program.md",
+      "dest": "docs/decisions/0010-m1-identifiability-program.md",
+      "sha256": "df8a3b97ff4e5bfba72def2326230c94f4d626e558fa4f8832de39ab2433aa60",
+      "bytes": 6244,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/decisions/0011-privacy-forensics-and-publication-rulings.md",
+      "dest": "docs/decisions/0011-privacy-forensics-and-publication-rulings.md",
+      "sha256": "85b5008b04e87b74693026819fd4d69176c1914420e3cfdd974773414e7f2742",
+      "bytes": 5602,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/decisions/0012-research-grade-minimal-fabric.md",
+      "dest": "docs/decisions/0012-research-grade-minimal-fabric.md",
+      "sha256": "cc13e0d6d36470b90a34b25b0e61f701173e5dbb3d8a69eb5cf0abc356ec06fe",
+      "bytes": 11172,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/decisions/0013-reproducibility-contract-v2.md",
+      "dest": "docs/decisions/0013-reproducibility-contract-v2.md",
+      "sha256": "2dd756b3308332d81793e98e8601af48e7afcf07bbb8df92c493636db5f19a14",
+      "bytes": 7469,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/decisions/0014-failure-taxonomy-and-decision-stability.md",
+      "dest": "docs/decisions/0014-failure-taxonomy-and-decision-stability.md",
+      "sha256": "ec5d0cc776a11b59515943a55ae9fb067501beeddc13692d8ff6a6a8d0817589",
+      "bytes": 8095,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/decisions/0015-model-adequacy-and-epistemic-decisions.md",
+      "dest": "docs/decisions/0015-model-adequacy-and-epistemic-decisions.md",
+      "sha256": "1d77aea17cc40f18d97505cfa2996f8feb1fc165c602fe8465741dbd2ff6dcdf",
+      "bytes": 8531,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/decisions/0016-identifiable-claims.md",
+      "dest": "docs/decisions/0016-identifiable-claims.md",
+      "sha256": "270b927930337dd65fab718ec1e96524f748034ee9cb0dc26e5df1984c419e8a",
+      "bytes": 7481,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/decisions/0017-gated-invariants.md",
+      "dest": "docs/decisions/0017-gated-invariants.md",
+      "sha256": "b9461cb7e9a3254d692fceb39c2991c878e07f78648b6f95f19c39fc031b0beb",
+      "bytes": 6680,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/decisions/0018-symmetry-convention-audit.md",
+      "dest": "docs/decisions/0018-symmetry-convention-audit.md",
+      "sha256": "6fa01ea8e1a43f5d84a399d005042f131a53f7cb02338558c3c2f2978c495526",
+      "bytes": 5893,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/decisions/0019-authoritative-frozen-payload-and-c2.md",
+      "dest": "docs/decisions/0019-authoritative-frozen-payload-and-c2.md",
+      "sha256": "e665868883c5373a4fd34d68d60f163a52e37081a4210db7d5b1af15c8501366",
+      "bytes": 7984,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/decisions/0020-measurement-model-and-c2-repair.md",
+      "dest": "docs/decisions/0020-measurement-model-and-c2-repair.md",
+      "sha256": "b2fc9822f86f39f26fb3902b0b94d0c3461d8c9250f9007144afc1970b13816e",
+      "bytes": 9000,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/decisions/0021-conditional-measurement-error-and-predictive-acceptance.md",
+      "dest": "docs/decisions/0021-conditional-measurement-error-and-predictive-acceptance.md",
+      "sha256": "e5deb7a44d60bdd128df9ca671e17bcb845e01205210706e7fdf9f441fa7e4d2",
+      "bytes": 7766,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/decisions/0022-candidate-classification-and-sealed-run.md",
+      "dest": "docs/decisions/0022-candidate-classification-and-sealed-run.md",
+      "sha256": "1c9304f1e3ff289f8fe2f70cac260bb649258aa6248e209c1c79fa79c6c715da",
+      "bytes": 5455,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/decisions/0023-three-operations-and-sealed-protocol.md",
+      "dest": "docs/decisions/0023-three-operations-and-sealed-protocol.md",
+      "sha256": "c1e5c9241780b167d7dc6b5ce06df9daec312d8838661b0291bf280543712273",
+      "bytes": 6152,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/decisions/0024-run-lifecycle-and-evidence-archive.md",
+      "dest": "docs/decisions/0024-run-lifecycle-and-evidence-archive.md",
+      "sha256": "b879ba167632bef4bf9a88e4c8b450981e8d5a2e9c76dd8414a17caf010b5c04",
+      "bytes": 4328,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/decisions/0025-e1-scope-and-scale-audit.md",
+      "dest": "docs/decisions/0025-e1-scope-and-scale-audit.md",
+      "sha256": "0d3b9c7726cc332fa6341476a05cbfda307d75e86025fc0baf11e5cc265d35f0",
+      "bytes": 6222,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/decisions/0026-runtime-governance-primitives.md",
+      "dest": "docs/decisions/0026-runtime-governance-primitives.md",
+      "sha256": "299c4114ead3efe0bcc02bfdc56dfc90b376690edc44c5963fbce447cece2fa4",
+      "bytes": 8908,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/decisions/0027-hardened-v1.1-reproducibility-protocol.md",
+      "dest": "docs/decisions/0027-hardened-v1.1-reproducibility-protocol.md",
+      "sha256": "6c75d90b4fc461135bb8aa103cd496cd5dd01028dbd374d6414bf827efa570f4",
+      "bytes": 4383,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/decisions/README.md",
+      "dest": "docs/decisions/README.md",
+      "sha256": "daf4dce28388dbccfebd1f90d03995542a1558ff7a608b89e244a81b69ae1497",
+      "bytes": 3865,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/2026-11-04-e0-synthetic-doppler.md",
+      "dest": "docs/experiments/2026-11-04-e0-synthetic-doppler.md",
+      "sha256": "a5259a33a4a3ef545184fd035e1393c89d3a54ca676e8feec123176e78c400ef",
+      "bytes": 49012,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-c1-identifiability.md",
+      "dest": "docs/experiments/2026-11-05-c1-identifiability.md",
+      "sha256": "bd185c9ae48d78c1b7d77c3673aaf125310988c8970725f69578684d73699998",
+      "bytes": 11407,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-c1-symmetry-audit.md",
+      "dest": "docs/experiments/2026-11-05-c1-symmetry-audit.md",
+      "sha256": "a6ccb65529a92a5990c0c9941463f36a5b3a7e5eab3cfecdc15a4d14a96ae2d0",
+      "bytes": 8549,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-c2-diagnosis.md",
+      "dest": "docs/experiments/2026-11-05-c2-diagnosis.md",
+      "sha256": "56e8dce4ae0dd3dd6257f47fed346cc226a6c231e6192779d1319b34c9fac9fa",
+      "bytes": 5989,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-c2-measurement-model.md",
+      "dest": "docs/experiments/2026-11-05-c2-measurement-model.md",
+      "sha256": "77c8c3f418174f421616141cdbe457a771e1dccd96ae45035102bd09d4304907",
+      "bytes": 7377,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-c2-repair-dev.md",
+      "dest": "docs/experiments/2026-11-05-c2-repair-dev.md",
+      "sha256": "db6c23acf7043595ef3378a92423c5fe7af8a8454cc75acd17dfc9b1d135ae59",
+      "bytes": 6381,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "release/phase1/sanitized/2026-11-05-c2-sealed-attempt1.md",
+      "dest": "docs/experiments/2026-11-05-c2-sealed-attempt1.md",
+      "sha256": "d67eb78719d899f5582e7bec78c35e2aa41cdd0888cbe2144df10ac55702fd53",
+      "bytes": 2480,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-c2-sealed-confirmation.md",
+      "dest": "docs/experiments/2026-11-05-c2-sealed-confirmation.md",
+      "sha256": "0cc05502510d183f40e40ddcc21e7e5af5463100a565e84ec885628cdfc6e9f6",
+      "bytes": 9043,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-c2-selfcheck.md",
+      "dest": "docs/experiments/2026-11-05-c2-selfcheck.md",
+      "sha256": "432019707ea049edb4a86cf4e46f56b6ec0d89c011b6ae307838ca19bfded361",
+      "bytes": 5986,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-c2m2-conditional-error.md",
+      "dest": "docs/experiments/2026-11-05-c2m2-conditional-error.md",
+      "sha256": "1f6e4a6aefd7ca9d632cb7db86dc640b8a9d84ae449a0179c62db12c8c87355b",
+      "bytes": 6849,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-c3-risk-coverage.md",
+      "dest": "docs/experiments/2026-11-05-c3-risk-coverage.md",
+      "sha256": "b91cce2e555521a693f2bd6f6cbf15a4d07664e0a5636da39cd3807070279e20",
+      "bytes": 4496,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-c4-semantics-audit.md",
+      "dest": "docs/experiments/2026-11-05-c4-semantics-audit.md",
+      "sha256": "f65b000b658929b823d44baf0fb7d0655f2cc08a1a89182b6d8471e71f3716bd",
+      "bytes": 3023,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-cross-platform-e0.md",
+      "dest": "docs/experiments/2026-11-05-cross-platform-e0.md",
+      "sha256": "20bef4fdf3a21ef8b51b60d6494e92af7dd60d9c248fa877d857087e3cad9d98",
+      "bytes": 13065,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-e1-detection-consensus-rule.md",
+      "dest": "docs/experiments/2026-11-05-e1-detection-consensus-rule.md",
+      "sha256": "009563b3511233c832831e8963bbd1562bd0bba6a3628d055049a49477e16047",
+      "bytes": 4003,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-e1-detection-consensus-v2.md",
+      "dest": "docs/experiments/2026-11-05-e1-detection-consensus-v2.md",
+      "sha256": "10a9024ca2d11dc9101cd98dd67abd9d58da465a14173585d0dade8a3c623b2f",
+      "bytes": 7630,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-e1-estimator-audit.md",
+      "dest": "docs/experiments/2026-11-05-e1-estimator-audit.md",
+      "sha256": "0eeb1a7533adc6fffcdff3aeb7aba52d3ce20ab169c9381bfe1efa357a3e44cd",
+      "bytes": 4024,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-e1-preregistration-draft.md",
+      "dest": "docs/experiments/2026-11-05-e1-preregistration-draft.md",
+      "sha256": "bd1f60930fd0f9817c78fd8a0a3bd3261f6f3b4acab47c22a9019b7695b77c6a",
+      "bytes": 24311,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-pr4c-hardened-validation.md",
+      "dest": "docs/experiments/2026-11-05-pr4c-hardened-validation.md",
+      "sha256": "3a0cd4f738f78c0eaa988d362cd86137b61283b75e5f5053321a11632cd7f0af",
+      "bytes": 12135,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-pr4d-adequacy-validation.md",
+      "dest": "docs/experiments/2026-11-05-pr4d-adequacy-validation.md",
+      "sha256": "2374c309a0ce71bf64588677e7fa8e2c62630f676c582eed7ddf65c4645302e3",
+      "bytes": 9900,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-pr4d-report-corrections.md",
+      "dest": "docs/experiments/2026-11-05-pr4d-report-corrections.md",
+      "sha256": "40500d11b9e5e31699c8f602ed872437977fb83326eccff219110719c1ccdd67",
+      "bytes": 4124,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-sealed-independent-recompute.md",
+      "dest": "docs/experiments/2026-11-05-sealed-independent-recompute.md",
+      "sha256": "4a9e408c3e08908638ea16371a21ce3d291547d7e1a079ca76bea9d13982d025",
+      "bytes": 3071,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/2026-11-06-e1-0-dry-run-readiness.md",
+      "dest": "docs/experiments/2026-11-06-e1-0-dry-run-readiness.md",
+      "sha256": "46a6507dfd7c8989ce1e18097671f050365e975129b55e2f90d0d74ce3c89583",
+      "bytes": 3665,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/2026-11-06-r1d-container-report.md",
+      "dest": "docs/experiments/2026-11-06-r1d-container-report.md",
+      "sha256": "4c216c132781a1728be1695fa873b89e531f5a91401e7589673f4b22323dba0d",
+      "bytes": 7982,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/2026-11-06-refusal-audit-demo.md",
+      "dest": "docs/experiments/2026-11-06-refusal-audit-demo.md",
+      "sha256": "bac4dc405549c860bd3db5f17565c0ca9ed4fb24c0a3023e7c81572273f34747",
+      "bytes": 2730,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/2026-11-07-ci-run.md",
+      "dest": "docs/experiments/2026-11-07-ci-run.md",
+      "sha256": "cc869c9c67734e3f1381743642bc6fb27c3532dd0bd682aef7632514ef32cf2d",
+      "bytes": 3446,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/2026-11-07-e1-end-to-end-fixture.md",
+      "dest": "docs/experiments/2026-11-07-e1-end-to-end-fixture.md",
+      "sha256": "ab925f0a1f5e5bd856c84bef899c03e0653672834631198651069189b0cdbe7d",
+      "bytes": 2278,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/2026-11-07-hardened-v1.1-freeze.md",
+      "dest": "docs/experiments/2026-11-07-hardened-v1.1-freeze.md",
+      "sha256": "8d3fd8664a959087dd0a8106ce89c0b7b35c6aa31564482a658d2690032d9574",
+      "bytes": 4195,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/2026-11-07-local-trust-chain.md",
+      "dest": "docs/experiments/2026-11-07-local-trust-chain.md",
+      "sha256": "f57aab02cc51e9fb3a8553ae3cd394512731ed95f9ed38d7d76a624704cd13f1",
+      "bytes": 2588,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/E1-0-atmosphere-uncertainty.md",
+      "dest": "docs/experiments/E1-0-atmosphere-uncertainty.md",
+      "sha256": "f1f7864e1508a2ed702d42cab5de8bfd021e7b841f6f0c8f7b6c0c09fa2d8923",
+      "bytes": 2030,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/E1-0-bench-validation.md",
+      "dest": "docs/experiments/E1-0-bench-validation.md",
+      "sha256": "467178ac7f95ad31c4a15cdf06d302124470f00c51278d498c32117fbfe551f7",
+      "bytes": 3377,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/E1-0-fault-injection.md",
+      "dest": "docs/experiments/E1-0-fault-injection.md",
+      "sha256": "d3fc8e26a1a4e5df02b7b984b2c45c72523a0fdeccc8ac6a2da21257f35203e8",
+      "bytes": 3432,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/E1-0-filesystem-sandbox.md",
+      "dest": "docs/experiments/E1-0-filesystem-sandbox.md",
+      "sha256": "ec6f19632f1a6fc5fd70dbae6fbed20a21ab1b31b3714cec1967275f02de72f3",
+      "bytes": 2076,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/E1-0-instrument-feasibility.md",
+      "dest": "docs/experiments/E1-0-instrument-feasibility.md",
+      "sha256": "d6c1ee74a60eb4cfb5e4ce11c6e1b8da77632dd298d34e9a3fc22c652690a98c",
+      "bytes": 4557,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/E1-0-procurement-and-authorization.md",
+      "dest": "docs/experiments/E1-0-procurement-and-authorization.md",
+      "sha256": "6d0a69a3d6c0186b5324ba1e79ab747fe819ef94eb0e6f91275677936c64f4c6",
+      "bytes": 3466,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/E1-0-raw-bundle-schema.md",
+      "dest": "docs/experiments/E1-0-raw-bundle-schema.md",
+      "sha256": "8d0623d8c9c9adcaa352a09f4d98dc280dbaecb94e48383d324f58a0f38df150",
+      "bytes": 3691,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/E1-B-leakage-protocol.md",
+      "dest": "docs/experiments/E1-B-leakage-protocol.md",
+      "sha256": "7fdde290c97bb4490d262ba12e114ce033fd552ca2572412d97bca13b1f27099",
+      "bytes": 3032,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/E1-data-registration.md",
+      "dest": "docs/experiments/E1-data-registration.md",
+      "sha256": "fd1faa315c33cb4025cd627bdbce46656e362662081548d95aa54047f75360b8",
+      "bytes": 3641,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/E1-instrument-calibration.md",
+      "dest": "docs/experiments/E1-instrument-calibration.md",
+      "sha256": "a37a6eb8e7cad93116567735e17e0cafb177bed43acf86a6976532af62af8241",
+      "bytes": 4877,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/E1-scale-audit.md",
+      "dest": "docs/experiments/E1-scale-audit.md",
+      "sha256": "95f3870cad9bd080df8380cf59bd24292a2e21f422713e2c94f7539a5628f551",
+      "bytes": 2823,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/README.md",
+      "dest": "docs/experiments/README.md",
+      "sha256": "315d3d823b17e03ce8b022d4315e72358d802ec4b1542cbae7a24c6a90659ee8",
+      "bytes": 10067,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/pr4c-plan.md",
+      "dest": "docs/experiments/pr4c-plan.md",
+      "sha256": "7ee8a9e58e9a1164905b79d50dbd0503e031d4fbc6a610d9d1367f9ac1ce3ce4",
+      "bytes": 4671,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/pr4c/trial57-params.json",
+      "dest": "docs/experiments/pr4c/trial57-params.json",
+      "sha256": "866ce43c96cef4c2f2f2b3d58305eaed17540ee0d2ced03062022ae190bf627b",
+      "bytes": 675,
+      "license": "CC0-1.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/pr4d-plan.md",
+      "dest": "docs/experiments/pr4d-plan.md",
+      "sha256": "00e8b384b57d92d89973123b31babe00e181246baef81bc92f384233c8a12965",
+      "bytes": 6579,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/pr4e-c2-repair-plan.md",
+      "dest": "docs/experiments/pr4e-c2-repair-plan.md",
+      "sha256": "5cc113e3b13c423987f893b5c51354cb81a501a0a162daba6b5b8545a4ca1932",
+      "bytes": 7669,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/experiments/pr4e-plan.md",
+      "dest": "docs/experiments/pr4e-plan.md",
+      "sha256": "b45caec7ca1451b908cddb2fd0130587e115292aabeb81e098d2d70ba765bf27",
+      "bytes": 8288,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/policy/consent-template.md",
+      "dest": "docs/policy/consent-template.md",
+      "sha256": "3e183ab6480b6344cfdecff4db41d9e3019f99c68c36794d8e5cefa3dca9a7a3",
+      "bytes": 3881,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/policy/data-governance.md",
+      "dest": "docs/policy/data-governance.md",
+      "sha256": "7af8fe9447c1523142b8a62b62b284823cc49a9f826c86ad6a9819142d3a9a0c",
+      "bytes": 19394,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/policy/ethics-and-privacy.md",
+      "dest": "docs/policy/ethics-and-privacy.md",
+      "sha256": "e004b8157c115bf65a01a28f53ec4953fd1fcbef84af494f3af601272e3fe826",
+      "bytes": 26937,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/policy/reviews/README.md",
+      "dest": "docs/policy/reviews/README.md",
+      "sha256": "4a30fae8d12c65db3a829411284b5b273fd2e04631ecb676efc697b351380ee2",
+      "bytes": 847,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/product/founding-brief.md",
+      "dest": "docs/product/founding-brief.md",
+      "sha256": "1a8afc6dc83fe42ed28c4502afa57da3dd2dc1e2b23590043a7e2c9eed64c66b",
+      "bytes": 16473,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/product/founding-brief.zh-CN.md",
+      "dest": "docs/product/founding-brief.zh-CN.md",
+      "sha256": "d2de4a4f5d6b06a048ecbc128cc9d7c4b1627e4fc3a2c50b7cbe3765b26f215d",
+      "bytes": 15126,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/research/data-infrastructure.md",
+      "dest": "docs/research/data-infrastructure.md",
+      "sha256": "757c76b93b0827b2909271fd9869603a0540baed78e584d260a87d68e39b63ee",
+      "bytes": 31890,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/research/data-sources.md",
+      "dest": "docs/research/data-sources.md",
+      "sha256": "7818f35e858cde8260b06bffd046b27158ee74d3762b76554d6f1fed0f200691",
+      "bytes": 23367,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/research/landscape.md",
+      "dest": "docs/research/landscape.md",
+      "sha256": "3c243cc76574ce6461d46f576b33098996b7d053041c35a5c598f1753d26341a",
+      "bytes": 34389,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/research/research-program.md",
+      "dest": "docs/research/research-program.md",
+      "sha256": "c5981d4790988b09807b90df724abf9b74b601f9d3f9853740a604251d331f2f",
+      "bytes": 8175,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/roadmap/2026-11-07-project-review.md",
+      "dest": "docs/roadmap/2026-11-07-project-review.md",
+      "sha256": "71501cdf22fed919a6a27bc5575a4bf667695fa05bb5a921df561bb6c941ecaf",
+      "bytes": 13742,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/roadmap/M0-STATUS.md",
+      "dest": "docs/roadmap/M0-STATUS.md",
+      "sha256": "87fcc14f0f2cf206f90aa09735ff2d69191ae9de819571c85356304c3ed782f1",
+      "bytes": 14384,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/roadmap/ROADMAP.md",
+      "dest": "docs/roadmap/ROADMAP.md",
+      "sha256": "5c20d825f5d8f3c8887dd0bdcea723395cc31fb24ecccf33a9686233b1158778",
+      "bytes": 43851,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/roadmap/benchmark-and-evals.md",
+      "dest": "docs/roadmap/benchmark-and-evals.md",
+      "sha256": "f9c584cc4d7d8fad54aff9779d5edd23f4eeb27be720127bb35349d713a64626",
+      "bytes": 25796,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/specs/inferencer-contract.md",
+      "dest": "docs/specs/inferencer-contract.md",
+      "sha256": "621aeca6357c40c048bfc1d5c0d4c130323ff18685f346af85421cda6df80008",
+      "bytes": 19824,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/specs/local-actor-credentials.md",
+      "dest": "docs/specs/local-actor-credentials.md",
+      "sha256": "cff1dad5845407369309297358cefb0d377175df3754dbbb9b5291f43b3eeb46",
+      "bytes": 2485,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "docs/specs/world-ontology.md",
+      "dest": "docs/specs/world-ontology.md",
+      "sha256": "1e48dcbdaf288ac495e9843b8c5dcbb7e2d5f4b810e8695fcded021d1e913d25",
+      "bytes": 38965,
+      "license": "CC-BY-4.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "crates/phaino-cli/seed/e0-config.json",
+      "dest": "e0/e0-config.json",
+      "sha256": "fb6e98447058d180a4cfabecb7f81a414de4fdbab1598449342bf81f070cc377",
+      "bytes": 6203,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "release/phase1/EVIDENCE-README.md",
+      "dest": "evidence/README.md",
+      "sha256": "e2fb95dd87dfd4784983a68eab2615075944995db3c0e27b1ae61c9c73d5a9f9",
+      "bytes": 990,
+      "license": "CC0-1.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "evidence/c2c-sealed/ARCHIVE.json",
+      "dest": "evidence/c2c-sealed/ARCHIVE.json",
+      "sha256": "177321d8deaecad948a3097e7da77c839d4614c19763e42cadff7620eee519f8",
+      "bytes": 6711,
+      "license": "CC0-1.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "evidence/c2c-sealed/c2-repair-summary.md",
+      "dest": "evidence/c2c-sealed/c2-repair-summary.md",
+      "sha256": "b6bd513b0cc85f97a8491a60781439675cbdf5dc1c230eeb86f37182b35f5cfc",
+      "bytes": 1269,
+      "license": "CC0-1.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "evidence/c2c-sealed/c2-repair.json.gz",
+      "dest": "evidence/c2c-sealed/c2-repair.json.gz",
+      "sha256": "c5e47391edb82d527e5ba656ece5ad8aea82cab452902a53fcf14ba3fed8a409",
+      "bytes": 437390,
+      "license": "CC0-1.0 (proposed)",
+      "content_kind": "binary"
+    },
+    {
+      "source": "evidence/c2c-sealed/eval/report.json",
+      "dest": "evidence/c2c-sealed/eval/report.json",
+      "sha256": "28d3393b6c4057a453f6b6c6eb95d7c27ecbcc6a66d57b0366671bef395c4f73",
+      "bytes": 380845,
+      "license": "CC0-1.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "evidence/c2c-sealed/eval/report.md",
+      "dest": "evidence/c2c-sealed/eval/report.md",
+      "sha256": "08a16ff9604d3ad0da232073c31b0cebb03b526ec1cfa1fbfafec630c81a5caa",
+      "bytes": 19100,
+      "license": "CC0-1.0 (proposed)",
+      "content_kind": "text"
+    },
+    {
+      "source": "protocols/README.md",
+      "dest": "protocols/README.md",
+      "sha256": "4735a13b8c51fd052a82e20d07d31cd79f2564052dab4788cfdf2e17afe84f8a",
+      "bytes": 10985,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "protocols/c2c-freeze-v1.json",
+      "dest": "protocols/c2c-freeze-v1.json",
+      "sha256": "2ba09f459b84fe5bafe0e546ab4898c942e9bc2fd16d85062c6100d5d6ab15f8",
+      "bytes": 69596,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "protocols/c2c-freeze-v1.md",
+      "dest": "protocols/c2c-freeze-v1.md",
+      "sha256": "acab3b44cbc5d80699e4b359e2880f7ee41a8424ddcc5268904205643b1a5920",
+      "bytes": 11035,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "protocols/c2c-freeze-v2.md",
+      "dest": "protocols/c2c-freeze-v2.md",
+      "sha256": "e8a4047829705f9d3cd342af87aabbb056c3b740667ea1b1363e46801b28952c",
+      "bytes": 10143,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "protocols/c2c-grid-v1.json",
+      "dest": "protocols/c2c-grid-v1.json",
+      "sha256": "5bec5ef1393f5ee9556440862a955c4f609fd1d4428159d40d702cbf37eadabc",
+      "bytes": 29820,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "protocols/c2c-grid-v2.json",
+      "dest": "protocols/c2c-grid-v2.json",
+      "sha256": "2f0005a16dc5d223245629a6e29ef0ebf38d0252a6e714bf56ad4ae07b351987",
+      "bytes": 29820,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "protocols/e0-cross-platform.example.json",
+      "dest": "protocols/e0-cross-platform.example.json",
+      "sha256": "862c643ea2c0d3f6250b67ac651c4ee504a8d7f350d558376daeebf45213ad73",
+      "bytes": 7274,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "protocols/e0-cross-platform.v2.json",
+      "dest": "protocols/e0-cross-platform.v2.json",
+      "sha256": "8123b68273435c2ab0212a1f9c4669af5f83e5767efeb8e372854edebfb51b20",
+      "bytes": 18836,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "protocols/e0-hardened-v1.1.json",
+      "dest": "protocols/e0-hardened-v1.1.json",
+      "sha256": "f1dbde6e51fcec136411cf1a205ad757c09940bca5fa03d2abe8ba8ccdeae09d",
+      "bytes": 2847,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "protocols/pr4e-claims-1.3.0.json",
+      "dest": "protocols/pr4e-claims-1.3.0.json",
+      "sha256": "16c62ca63577668b4dfb45f542db97214d1275a2b0dcd95c3e23734871dcbfa6",
+      "bytes": 33803,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_acoustics/__init__.py",
+      "dest": "python/phaino_acoustics/__init__.py",
+      "sha256": "70888c2b3e7b6cfb59f6809df85b7d0cae1248040fc940377916706ab77c3665",
+      "bytes": 1056,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_acoustics/adequacy.py",
+      "dest": "python/phaino_acoustics/adequacy.py",
+      "sha256": "75f036e387cf3bb67c5c47fabd83b4fae7d83c88c7f951ef8f1cd3d832cf8c0d",
+      "bytes": 28428,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_acoustics/adequacy_protocol.py",
+      "dest": "python/phaino_acoustics/adequacy_protocol.py",
+      "sha256": "c5c0427207436ae8c3a4562ab71d7f92ff4f61f8db6eaec77bf0980b55ea6b17",
+      "bytes": 11371,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_acoustics/atmosphere.py",
+      "dest": "python/phaino_acoustics/atmosphere.py",
+      "sha256": "5820133adff0c4cea1d8107b7f9652ca38732a8361f974f53333f5e885b665a1",
+      "bytes": 3810,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_acoustics/audit_estimator.py",
+      "dest": "python/phaino_acoustics/audit_estimator.py",
+      "sha256": "e180b1af0329ca9ac0f18bfb3380d65564f767507cd5218fd640a01a0e62d47f",
+      "bytes": 48447,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_acoustics/c2_grid.py",
+      "dest": "python/phaino_acoustics/c2_grid.py",
+      "sha256": "b49af98d16ef54225d78fa2a4028b815bf243b9ba930d23cfed2df5997a61c00",
+      "bytes": 12271,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_acoustics/detection_consensus.py",
+      "dest": "python/phaino_acoustics/detection_consensus.py",
+      "sha256": "13109817fe64f83519fa6b5dea39cfc1e8415ab9bb5118c7acb65cc112ab6271",
+      "bytes": 8189,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_acoustics/diagnose.py",
+      "dest": "python/phaino_acoustics/diagnose.py",
+      "sha256": "9892eb42b0654647e411ecbebcb18b48b1f97b48ec7046e0e9c01d45adbd52b1",
+      "bytes": 29834,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_acoustics/diagnose_c2.py",
+      "dest": "python/phaino_acoustics/diagnose_c2.py",
+      "sha256": "ea6e419b7328d33b3b475f50c52e5055522aa9f945133571b15267a0842579a1",
+      "bytes": 38916,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_acoustics/experiment.py",
+      "dest": "python/phaino_acoustics/experiment.py",
+      "sha256": "9d8b51eb32fa6e3e653bd87ede0489b14a42ec7e1d17a67279ab4b96836537e1",
+      "bytes": 37455,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_acoustics/experiment_adequacy.py",
+      "dest": "python/phaino_acoustics/experiment_adequacy.py",
+      "sha256": "6a72993789ed4895a0489afed4f6b8d4ada0abba0ab9401c7b2f64cca03a26f9",
+      "bytes": 30053,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_acoustics/experiment_c2a.py",
+      "dest": "python/phaino_acoustics/experiment_c2a.py",
+      "sha256": "c53dfad5ec9289835eeb7023353804115a850bc2e4430dba3be75314e948b099",
+      "bytes": 37199,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_acoustics/experiment_c2m2.py",
+      "dest": "python/phaino_acoustics/experiment_c2m2.py",
+      "sha256": "57d8c266889ded8e840fdcfe5ab24237fce25502a45779ec46e5e9d4eca98840",
+      "bytes": 29788,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_acoustics/experiment_hardened.py",
+      "dest": "python/phaino_acoustics/experiment_hardened.py",
+      "sha256": "fd9e1c3d3dfbdceee67b7d7fa65f86575b7e3353fd03fd11644cedc603ba1400",
+      "bytes": 24828,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_acoustics/experiment_repair.py",
+      "dest": "python/phaino_acoustics/experiment_repair.py",
+      "sha256": "3d51004c7c37bfb2fba18d7d09c25018f369bf6237a96db2b565d341f611c2ca",
+      "bytes": 72528,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_acoustics/fault_injection.py",
+      "dest": "python/phaino_acoustics/fault_injection.py",
+      "sha256": "715d07f373d9692ddd8a61183b64086746fd7ec1e56058cd75670e497d520be3",
+      "bytes": 9132,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_acoustics/features.py",
+      "dest": "python/phaino_acoustics/features.py",
+      "sha256": "2fc0b3469c908d8b6ab3fd6c40eb7454fd2f884b8dbd184580040d8bbb20219c",
+      "bytes": 4983,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_acoustics/fit.py",
+      "dest": "python/phaino_acoustics/fit.py",
+      "sha256": "bcf1232dce977337677e5afc30aec76addeb01dfa3c29a712f5e1cf12744567d",
+      "bytes": 19013,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_acoustics/fit_hardened.py",
+      "dest": "python/phaino_acoustics/fit_hardened.py",
+      "sha256": "0dc636efcab20678f4a64f67aa6b56f843973c472ea4c6eb50061f7401876bd3",
+      "bytes": 27539,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_acoustics/measurement_error_models.py",
+      "dest": "python/phaino_acoustics/measurement_error_models.py",
+      "sha256": "38135463edb0e990e7a377259067b0ee94ec651be227dab2361fdd5d01b0783f",
+      "bytes": 27038,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_acoustics/measurement_model.py",
+      "dest": "python/phaino_acoustics/measurement_model.py",
+      "sha256": "6c52d9b2c9ccbca52db72f2b2d56609881650e9db95ad1d596db5d2e2b6e471c",
+      "bytes": 27923,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_acoustics/measurement_model_reference.py",
+      "dest": "python/phaino_acoustics/measurement_model_reference.py",
+      "sha256": "6b78b63345eb38f4d4e0d483ce105908d483b93552803dc7ae57f736d3ae14f2",
+      "bytes": 21121,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_acoustics/repair_candidates.py",
+      "dest": "python/phaino_acoustics/repair_candidates.py",
+      "sha256": "3803b0e5f3ee415d1b8fa30c264967d22cceb96d6dec0768d75a8cd1582cd5ff",
+      "bytes": 32267,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_acoustics/repair_selfcheck.py",
+      "dest": "python/phaino_acoustics/repair_selfcheck.py",
+      "sha256": "195cc4ee4ef9a000edfba9d95548a91028151250791d6ead24a8eed71c6baf96",
+      "bytes": 53506,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_acoustics/synthetic.py",
+      "dest": "python/phaino_acoustics/synthetic.py",
+      "sha256": "8bede6e595a7a878cf97ddc81462d31a70627c44de3dbae44a0233685508d9ac",
+      "bytes": 10914,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_adequacy_eval/__init__.py",
+      "dest": "python/phaino_adequacy_eval/__init__.py",
+      "sha256": "d204e97e4887467e24331327dc230d20a991065be4ccd0bbfa66a9cdd9f1eefc",
+      "bytes": 1778,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_adequacy_eval/__main__.py",
+      "dest": "python/phaino_adequacy_eval/__main__.py",
+      "sha256": "6135c439a327b0d2adb21af211d1062570456588dbac2d145ddb649c5a8c77f2",
+      "bytes": 134,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_adequacy_eval/artifacts.py",
+      "dest": "python/phaino_adequacy_eval/artifacts.py",
+      "sha256": "e990215061ddfef62420eafb825b71acf4bd91bf68a515cbe6dd689b84d260c0",
+      "bytes": 15415,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_adequacy_eval/cli.py",
+      "dest": "python/phaino_adequacy_eval/cli.py",
+      "sha256": "06a92c2e35da71f43d1d51efea1a6a56a0ec12690636f1434a617098d5bf0838",
+      "bytes": 3731,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_adequacy_eval/metrics.py",
+      "dest": "python/phaino_adequacy_eval/metrics.py",
+      "sha256": "3552ad81da40163398f4f68fc32b01628c0ddde504e8a4cea616c06a7abf5b53",
+      "bytes": 24381,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_adequacy_eval/report.py",
+      "dest": "python/phaino_adequacy_eval/report.py",
+      "sha256": "2f6973755183bc37c11ce5edb186d1ef6371f4853992af9fa32d4c5f25d37a72",
+      "bytes": 14377,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_adequacy_eval/truth.py",
+      "dest": "python/phaino_adequacy_eval/truth.py",
+      "sha256": "816af174bf28264d21efe8632f02aacb12d3b948110913dd4b01704a4787b63b",
+      "bytes": 2430,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_bench/__init__.py",
+      "dest": "python/phaino_bench/__init__.py",
+      "sha256": "e6541e8f0c0475db4d2077ff29c87ac79e35b1d399d06eac2d7ad15b2a40ea8a",
+      "bytes": 499,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_bench/__main__.py",
+      "dest": "python/phaino_bench/__main__.py",
+      "sha256": "8a35b2f1ad82142ab426bc20adea0168e180a2d5b5ec0ffd26e366a411e47c4f",
+      "bytes": 1217,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_bench/analysis.py",
+      "dest": "python/phaino_bench/analysis.py",
+      "sha256": "d92ab20e19e0b8cc9622fb303868390b6e48c9ac3c2764625f2c658e24f38586",
+      "bytes": 4573,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_bench/schema.py",
+      "dest": "python/phaino_bench/schema.py",
+      "sha256": "ab42148610e21197018d92ef497815458882170d6f443ff2d7cdf92767a59c14",
+      "bytes": 2746,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_c2_eval/__init__.py",
+      "dest": "python/phaino_c2_eval/__init__.py",
+      "sha256": "93a5f0f42068326d8db64918ed5f7955c1d59d98ebb1f27e98150b6ec560416e",
+      "bytes": 1875,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_c2_eval/__main__.py",
+      "dest": "python/phaino_c2_eval/__main__.py",
+      "sha256": "9eeca4e8512f12432f6d98484bbf37a32b757510330f8bef564eeca2646f0438",
+      "bytes": 128,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_c2_eval/artifacts.py",
+      "dest": "python/phaino_c2_eval/artifacts.py",
+      "sha256": "399c221ac1a62783ec2056a7ba4359b1d6872fe125b9a952791d4942ba0c5d7a",
+      "bytes": 23360,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_c2_eval/cli.py",
+      "dest": "python/phaino_c2_eval/cli.py",
+      "sha256": "65d5d2c9aaa6669ff92385edb8e98a412bce444beddb029fae484077b1c014af",
+      "bytes": 3491,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_c2_eval/evaluate.py",
+      "dest": "python/phaino_c2_eval/evaluate.py",
+      "sha256": "66557f0e909cea0d0b71b2644da7a96dabae9dc21986d9cec0945e7273de9f27",
+      "bytes": 18535,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_c2_eval/metrics.py",
+      "dest": "python/phaino_c2_eval/metrics.py",
+      "sha256": "594c0ec49190deaf6c5443a45d583e094b0e4cc7a5d489dfcd5349acd8e7ba99",
+      "bytes": 34142,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_c2_eval/report.py",
+      "dest": "python/phaino_c2_eval/report.py",
+      "sha256": "47995050ec57402c2d2dfa69d28213517eea57308070f37e053f00d2c2f3c8ea",
+      "bytes": 17569,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_c2_modelcheck/__init__.py",
+      "dest": "python/phaino_c2_modelcheck/__init__.py",
+      "sha256": "88a3f7d9bfa9030af2e810b63c65673d4f1ddaeaf638db3d2730d09742565e17",
+      "bytes": 1735,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_c2_modelcheck/__main__.py",
+      "dest": "python/phaino_c2_modelcheck/__main__.py",
+      "sha256": "02630f2f37adf7e5a0d297e458885a7907b226238b724e54b37dc5ffc9dc5c6d",
+      "bytes": 134,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_c2_modelcheck/artifacts.py",
+      "dest": "python/phaino_c2_modelcheck/artifacts.py",
+      "sha256": "e2e570b35feae013c22bc7c2bb5f786224f3bc0d96df5ccb10721e17f21f00d0",
+      "bytes": 22340,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_c2_modelcheck/cli.py",
+      "dest": "python/phaino_c2_modelcheck/cli.py",
+      "sha256": "d05521bdbe80f588f9e8741d9d7dd8113f39d26ce50d9a67c0f46d7e0ecdbf66",
+      "bytes": 2667,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_c2_modelcheck/evaluate.py",
+      "dest": "python/phaino_c2_modelcheck/evaluate.py",
+      "sha256": "33105ae4c643133832102f471259dfdba5c04f1c0ed5418f514f23eddbf1ca8f",
+      "bytes": 11653,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_c2_modelcheck/metrics.py",
+      "dest": "python/phaino_c2_modelcheck/metrics.py",
+      "sha256": "4dba7e10242ef4fbb4e2011dd3efc685d5f4abd35e10f6807b262632b2dd9523",
+      "bytes": 17945,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_c2_modelcheck/report.py",
+      "dest": "python/phaino_c2_modelcheck/report.py",
+      "sha256": "4a4a068b2588c4186548930625891e4147abcfdb57930832ae05f7e724267247",
+      "bytes": 8243,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_c3/__init__.py",
+      "dest": "python/phaino_c3/__init__.py",
+      "sha256": "8d5510daa333544f66695730a99c52d89cab6f1af411f180bc638a046e50f18b",
+      "bytes": 461,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_c3/__main__.py",
+      "dest": "python/phaino_c3/__main__.py",
+      "sha256": "f49e9b17205ad4ca6e0917b65ae84f20811ebd8b0c948f393bb6393f26227307",
+      "bytes": 2672,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_c3/curve.py",
+      "dest": "python/phaino_c3/curve.py",
+      "sha256": "fb7cd6a5202a56a87ab1db6ea6549a51defc1f7855a4cc9cb5355b0d833418cf",
+      "bytes": 6768,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_claim_certificate/__init__.py",
+      "dest": "python/phaino_claim_certificate/__init__.py",
+      "sha256": "f8d5d77d97ed9608c16bdf9becb04e6b46faac25040ebcd75080b4280d1582fb",
+      "bytes": 1349,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_claim_certificate/__main__.py",
+      "dest": "python/phaino_claim_certificate/__main__.py",
+      "sha256": "fb6066a4bffec3bd01b90abe5fcc8a522679cc17f119539abfaac10bd31f4794",
+      "bytes": 138,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_claim_certificate/certificate.py",
+      "dest": "python/phaino_claim_certificate/certificate.py",
+      "sha256": "7f03d84f32cbaeb3e3f3d594c545e5f0db0d8597f5f7e746e94fafdd8118cea8",
+      "bytes": 29425,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_claim_certificate/cli.py",
+      "dest": "python/phaino_claim_certificate/cli.py",
+      "sha256": "f69772a450923acd8d53ce86edd7a2873809443971b6683dbb48729742af0c14",
+      "bytes": 4615,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_claim_certificate/model.py",
+      "dest": "python/phaino_claim_certificate/model.py",
+      "sha256": "f606229a4baed315cd7666237f2908bf0048c0f08a639d402bbffff0d147718e",
+      "bytes": 8839,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_claim_certificate/protocol.py",
+      "dest": "python/phaino_claim_certificate/protocol.py",
+      "sha256": "cae78682ac4882a06697f0febd33c29dca0d81a5846843a804e985832643342f",
+      "bytes": 26120,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_claim_certificate/report.py",
+      "dest": "python/phaino_claim_certificate/report.py",
+      "sha256": "265c9f4eabe7d59a52a54530f5e1033abc94c176ab32c857419766fc3d4a79d0",
+      "bytes": 9247,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_claims/__init__.py",
+      "dest": "python/phaino_claims/__init__.py",
+      "sha256": "858d0ff3fe64138fe9410242977ce9817568871d3e590ac485640bf5db21f49d",
+      "bytes": 365,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_claims/boundary.py",
+      "dest": "python/phaino_claims/boundary.py",
+      "sha256": "8d82a0c704d87c7de59b400bb3183dabdc0f332660d2632357dd5629a4545337",
+      "bytes": 15418,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_claims/claims.py",
+      "dest": "python/phaino_claims/claims.py",
+      "sha256": "c7eee9ba48f796baddc701d7ea0cd6e7b3ef4f6579e3ddcebba10027dd5143ac",
+      "bytes": 9185,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_claims/claims_protocol.py",
+      "dest": "python/phaino_claims/claims_protocol.py",
+      "sha256": "208f99f5c93af98527cf1253383a6445a22f0a2c88b4fbbf8b748336bc9c687a",
+      "bytes": 47651,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_claims/experiment.py",
+      "dest": "python/phaino_claims/experiment.py",
+      "sha256": "2fb92dc8e61a2bfd3b9263e199d38ca341b13fe7e5c122e84fe52f8b9ad5ba41",
+      "bytes": 27895,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_claims/symbolic.py",
+      "dest": "python/phaino_claims/symbolic.py",
+      "sha256": "8f91134564bac2d47b0508192603b9a334956979df67edee4499494783c9406f",
+      "bytes": 47994,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_e1raw/__init__.py",
+      "dest": "python/phaino_e1raw/__init__.py",
+      "sha256": "0bf8aad144631886271ce0c011eb094e56320e05555f1e5679b9e3cdf7587785",
+      "bytes": 204,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_e1raw/__main__.py",
+      "dest": "python/phaino_e1raw/__main__.py",
+      "sha256": "11406422d9ef840f4c0fb44af3d144c83cf159f7f7699844ddf6c6f22f1498e4",
+      "bytes": 773,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_e1raw/validate.py",
+      "dest": "python/phaino_e1raw/validate.py",
+      "sha256": "4de735337d58a08648cd2b61035eb6f5af4d58ce002e95d28902ea0d53f219e5",
+      "bytes": 11414,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_sdk/__init__.py",
+      "dest": "python/phaino_sdk/__init__.py",
+      "sha256": "5e297fcdc5eee5e2bbcc479c5784b0032db16597374d1bcd4cae64da5877f7c5",
+      "bytes": 2045,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_sdk/canonical.py",
+      "dest": "python/phaino_sdk/canonical.py",
+      "sha256": "8824f8923224d4dcd6b2e77f1ce662263dac66b4643d798b98d8aae88b17980b",
+      "bytes": 4966,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_sdk/contract.py",
+      "dest": "python/phaino_sdk/contract.py",
+      "sha256": "cd2cd13c68b41947833150abd644c47b35a55631503b2aede444ea09ec9ca136",
+      "bytes": 9243,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_sdk/manifest.py",
+      "dest": "python/phaino_sdk/manifest.py",
+      "sha256": "93142e191b949677b409681c80ac5bdf5258f992d4493cf92fc152694949ae52",
+      "bytes": 6934,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_sdk/runner.py",
+      "dest": "python/phaino_sdk/runner.py",
+      "sha256": "95d796ccd7041dd3132ed23270770599dbccc378c2c56992d6fa85c2bc162fa0",
+      "bytes": 5954,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_sdk/validate.py",
+      "dest": "python/phaino_sdk/validate.py",
+      "sha256": "f00e88c6d43558fc5c3dfa1d2c9c68a573d43315620db29eb80ce58290d5bba6",
+      "bytes": 30085,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_verify/__init__.py",
+      "dest": "python/phaino_verify/__init__.py",
+      "sha256": "05bb3ae1452799aabfeef4813774cdc9b5d4e63363dc2604d6986fdb7add7f6a",
+      "bytes": 1445,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_verify/artifacts.py",
+      "dest": "python/phaino_verify/artifacts.py",
+      "sha256": "34607a451138384206ab255bae93ef3c2d472b82eabbe5dfb8fcbf6bdf10223d",
+      "bytes": 3772,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_verify/compare.py",
+      "dest": "python/phaino_verify/compare.py",
+      "sha256": "01973e3e14d16196dbc9f728da0dbf346e1aa3424fa1e5c697fc1b6f12f6164c",
+      "bytes": 31842,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_verify/paths.py",
+      "dest": "python/phaino_verify/paths.py",
+      "sha256": "1201204ebe15002b3365f8af61bf27ed2745a582dab5b708711de72a3e36518f",
+      "bytes": 6446,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_verify/protocol.py",
+      "dest": "python/phaino_verify/protocol.py",
+      "sha256": "87a51650f4fb314526da9c8ac77ac6b7ea0833b36d0e5b047f5d5873f4e2b3ee",
+      "bytes": 34245,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_verify/run_state.py",
+      "dest": "python/phaino_verify/run_state.py",
+      "sha256": "db8f389832cacdd01e26a9bc93822c8e6c7cd01048525354ccb6729cb4436f0b",
+      "bytes": 5575,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/phaino_verify/v2.py",
+      "dest": "python/phaino_verify/v2.py",
+      "sha256": "b7c96b213396b9de2d0f80bb4dda57c2f3f722838bd885a6e3d140c136c81865",
+      "bytes": 43004,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/pyproject.toml",
+      "dest": "python/pyproject.toml",
+      "sha256": "6e0220b62a71448df5cdff94b138b253bd5cf3eeeb38c9417536aa2064c79d3b",
+      "bytes": 616,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/conftest.py",
+      "dest": "python/tests/conftest.py",
+      "sha256": "32df3fa423ea1c90f719bb63aed6c153bffadc9817db3ed97ba81ef0a08ba006",
+      "bytes": 5733,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_acoustics_e0.py",
+      "dest": "python/tests/test_acoustics_e0.py",
+      "sha256": "227787d0444b9cfbb29c067731ac662bc105ba1d06f4fae47feb55e3dff89438",
+      "bytes": 10573,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_adequacy.py",
+      "dest": "python/tests/test_adequacy.py",
+      "sha256": "d1a18c75b06138ef2f7c2cef79a47305e6f3739ff1c70d7b31c1041c9a1ef6f5",
+      "bytes": 21662,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_adequacy_eval.py",
+      "dest": "python/tests/test_adequacy_eval.py",
+      "sha256": "c11804def3285b7c8d41940e6234c07ed09f3729ed60bbc842e0998f6e826be7",
+      "bytes": 18400,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_archive_semantics.py",
+      "dest": "python/tests/test_archive_semantics.py",
+      "sha256": "20fd15a1eea0aefcebf39c43ec70f69323545a7b5903ba57289ce1565b9b416b",
+      "bytes": 2177,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_atmosphere.py",
+      "dest": "python/tests/test_atmosphere.py",
+      "sha256": "ffb0a5a7daa81a59998905bec2e253457485a3879b9c3bad053184b24ec418f4",
+      "bytes": 2224,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_audit_estimator.py",
+      "dest": "python/tests/test_audit_estimator.py",
+      "sha256": "c2cf5ec1712724c9829698c40524f749f6f5b5beba9eb005f9fc78cbfdec7a38",
+      "bytes": 5605,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_bench.py",
+      "dest": "python/tests/test_bench.py",
+      "sha256": "fc0191f9888f51a6032304b4d6c190c6f56aea923e600ac207e63895e1bfaf0a",
+      "bytes": 3547,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_c2_eval.py",
+      "dest": "python/tests/test_c2_eval.py",
+      "sha256": "6022d8b9c3c3e6252894b52dac91c3ffa3ea1050b30ae37ae4ec4b768f6036fc",
+      "bytes": 30549,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_c2_grid.py",
+      "dest": "python/tests/test_c2_grid.py",
+      "sha256": "ef355df1670c63cfbef716a8dc082f723124c5924352ed1aa1b7a7641390da08",
+      "bytes": 6699,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_c2_modelcheck.py",
+      "dest": "python/tests/test_c2_modelcheck.py",
+      "sha256": "dc73b1d0554e16638bd412d69e9df190b26177406303b8ec80716a00302b25b2",
+      "bytes": 15354,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_c3_riskcoverage.py",
+      "dest": "python/tests/test_c3_riskcoverage.py",
+      "sha256": "4bd3ba9356d441567b8f0915f40495cc121ca07f049dc218fff1045343a9c388",
+      "bytes": 3084,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_canonical.py",
+      "dest": "python/tests/test_canonical.py",
+      "sha256": "c5168a3c81779ba022db193a8ed409e2346dda4bd9fdffa95487bef320fff462",
+      "bytes": 2287,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_claim_certificate.py",
+      "dest": "python/tests/test_claim_certificate.py",
+      "sha256": "29a1e5aa74f1373570eddc81a48ba9afd67fdef0b65d60c97ef123c35d138c84",
+      "bytes": 21456,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_claims.py",
+      "dest": "python/tests/test_claims.py",
+      "sha256": "368d365c732de4f721edc6e80df81a74e4e3cef51cc638dd4dbdb7b41430e6f5",
+      "bytes": 52016,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_detection_consensus.py",
+      "dest": "python/tests/test_detection_consensus.py",
+      "sha256": "0d8b9e858d45908c0b19ffb93759adcd8293fc13c3af9c466f41d0dcbc6264cd",
+      "bytes": 5531,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_diagnose.py",
+      "dest": "python/tests/test_diagnose.py",
+      "sha256": "48b07a2f4d1609c95e1b620f792c4543ad48e51df5fa9eea168e5256b3a60635",
+      "bytes": 12394,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_diagnose_c2.py",
+      "dest": "python/tests/test_diagnose_c2.py",
+      "sha256": "2efb8448cb3e888514b36a7f4010277bef60e0eb14a5e71452d7ae9dc093867e",
+      "bytes": 12172,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_e1raw.py",
+      "dest": "python/tests/test_e1raw.py",
+      "sha256": "d4b595e5ee8ee6ca6ef082ec81275084089273b4488205547de5ee9df701d3cd",
+      "bytes": 5642,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_fault_injection.py",
+      "dest": "python/tests/test_fault_injection.py",
+      "sha256": "ec9b2933dc949384c6e713dfab8bc1e3e430e9451f0cc2f2d97cfc11cfde1f42",
+      "bytes": 2744,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_fit_hardened.py",
+      "dest": "python/tests/test_fit_hardened.py",
+      "sha256": "419d91add6016b2ed197e6b481560b718c658ab75bada6f8572ac9dbe996643c",
+      "bytes": 12987,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_hardened_comparator.py",
+      "dest": "python/tests/test_hardened_comparator.py",
+      "sha256": "c1f132053896b4cec3313b142164a15950d761d55069b7772c030f83889886f6",
+      "bytes": 3507,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_manifest.py",
+      "dest": "python/tests/test_manifest.py",
+      "sha256": "cb60265c3d6aa5d640ae37a2e765de8ac5dac4645d2faaf37bd4fdd9e5bd41c5",
+      "bytes": 2907,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_measurement_error_models.py",
+      "dest": "python/tests/test_measurement_error_models.py",
+      "sha256": "463e70c3241c79a97854f278b5650d7c531d7cffc3ea563bc63ce4cbad74c625",
+      "bytes": 6950,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_measurement_model.py",
+      "dest": "python/tests/test_measurement_model.py",
+      "sha256": "3ba812e3899c2d882657edf7c9402c8cf2036cf4b98929dca773838116e95e04",
+      "bytes": 8033,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_reference_estimator.py",
+      "dest": "python/tests/test_reference_estimator.py",
+      "sha256": "a21fef34ea73c242817bec33692e768e9b9c0d6ad0205c6f23efafc2d141d0c8",
+      "bytes": 4081,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_repair_candidates.py",
+      "dest": "python/tests/test_repair_candidates.py",
+      "sha256": "ec10f76ef1f8b13506da2a2cf34d80229a1a76e1a3e36775938963ee8ee25f22",
+      "bytes": 21165,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_repair_selfcheck.py",
+      "dest": "python/tests/test_repair_selfcheck.py",
+      "sha256": "f22104211650346ee573acd420732b7979bf7bb5e1a0ec8054bc420a7b2cc7e4",
+      "bytes": 7624,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_replay_config.py",
+      "dest": "python/tests/test_replay_config.py",
+      "sha256": "7737f788c1d17290a010e00240e4c26eee3c88a388ec09849a9c7a4083777cb4",
+      "bytes": 5365,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_run_state.py",
+      "dest": "python/tests/test_run_state.py",
+      "sha256": "6c84d60f104d7192ad75157296df55962e5e389d728324d822f97841113e86b0",
+      "bytes": 4284,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_runner.py",
+      "dest": "python/tests/test_runner.py",
+      "sha256": "ab2c5ed4b37962e6dc197736ce11ee923861fc6bf9e053d94df95688fd2bb542",
+      "bytes": 6714,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_validate.py",
+      "dest": "python/tests/test_validate.py",
+      "sha256": "029573aaeae6e3ede5cfa7980a1b924cb8d62a13483c6d26005c32a315a4922a",
+      "bytes": 8239,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_verify_compare.py",
+      "dest": "python/tests/test_verify_compare.py",
+      "sha256": "ec97135e12d704873aea2b495c43fed063d202e5c31ddc886a9dcdc899f3406b",
+      "bytes": 17740,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "python/tests/test_verify_decisions.py",
+      "dest": "python/tests/test_verify_decisions.py",
+      "sha256": "f26a701b980a93f836c14f9b34554a977ee917d4ec0e8addeabb20f6995175b9",
+      "bytes": 15658,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "scripts/compare_hardened_v11.py",
+      "dest": "scripts/compare_hardened_v11.py",
+      "sha256": "989e19677bace1a150a510e6e55b1e512336c506cef334e2e5c63bf0c3fc134f",
+      "bytes": 9259,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "scripts/container_repro.sh",
+      "dest": "scripts/container_repro.sh",
+      "sha256": "0403110e304dcbc8609cc67f59082c633d7b803d63e49387cd7f6ec9095f996c",
+      "bytes": 2878,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    },
+    {
+      "source": "scripts/independent_sealed_recompute.py",
+      "dest": "scripts/independent_sealed_recompute.py",
+      "sha256": "d40600862a8050e4fc234019559b00f8dca6d9ce2e5797e8c7634688cebb616c",
+      "bytes": 6307,
+      "license": "Apache-2.0",
+      "content_kind": "text"
+    }
+  ],
+  "blocked": [],
+  "review": [
+    {
+      "source": "docs/experiments/2026-11-04-e0-synthetic-doppler.md",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-c2-diagnosis.md",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-c2-measurement-model.md",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-c2-repair-dev.md",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-c2-sealed-confirmation.md",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-c2-sealed-confirmation.md",
+      "pattern": "c2c-sealed-v3"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-c2-selfcheck.md",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-c2m2-conditional-error.md",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-c3-risk-coverage.md",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-c3-risk-coverage.md",
+      "pattern": "c2c-sealed-v3"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-e1-detection-consensus-rule.md",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-e1-detection-consensus-v2.md",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "docs/experiments/2026-11-05-e1-estimator-audit.md",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "docs/experiments/2026-11-06-refusal-audit-demo.md",
+      "pattern": "PHAINOWEAVE_"
+    },
+    {
+      "source": "docs/roadmap/2026-11-07-project-review.md",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "docs/specs/inferencer-contract.md",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "evidence/c2c-sealed/ARCHIVE.json",
+      "pattern": "c2c-sealed-v3"
+    },
+    {
+      "source": "evidence/c2c-sealed/eval/report.json",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "evidence/c2c-sealed/eval/report.json",
+      "pattern": "c2c-sealed-v3"
+    },
+    {
+      "source": "protocols/c2c-freeze-v1.json",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "protocols/c2c-freeze-v1.md",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "protocols/c2c-freeze-v2.md",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "protocols/pr4e-claims-1.3.0.json",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "python/phaino_acoustics/audit_estimator.py",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "python/phaino_acoustics/diagnose.py",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "python/phaino_acoustics/experiment.py",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "python/phaino_acoustics/experiment_adequacy.py",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "python/phaino_acoustics/experiment_c2a.py",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "python/phaino_acoustics/experiment_c2m2.py",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "python/phaino_acoustics/experiment_hardened.py",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "python/phaino_acoustics/experiment_repair.py",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "python/phaino_acoustics/repair_selfcheck.py",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "python/phaino_claims/claims_protocol.py",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "python/phaino_claims/symbolic.py",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "python/tests/conftest.py",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "python/tests/test_bench.py",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "python/tests/test_c2_eval.py",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "python/tests/test_c2_modelcheck.py",
+      "pattern": "/tmp/"
+    },
+    {
+      "source": "python/tests/test_claims.py",
+      "pattern": "/tmp/"
+    }
+  ],
+  "symlinks": [],
+  "reviewed_binary": [
+    {
+      "source": "evidence/c2c-sealed/c2-repair.json.gz",
+      "sha256": "c5e47391edb82d527e5ba656ece5ad8aea82cab452902a53fcf14ba3fed8a409",
+      "review": "sealed synthetic artifact; decompressed digest 641a1003...; covered by ARCHIVE.json and SHA256SUMS.public"
+    }
+  ],
+  "link_rewrites": [
+    {
+      "file": "docs/experiments/2026-11-06-refusal-audit-demo.md",
+      "target": "../../crates/phaino-core/src/actions.rs"
+    },
+    {
+      "file": "docs/experiments/2026-11-06-refusal-audit-demo.md",
+      "target": "../../crates/phaino-store/src/store.rs"
+    },
+    {
+      "file": "docs/experiments/2026-11-06-refusal-audit-demo.md",
+      "target": "../../crates/phaino-cli/src/main.rs"
+    },
+    {
+      "file": "docs/experiments/2026-11-06-refusal-audit-demo.md",
+      "target": "../../apps/desktop"
+    },
+    {
+      "file": "docs/experiments/2026-11-07-e1-end-to-end-fixture.md",
+      "target": "../../scripts/e1_e2e.sh"
+    },
+    {
+      "file": "docs/experiments/E1-0-filesystem-sandbox.md",
+      "target": "../../scripts/sandboxed_e0.sh"
+    }
+  ],
+  "integrity": {
+    "no_git_directory": true,
+    "file_count": 244
+  }
+}

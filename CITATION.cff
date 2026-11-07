@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this research snapshot, cite it as a research prototype, not as a validated physical inference system. Copyright 2026 Inceptless. The Apache-2.0 licence field applies to software code; documentation is confirmed CC BY 4.0 and synthetic evidence is confirmed CC0 1.0 by the maintainer."
+title: "PhainoWeave Research — Reproducible Physical Inference Studies"
+version: "0.1.0-research"
+date-released: 2026-11-07
+license: Apache-2.0
+repository-code: "https://github.com/haeliotang/phainoweave-research"
+authors:
+  - family-names: "Tang"
+    given-names: "Haelio"
+    affiliation: "Inceptless"
+abstract: >-
+  Synthetic studies, frozen protocols, negative results, and minimal
+  reproduction code for a verifiable physical-world inference research
+  program. The snapshot contains no real bench data and makes no claim of
+  real-world physical inference capability.
+keywords:
+  - reproducibility
+  - physical inference
+  - identifiability
+  - negative results
+  - research software

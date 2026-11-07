@@ -1,0 +1,308 @@
+{
+  "release": "0.1.0-research-candidate",
+  "source_export": "candidate phase1 export",
+  "count": 42,
+  "findings": [
+    {
+      "finding_id": "F001",
+      "source": "release/phase1/RELEASE-AUDIT.md",
+      "pattern_class": "temporary_path",
+      "disposition": "transformed",
+      "rationale": "Audit wording was changed so the published report does not reproduce literal scan patterns; the underlying finding was reviewed and required no source deletion."
+    },
+    {
+      "finding_id": "F002",
+      "source": "release/phase1/RELEASE-AUDIT.md",
+      "pattern_class": "environment_name",
+      "disposition": "transformed",
+      "rationale": "Audit wording was changed so the published report does not reproduce literal scan patterns; the underlying finding was reviewed and required no source deletion."
+    },
+    {
+      "finding_id": "F003",
+      "source": "release/phase1/RELEASE-AUDIT.md",
+      "pattern_class": "historical_run_id",
+      "disposition": "transformed",
+      "rationale": "Audit wording was changed so the published report does not reproduce literal scan patterns; the underlying finding was reviewed and required no source deletion."
+    },
+    {
+      "finding_id": "F004",
+      "source": "docs/experiments/2026-11-04-e0-synthetic-doppler.md",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F005",
+      "source": "docs/experiments/2026-11-05-c2-diagnosis.md",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F006",
+      "source": "docs/experiments/2026-11-05-c2-measurement-model.md",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F007",
+      "source": "docs/experiments/2026-11-05-c2-repair-dev.md",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F008",
+      "source": "docs/experiments/2026-11-05-c2-sealed-confirmation.md",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F009",
+      "source": "docs/experiments/2026-11-05-c2-sealed-confirmation.md",
+      "pattern_class": "historical_run_id",
+      "disposition": "accepted_public",
+      "rationale": "Historical sealed-run identifier used by the frozen archive and reports for traceability; it is not a filesystem path or credential."
+    },
+    {
+      "finding_id": "F010",
+      "source": "docs/experiments/2026-11-05-c2-selfcheck.md",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F011",
+      "source": "docs/experiments/2026-11-05-c2m2-conditional-error.md",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F012",
+      "source": "docs/experiments/2026-11-05-c3-risk-coverage.md",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F013",
+      "source": "docs/experiments/2026-11-05-c3-risk-coverage.md",
+      "pattern_class": "historical_run_id",
+      "disposition": "accepted_public",
+      "rationale": "Historical sealed-run identifier used by the frozen archive and reports for traceability; it is not a filesystem path or credential."
+    },
+    {
+      "finding_id": "F014",
+      "source": "docs/experiments/2026-11-05-e1-detection-consensus-rule.md",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F015",
+      "source": "docs/experiments/2026-11-05-e1-detection-consensus-v2.md",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F016",
+      "source": "docs/experiments/2026-11-05-e1-estimator-audit.md",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F017",
+      "source": "docs/experiments/2026-11-06-refusal-audit-demo.md",
+      "pattern_class": "environment_name",
+      "disposition": "accepted_public",
+      "rationale": "Environment-variable name only; no secret value is embedded."
+    },
+    {
+      "finding_id": "F018",
+      "source": "docs/roadmap/2026-11-07-project-review.md",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F019",
+      "source": "docs/specs/inferencer-contract.md",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F020",
+      "source": "evidence/c2c-sealed/ARCHIVE.json",
+      "pattern_class": "historical_run_id",
+      "disposition": "accepted_public",
+      "rationale": "Historical sealed-run identifier used by the frozen archive and reports for traceability; it is not a filesystem path or credential."
+    },
+    {
+      "finding_id": "F021",
+      "source": "evidence/c2c-sealed/eval/report.json",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F022",
+      "source": "evidence/c2c-sealed/eval/report.json",
+      "pattern_class": "historical_run_id",
+      "disposition": "accepted_public",
+      "rationale": "Historical sealed-run identifier used by the frozen archive and reports for traceability; it is not a filesystem path or credential."
+    },
+    {
+      "finding_id": "F023",
+      "source": "protocols/c2c-freeze-v1.json",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F024",
+      "source": "protocols/c2c-freeze-v1.md",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F025",
+      "source": "protocols/c2c-freeze-v2.md",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F026",
+      "source": "protocols/pr4e-claims-1.3.0.json",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F027",
+      "source": "python/phaino_acoustics/audit_estimator.py",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F028",
+      "source": "python/phaino_acoustics/diagnose.py",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F029",
+      "source": "python/phaino_acoustics/experiment.py",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F030",
+      "source": "python/phaino_acoustics/experiment_adequacy.py",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F031",
+      "source": "python/phaino_acoustics/experiment_c2a.py",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F032",
+      "source": "python/phaino_acoustics/experiment_c2m2.py",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F033",
+      "source": "python/phaino_acoustics/experiment_hardened.py",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F034",
+      "source": "python/phaino_acoustics/experiment_repair.py",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F035",
+      "source": "python/phaino_acoustics/repair_selfcheck.py",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F036",
+      "source": "python/phaino_claims/claims_protocol.py",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F037",
+      "source": "python/phaino_claims/symbolic.py",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F038",
+      "source": "python/tests/conftest.py",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F039",
+      "source": "python/tests/test_bench.py",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F040",
+      "source": "python/tests/test_c2_eval.py",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F041",
+      "source": "python/tests/test_c2_modelcheck.py",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    },
+    {
+      "finding_id": "F042",
+      "source": "python/tests/test_claims.py",
+      "pattern_class": "temporary_path",
+      "disposition": "accepted_public",
+      "rationale": "Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator."
+    }
+  ],
+  "summary": {
+    "accepted_public": 39,
+    "transformed": 3,
+    "excluded": 0,
+    "requires_review": 0
+  },
+  "final_export_review_findings": 39
+}

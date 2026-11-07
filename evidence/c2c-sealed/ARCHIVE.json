@@ -1,0 +1,205 @@
+{
+ "archive_version": "1.0.0",
+ "artifact": {
+  "compressed_path": "c2-repair.json.gz",
+  "compressed_sha256": "c5e47391edb82d527e5ba656ece5ad8aea82cab452902a53fcf14ba3fed8a409",
+  "decompressed_bytes": 9419297,
+  "decompressed_sha256": "641a100384af991ab71952e9baa1b14825accdcb7d81f407fec8ed55ed8d6d8d",
+  "note": "decompressed digest must equal the run-record artifact_sha256 641a1003..."
+ },
+ "content_addressed": true,
+ "experiment": "C2-C sealed confirmation",
+ "files": [
+  {
+   "bytes": 663,
+   "path": "attempts/attempt1/run-console.log",
+   "sha256": "23ed6f8df9cb5fa10605a5ade361b9f13e1439b08c1c38232f5336babc751354"
+  },
+  {
+   "bytes": 3270,
+   "path": "attempts/attempt1/run-log.json",
+   "sha256": "48f851dbd730b1d1b91797ebe694c2dfeea1abf1f3ad02baad0f460ca926e648"
+  },
+  {
+   "bytes": 5706,
+   "path": "attempts/attempt2/run-console.log",
+   "sha256": "e7d819f1a19e0eeb6f2d3037cd44ed977db0102f8f13691d9175276eac54d50d"
+  },
+  {
+   "bytes": 3325,
+   "path": "attempts/attempt2/run-log.json",
+   "sha256": "18d66f148bf8c7b60ea07d3156e95addb17543a63cc632818c729a8cdf808447"
+  },
+  {
+   "bytes": 1269,
+   "path": "c2-repair-summary.md",
+   "sha256": "b6bd513b0cc85f97a8491a60781439675cbdf5dc1c230eeb86f37182b35f5cfc"
+  },
+  {
+   "bytes": 437390,
+   "path": "c2-repair.json.gz",
+   "sha256": "c5e47391edb82d527e5ba656ece5ad8aea82cab452902a53fcf14ba3fed8a409"
+  },
+  {
+   "bytes": 380845,
+   "path": "eval/report.json",
+   "sha256": "28d3393b6c4057a453f6b6c6eb95d7c27ecbcc6a66d57b0366671bef395c4f73"
+  },
+  {
+   "bytes": 19100,
+   "path": "eval/report.md",
+   "sha256": "08a16ff9604d3ad0da232073c31b0cebb03b526ec1cfa1fbfafec630c81a5caa"
+  },
+  {
+   "bytes": 791,
+   "path": "run-console.log",
+   "sha256": "c32f497037861e5822d53af0ec8d3917be8613ee58d287d975007997f63bce9e"
+  },
+  {
+   "bytes": 822,
+   "path": "run-record.json",
+   "sha256": "40e086e3b0bfd17941c4b3ed4e64fb4b51de1ee91aa99f6da46521718d601010"
+  }
+ ],
+ "limitations": [
+  "single environment (macOS arm64, Python 3.14.0, NumPy 2.4.4); no cross-platform sealed replication",
+  "archive is content-addressed but not signed"
+ ],
+ "manifest": "protocols/c2c-freeze-v3.json",
+ "manifest_digest": "916a989d0322e4d769e7d264b67abbd2856846424fd9c784088af4253a69c4c4",
+ "note": "execution_status and scientific_outcome are orthogonal; a negative result is a completed run, not an execution failure (ADR 0024 amendment).",
+ "runs": [
+  {
+   "details": {
+    "artifact_written": false,
+    "reason": "C2-C grid digest mismatch in protocols/c2c-grid-v1.json before any trial (writer computed digest before appending selection_inputs_assertion)",
+    "revision": "v2"
+   },
+   "execution_status": "invalid_execution",
+   "history": [
+    {
+     "details": {},
+     "execution_status": "prepared"
+    },
+    {
+     "details": {
+      "manifest": "protocols/c2c-freeze-v1.json",
+      "manifest_digest": "23ad3dd10a3940336f6bbb880ec45b3be8226c990770ada9f2465193dd89f8ca"
+     },
+     "execution_status": "sealed"
+    },
+    {
+     "details": {},
+     "execution_status": "running"
+    },
+    {
+     "details": {
+      "artifact_written": false,
+      "reason": "C2-C grid digest mismatch in protocols/c2c-grid-v1.json before any trial (writer computed digest before appending selection_inputs_assertion)",
+      "revision": "v2"
+     },
+     "execution_status": "invalid_execution"
+    }
+   ],
+   "run_id": "c2c-sealed-attempt1",
+   "scientific_outcome": "not_evaluated"
+  },
+  {
+   "details": {
+    "artifact_written": false,
+    "reason": "BrokenProcessPool: stdin runner with default multiprocessing spawn; workers could not import <stdin>; no artifact",
+    "revision": "v3"
+   },
+   "execution_status": "invalid_execution",
+   "history": [
+    {
+     "details": {},
+     "execution_status": "prepared"
+    },
+    {
+     "details": {
+      "manifest": "protocols/c2c-freeze-v2.json",
+      "manifest_digest": "033fb2620fc1d95f6bdd21538c7e14c3e9d395951007f5f808a581159b1c460c"
+     },
+     "execution_status": "sealed"
+    },
+    {
+     "details": {},
+     "execution_status": "running"
+    },
+    {
+     "details": {
+      "artifact_written": false,
+      "reason": "BrokenProcessPool: stdin runner with default multiprocessing spawn; workers could not import <stdin>; no artifact",
+      "revision": "v3"
+     },
+     "execution_status": "invalid_execution"
+    }
+   ],
+   "run_id": "c2c-sealed-attempt2",
+   "scientific_outcome": "not_evaluated"
+  },
+  {
+   "details": {
+    "artifact_sha256": "641a100384af991ab71952e9baa1b14825accdcb7d81f407fec8ed55ed8d6d8d",
+    "protocol_digest": "b61db06d81b473798693446b0d08d6769c1ddbf25a0f432e43789ff1523cbb16",
+    "sealed_run_count": 1,
+    "trials": 566
+   },
+   "execution_status": "completed",
+   "history": [
+    {
+     "details": {},
+     "execution_status": "prepared"
+    },
+    {
+     "details": {
+      "grid_digest": "2978c8b24d0ef1bd3b787f13f68431230720154a288575a41067c8ad4c26eeaf",
+      "grid_file_sha256": "2f0005a16dc5d223245629a6e29ef0ebf38d0252a6e714bf56ad4ae07b351987",
+      "manifest": "protocols/c2c-freeze-v3.json",
+      "manifest_digest": "916a989d0322e4d769e7d264b67abbd2856846424fd9c784088af4253a69c4c4"
+     },
+     "execution_status": "sealed"
+    },
+    {
+     "details": {
+      "started_utc": null,
+      "started_utc_source": "not captured by the frozen runner; artifact mtime 2026-11-05T05:04Z (10:49 Asia/Katmandu)"
+     },
+     "execution_status": "running"
+    },
+    {
+     "details": {
+      "artifact_sha256": "641a100384af991ab71952e9baa1b14825accdcb7d81f407fec8ed55ed8d6d8d",
+      "protocol_digest": "b61db06d81b473798693446b0d08d6769c1ddbf25a0f432e43789ff1523cbb16",
+      "sealed_run_count": 1,
+      "trials": 566
+     },
+     "execution_status": "completed"
+    }
+   ],
+   "outcome_evidence": {
+    "caveats": [
+     "high-chirp acceleration detection 0/30 for all candidates",
+     "time-block self-confirmation unresolved",
+     "single environment"
+    ],
+    "claim_integrity_violations": 0,
+    "data_scope": "synthetic sealed grid pr4e-c2c-v1 (566 trials), single environment (macOS arm64); NOT real-world",
+    "decision_protocol": "protocols/c2c-freeze-v3.json",
+    "detection_delta": 0.0,
+    "frr_B0": "278/406",
+    "frr_B1": "8/406",
+    "hypothesis_id": "H-C2C-B1-01",
+    "primary_endpoint": "correct_cv_supported_coverage_and_detection_B1_vs_B0",
+    "primary_result": "pass",
+    "scope_note": "supports B1 reached the pre-registered primary endpoint on this frozen synthetic benchmark; does not support real-world measurement reliability",
+    "supported_coverage_B0": "44/426",
+    "supported_coverage_B1": "335/426"
+   },
+   "run_id": "c2c-sealed-v3",
+   "scientific_outcome": "hypothesis_supported"
+  }
+ ],
+ "schema_version": "2.0.0"
+}

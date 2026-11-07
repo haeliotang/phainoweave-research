@@ -1,0 +1,1007 @@
+{
+ "evidence": {
+  "certificate": {
+   "certificate_builtin_protocol_digest": "8203c2f7bc0085507d8122de746753a0b7655b8cf1eae985dffd8f2bebbe5568",
+   "certificate_builtin_protocol_id": "builtin-e0-clock-invariance",
+   "certificate_path": "/tmp/certificate.json",
+   "certificate_sha256": "5b1a5337c9667d6554f25009d249bedf04fdd834de9651e10c53fa98687d7742",
+   "certificate_version": "1.0.0",
+   "convention_mapping": "certificate: t_obs = t_phys/k_c + beta, action (k_c f0, v, beta + t0/k_c, b/k_c, c); method: t_obs = k_m t_phys + beta, action (f0/k_m, v, k_m t0 + beta, k_m b, c); k_c = 1/k_m; identical group action (symbolic T11)",
+   "per_claim_numeric_verdicts": {
+    "b": {
+     "agrees_with_symbolic": true,
+     "max_relative_mismatch": 0.025000000000000067,
+     "numeric_verdict": "not_invariant",
+     "symbolic_verdict": "not_invariant",
+     "tolerance": 1e-12
+    },
+    "b/f0": {
+     "agrees_with_symbolic": false,
+     "max_relative_mismatch": 0.04937500000000005,
+     "numeric_verdict": "not_invariant",
+     "symbolic_verdict": "invariant",
+     "tolerance": 1e-12
+    },
+    "f0": {
+     "agrees_with_symbolic": true,
+     "max_relative_mismatch": 0.025000000000000067,
+     "numeric_verdict": "not_invariant",
+     "symbolic_verdict": "not_invariant",
+     "tolerance": 1e-12
+    },
+    "t0": {
+     "agrees_with_symbolic": true,
+     "max_relative_mismatch": 0.3,
+     "numeric_verdict": "not_invariant",
+     "symbolic_verdict": "not_invariant",
+     "tolerance": 1e-12
+    },
+    "v": {
+     "agrees_with_symbolic": true,
+     "max_relative_mismatch": 0.0,
+     "numeric_verdict": "invariant",
+     "symbolic_verdict": "invariant",
+     "tolerance": 1e-12
+    }
+   },
+   "reconciliation_note": "the certificate's builtin symbolic verdict for b/f0 was the ADR 0016 declaration, not the method symbolic artifact; its numeric verdict (not_invariant) agrees with method T5",
+   "status": "recorded",
+   "symbolic_numeric_disagreements": [
+    {
+     "claim": "b/f0",
+     "max_relative_mismatch": 0.04937500000000005,
+     "numeric_verdict": "not_invariant",
+     "symbolic_verdict": "invariant",
+     "tolerance": 1e-12
+    }
+   ]
+  },
+  "development_calibration": {
+   "layer": "development",
+   "nominal_clock_strata": [
+    "control",
+    "geometry_stress",
+    "near_identity",
+    "nominal_snr_control"
+   ],
+   "per_claim": {
+    "b": {
+     "candidates": [
+      {
+       "quantile": 0.5,
+       "supported": 88,
+       "threshold": 6.67780080462471e-05,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.6,
+       "supported": 105,
+       "threshold": 6.688174759662714e-05,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.7,
+       "supported": 122,
+       "threshold": 6.696215153733678e-05,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.8,
+       "supported": 140,
+       "threshold": 6.705987387054655e-05,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.9,
+       "supported": 157,
+       "threshold": 6.723674804609422e-05,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.95,
+       "supported": 166,
+       "threshold": 6.737871494302903e-05,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.99,
+       "supported": 173,
+       "threshold": 6.755384208147497e-05,
+       "validity": 1.0
+      }
+     ],
+     "chosen_threshold": 6.755384208147497e-05,
+     "claim_tolerance": {
+      "kind": "relative",
+      "source": "E0 operational tolerance",
+      "value": 0.05
+     },
+     "dev_support_rate": 0.9885714285714285,
+     "dev_supported": 173,
+     "dev_validity": 1.0,
+     "fallback": false,
+     "metric": "se_b/b",
+     "n_nominal_clock_gate_ok": 175
+    },
+    "f0": {
+     "candidates": [
+      {
+       "quantile": 0.5,
+       "supported": 88,
+       "threshold": 2.299075216181544e-05,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.6,
+       "supported": 105,
+       "threshold": 2.3026289037956343e-05,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.7,
+       "supported": 122,
+       "threshold": 2.3054560204335912e-05,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.8,
+       "supported": 140,
+       "threshold": 2.3088936108710275e-05,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.9,
+       "supported": 157,
+       "threshold": 2.3148352269887593e-05,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.95,
+       "supported": 166,
+       "threshold": 2.3195760400398613e-05,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.99,
+       "supported": 173,
+       "threshold": 2.3259895865761778e-05,
+       "validity": 1.0
+      }
+     ],
+     "chosen_threshold": 2.3259895865761778e-05,
+     "claim_tolerance": {
+      "kind": "relative",
+      "source": "E0 operational tolerance",
+      "value": 0.01
+     },
+     "dev_support_rate": 0.9885714285714285,
+     "dev_supported": 173,
+     "dev_validity": 1.0,
+     "fallback": false,
+     "metric": "se_f0/f0",
+     "n_nominal_clock_gate_ok": 175
+    },
+    "f0_times_b": {
+     "candidates": [
+      {
+       "quantile": 0.5,
+       "supported": 88,
+       "threshold": 7.062490384836403e-05,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.6,
+       "supported": 105,
+       "threshold": 7.073456120220198e-05,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.7,
+       "supported": 122,
+       "threshold": 7.081978879837835e-05,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.8,
+       "supported": 140,
+       "threshold": 7.092373013225057e-05,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.9,
+       "supported": 157,
+       "threshold": 7.11099549279728e-05,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.95,
+       "supported": 166,
+       "threshold": 7.125962762086187e-05,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.99,
+       "supported": 173,
+       "threshold": 7.144609392659601e-05,
+       "validity": 1.0
+      }
+     ],
+     "chosen_threshold": 7.144609392659601e-05,
+     "claim_tolerance": {
+      "kind": "relative",
+      "source": "propagated E0 tolerance",
+      "value": 0.05
+     },
+     "dev_support_rate": 0.9885714285714285,
+     "dev_supported": 173,
+     "dev_validity": 1.0,
+     "fallback": false,
+     "metric": "sqrt((se_f0/f0)^2 + (se_b/b)^2)",
+     "n_nominal_clock_gate_ok": 175
+    },
+    "t0": {
+     "candidates": [
+      {
+       "quantile": 0.5,
+       "supported": 88,
+       "threshold": 0.0005547059396968692,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.6,
+       "supported": 105,
+       "threshold": 0.0005555612646104316,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.7,
+       "supported": 122,
+       "threshold": 0.0005562479478867187,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.8,
+       "supported": 140,
+       "threshold": 0.0005570742418755907,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.9,
+       "supported": 157,
+       "threshold": 0.0005585044825993716,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.95,
+       "supported": 166,
+       "threshold": 0.0005596654164850631,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.99,
+       "supported": 173,
+       "threshold": 0.0005611915841206326,
+       "validity": 1.0
+      }
+     ],
+     "chosen_threshold": 0.0005611915841206326,
+     "claim_tolerance": {
+      "kind": "absolute",
+      "source": "E0 operational tolerance",
+      "value": 0.25
+     },
+     "dev_support_rate": 0.9885714285714285,
+     "dev_supported": 173,
+     "dev_validity": 1.0,
+     "fallback": false,
+     "metric": "se(t0)",
+     "n_nominal_clock_gate_ok": 175
+    },
+    "v": {
+     "candidates": [
+      {
+       "quantile": 0.5,
+       "supported": 88,
+       "threshold": 1.577864702922846e-05,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.6,
+       "supported": 105,
+       "threshold": 1.5803070059077694e-05,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.7,
+       "supported": 122,
+       "threshold": 1.582225169019809e-05,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.8,
+       "supported": 140,
+       "threshold": 1.584539620202494e-05,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.9,
+       "supported": 157,
+       "threshold": 1.5886887949256708e-05,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.95,
+       "supported": 166,
+       "threshold": 1.5920411699112542e-05,
+       "validity": 1.0
+      },
+      {
+       "quantile": 0.99,
+       "supported": 173,
+       "threshold": 1.5962202539374443e-05,
+       "validity": 1.0
+      }
+     ],
+     "chosen_threshold": 1.5962202539374443e-05,
+     "claim_tolerance": {
+      "kind": "relative",
+      "source": "E0 operational tolerance",
+      "value": 0.02
+     },
+     "dev_support_rate": 0.9885714285714285,
+     "dev_supported": 173,
+     "dev_validity": 1.0,
+     "fallback": false,
+     "metric": "se(v)/v",
+     "n_nominal_clock_gate_ok": 175
+    }
+   },
+   "rule": "for each claim, consider the candidate thresholds at the declared quantiles of the development uncertainty distribution among nominal-clock trials that pass the gates; choose the largest candidate whose empirical validity (fraction of supported claims within claim tolerance) is >= 0.95 and which is <= 0.5 * claim tolerance; if no candidate is admissible, fall back to 0.5 * claim tolerance. The chosen value is frozen before the locked layer is opened.",
+   "seed_base": 40000000
+  },
+  "environment": {
+   "cpu_count": 8,
+   "machine": "arm64",
+   "numpy": "2.4.4",
+   "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+   "python": "3.14.0"
+  },
+  "generated_at_utc": "2026-11-04T22:30:27Z",
+  "mechanism_audit_verification": {
+   "T4_T5_reverified": true,
+   "audit_reported_values": {
+    "certificate_forward_max_relative_error": 8.5e-16,
+    "method_forward_max_relative_error": 8.9e-16,
+    "pr4d_misstatement_max_relative_error": 0.025
+   },
+   "certificate_convention_symbolically_equivalent": true,
+   "method_convention_max_relative_forward_error": 8.907752921542769e-16,
+   "pr4d_misstatement_max_relative_mismatch": 0.07080653307607233,
+   "pr4d_misstatement_theorem": "T12_pr4d_misstatement"
+  },
+  "nuisance_probe_results": {
+   "direction_constraint": {
+    "basis": "direction nuisance is declared but not algebraically formalised",
+    "status": "not_probed"
+   },
+   "propagation_environment": {
+    "basis": "propagation nuisance is declared but not algebraically formalised",
+    "status": "not_probed"
+   },
+   "sound_speed_scaling": {
+    "basis": "T9_sound_speed_nuisance: exact one-parameter degeneracy; not resolved by the recording",
+    "status": "open"
+   }
+  },
+  "schema": "pr4e-claims-evidence-v1",
+  "symbolic_proof": {
+   "convention_reconciliation": {
+    "action_equivalence_checks": [
+     "0",
+     "0",
+     "0",
+     "0",
+     "0"
+    ],
+    "certificate_convention": {
+     "parameter_action": "(f0, v, t0, b, c) -> (k_c*f0, v, beta + t0/k_c, b/k_c, c)",
+     "time_map": "t_obs = t_phys / k_c + beta",
+     "where": "independent certificate artifact /tmp/certificate.json v1.0.0 (builtin protocol id builtin-e0-clock-invariance)"
+    },
+    "equivalent": true,
+    "mapping": "k_c = 1 / k_m (reciprocal rate conventions; identical group action)",
+    "method_convention": {
+     "parameter_action": "(f0, v, t0, b, c) -> (f0/k_m, v, k_m*t0 + beta, k_m*b, c)",
+     "time_map": "t_obs = k_m * t_phys + beta",
+     "where": "this artifact (phaino_claims.symbolic)"
+    },
+    "note": "No conflict: the certificate and this proof use reciprocal rate parameters. Both refute b/f0 under the rate family and both identify b*f0 as the invariant composite.",
+    "observation_equivalence_check": "0"
+   },
+   "digest": "b251848244c44044d5bda47e8dc7cb34c909c05326af7fe35d3fc4bd63cf9eb2",
+   "generators": [
+    "clock_offset",
+    "clock_rate"
+   ],
+   "theorem_statuses": {
+    "T10_negative_control": "pass",
+    "T11_convention_equivalence": "proven",
+    "T12_pr4d_misstatement": "refuted",
+    "T1_group_definition": "proven",
+    "T2_forward_invariance": "proven",
+    "T3_v_invariance": "proven",
+    "T4_f0b_invariance": "proven",
+    "T5_b_over_f0_refuted": "refuted",
+    "T6_t0_refuted": "refuted",
+    "T7_b_refuted": "refuted",
+    "T8_f0_refuted": "refuted",
+    "T9_sound_speed_nuisance": "proven"
+   }
+  },
+  "threshold_precision": 6,
+  "thresholds_full_precision": {
+   "b": 6.755384208147497e-05,
+   "f0": 2.3259895865761778e-05,
+   "f0_times_b": 7.144609392659601e-05,
+   "t0": 0.0005611915841206326,
+   "v": 1.5962202539374443e-05
+  }
+ },
+ "evidence_digest": "3d21670a5890443feb6d2ed0ae71020d688f079e46157c3f8c4f4334c71c7ace",
+ "frozen_payload": {
+  "authority": "ADR 0016, ADR 0017, PR-4e plan, P0 math audit",
+  "candidate_correction": {
+   "adr_0016_candidate": "b/f0",
+   "certificate_agreement": "certificate numeric verdict not_invariant for b/f0; invariant composite b*f0 (certificate note)",
+   "method_derivation": "T4_f0b_invariance (proven), T5_b_over_f0_refuted (refuted)",
+   "replacement": "f0*b",
+   "status": "refuted"
+  },
+  "claims": [
+   {
+    "ceiling_reason": "L2 is not proven in the full declared model (T9 counterexample)",
+    "claim_id": "v",
+    "claim_kind": "invariant",
+    "claim_tolerance": {
+     "kind": "relative",
+     "source": "E0 operational tolerance",
+     "value": 0.02
+    },
+    "conditioning": [
+     "declared model valid",
+     "sound speed known (an independent c measurement would be required for physical support)"
+    ],
+    "evaluated": true,
+    "expression": "v",
+    "l1_status": "proven",
+    "l1_theorem": "T3_v_invariance",
+    "l2_counterexample": "T9_sound_speed_nuisance",
+    "l2_reason": "an unknown sound speed admits the exact scaling (v,b,c)->(lambda v, lambda b, lambda c); direction and propagation nuisances are unmodelled",
+    "l2_scope": "full declared model with declared nuisances (unknown sound speed, direction, propagation environment)",
+    "l2_status": "open",
+    "l3": {
+     "metric": "se(v)/v",
+     "selected_on": "development",
+     "threshold": 1.59622e-05
+    },
+    "label": "relative speed of the source along the line of sight",
+    "max_status": "supported_conditional",
+    "nuisance_assumptions": [
+     "sound speed c = 343 m/s known to the declared tolerance",
+     "straight-line constant-velocity trajectory",
+     "no propagation delay, multipath, or source-directivity effects"
+    ],
+    "nuisance_probes": [
+     "sound_speed_scaling",
+     "direction_constraint",
+     "propagation_environment"
+    ],
+    "symmetry_scope": "G_clock",
+    "uncertainty_metric": {
+     "expression": "se(v)/v",
+     "kind": "relative_se",
+     "parameters": [
+      "v"
+     ]
+    },
+    "units": "m/s",
+    "value_expression": "v"
+   },
+   {
+    "ceiling_reason": "L2 is not proven in the full declared model (T9 counterexample)",
+    "claim_id": "f0_times_b",
+    "claim_kind": "invariant",
+    "claim_tolerance": {
+     "kind": "relative",
+     "source": "propagated E0 tolerance",
+     "value": 0.05
+    },
+    "conditioning": [
+     "declared model valid",
+     "sound speed known"
+    ],
+    "evaluated": true,
+    "expression": "f0*b",
+    "l1_status": "proven",
+    "l1_theorem": "T4_f0b_invariance",
+    "l2_counterexample": "T9_sound_speed_nuisance",
+    "l2_reason": "the sound-speed scaling nuisance multiplies f0*b by lambda",
+    "l2_scope": "full declared model with declared nuisances",
+    "l2_status": "open",
+    "l3": {
+     "metric": "sqrt((se_f0/f0)^2 + (se_b/b)^2)",
+     "selected_on": "development",
+     "threshold": 7.14461e-05
+    },
+    "label": "composite emitted frequency times closest-approach distance b*f0 (verified invariant; replaces the b/f0 candidate)",
+    "max_status": "supported_conditional",
+    "nuisance_assumptions": [
+     "sound speed c = 343 m/s known to the declared tolerance",
+     "straight-line constant-velocity trajectory"
+    ],
+    "nuisance_probes": [
+     "sound_speed_scaling"
+    ],
+    "symmetry_scope": "G_clock",
+    "uncertainty_metric": {
+     "expression": "sqrt((se_f0/f0)^2 + (se_b/b)^2)",
+     "kind": "relative_se",
+     "parameters": [
+      "f0",
+      "b"
+     ]
+    },
+    "units": "Hz*m",
+    "value_expression": "f0*b"
+   },
+   {
+    "ceiling_reason": "not invariant under G_clock (offset shifts t0); only a conditional claim under a nominal clock",
+    "claim_id": "t0",
+    "claim_kind": "conditional",
+    "claim_tolerance": {
+     "kind": "absolute",
+     "source": "E0 operational tolerance",
+     "value": 0.25
+    },
+    "conditioning": [
+     "k = 1 and beta = 0 (nominal clock) within the declared tolerance"
+    ],
+    "evaluated": true,
+    "expression": "t0",
+    "l1_status": "refuted",
+    "l1_theorem": "T6_t0_refuted",
+    "l2_counterexample": null,
+    "l2_reason": "under the conditioning (nominal clock) the nominal-model 4-observable map identifies t0",
+    "l2_scope": "nominal-clock model; t0 is the directly observed time origin and is invariant under the sound-speed nuisance",
+    "l2_status": "proven_within_conditioning",
+    "l3": {
+     "metric": "se(t0)",
+     "selected_on": "development",
+     "threshold": 0.000561192
+    },
+    "label": "physical event time (closest approach)",
+    "max_status": "supported_conditional",
+    "nuisance_assumptions": [
+     "recorder clock is nominal",
+     "declared model valid"
+    ],
+    "nuisance_probes": [],
+    "symmetry_scope": "trivial group (recorder clock assumed nominal: k=1, beta=0)",
+    "uncertainty_metric": {
+     "expression": "se(t0)",
+     "kind": "absolute_se",
+     "parameters": [
+      "t0"
+     ]
+    },
+    "units": "s",
+    "value_expression": "t0"
+   },
+   {
+    "ceiling_reason": "not invariant under G_clock (rate rescales b); conditional on nominal clock and known c",
+    "claim_id": "b",
+    "claim_kind": "conditional",
+    "claim_tolerance": {
+     "kind": "relative",
+     "source": "E0 operational tolerance",
+     "value": 0.05
+    },
+    "conditioning": [
+     "k = 1 and beta = 0 (nominal clock)",
+     "c = 343 m/s known"
+    ],
+    "evaluated": true,
+    "expression": "b",
+    "l1_status": "refuted",
+    "l1_theorem": "T7_b_refuted",
+    "l2_counterexample": "T9_sound_speed_nuisance",
+    "l2_reason": "b is rescaled by the clock rate and by the sound-speed nuisance",
+    "l2_scope": "nominal clock and sound speed known; with unknown c the scaling nuisance changes b",
+    "l2_status": "counterexample_within_nuisance",
+    "l3": {
+     "metric": "se_b/b",
+     "selected_on": "development",
+     "threshold": 6.75538e-05
+    },
+    "label": "closest-approach distance",
+    "max_status": "supported_conditional",
+    "nuisance_assumptions": [
+     "recorder clock is nominal",
+     "sound speed known"
+    ],
+    "nuisance_probes": [
+     "sound_speed_scaling"
+    ],
+    "symmetry_scope": "trivial group (recorder clock assumed nominal: k=1, beta=0)",
+    "uncertainty_metric": {
+     "expression": "se_b/b",
+     "kind": "relative_se",
+     "parameters": [
+      "b"
+     ]
+    },
+    "units": "m",
+    "value_expression": "b"
+   },
+   {
+    "ceiling_reason": "not invariant under G_clock (rate rescales f0); only a conditional claim under a nominal clock",
+    "claim_id": "f0",
+    "claim_kind": "conditional",
+    "claim_tolerance": {
+     "kind": "relative",
+     "source": "E0 operational tolerance",
+     "value": 0.01
+    },
+    "conditioning": [
+     "k = 1 and beta = 0 (nominal clock) within the declared tolerance"
+    ],
+    "evaluated": true,
+    "expression": "f0",
+    "l1_status": "refuted",
+    "l1_theorem": "T8_f0_refuted",
+    "l2_counterexample": null,
+    "l2_reason": "under the conditioning (nominal clock) the nominal-model 4-observable map identifies f0",
+    "l2_scope": "nominal-clock model; f0 is the directly observed frequency scale",
+    "l2_status": "proven_within_conditioning",
+    "l3": {
+     "metric": "se_f0/f0",
+     "selected_on": "development",
+     "threshold": 2.32599e-05
+    },
+    "label": "emitted (rest-frame) frequency",
+    "max_status": "supported_conditional",
+    "nuisance_assumptions": [
+     "recorder clock is nominal",
+     "declared model valid"
+    ],
+    "nuisance_probes": [],
+    "symmetry_scope": "trivial group (recorder clock assumed nominal: k=1, beta=0)",
+    "uncertainty_metric": {
+     "expression": "se_f0/f0",
+     "kind": "relative_se",
+     "parameters": [
+      "f0"
+     ]
+    },
+    "units": "Hz",
+    "value_expression": "f0"
+   },
+   {
+    "ceiling_reason": "L1 refuted: rate family changes b/f0; the invariant composite is f0*b (T4)",
+    "claim_id": "b_over_f0",
+    "claim_kind": "refuted_invariant",
+    "claim_tolerance": {
+     "kind": "relative",
+     "source": "declared for reporting only",
+     "value": 0.05
+    },
+    "conditioning": [],
+    "evaluated": false,
+    "expression": "b/f0",
+    "l1_status": "refuted",
+    "l1_theorem": "T5_b_over_f0_refuted",
+    "l2_counterexample": "T5_b_over_f0_refuted",
+    "l2_reason": "the candidate is not invariant under the rate generator: in the method convention b/f0 -> k_m^2 b/f0 (certificate convention: b/(k_c^2 f0) with k_c = 1/k_m)",
+    "l2_scope": null,
+    "l2_status": "not_reached",
+    "l3": {
+     "metric": "sqrt((se_b/b)^2 + (se_f0/f0)^2)",
+     "selected_on": "development",
+     "threshold": null
+    },
+    "label": "closest-approach distance over emitted frequency (REFUTED candidate from ADR 0016)",
+    "max_status": "contradicted",
+    "nuisance_assumptions": [
+     "as declared model"
+    ],
+    "nuisance_probes": [],
+    "symmetry_scope": "G_clock",
+    "uncertainty_metric": {
+     "expression": "sqrt((se_b/b)^2 + (se_f0/f0)^2)",
+     "kind": "relative_se",
+     "parameters": [
+      "b",
+      "f0"
+     ]
+    },
+    "units": "m/Hz",
+    "value_expression": "b/f0"
+   }
+  ],
+  "conventions": {
+   "certificate": {
+    "parameter_action": "(f0, v, t0, b, c) -> (k_c*f0, v, beta + t0/k_c, b/k_c, c)",
+    "time_map": "t_obs = t_phys / k_c + beta",
+    "where": "independent certificate artifact (phaino_claim_certificate), evidence only"
+   },
+   "equivalence_theorem": "T11_convention_equivalence",
+   "mapping": "k_c = 1 / k_m (reciprocal rate conventions; identical group action)",
+   "method": {
+    "parameter_action": "(f0, v, t0, b, c) -> (f0/k_m, v, k_m*t0 + beta, k_m*b, c)",
+    "time_map": "t_obs = k_m * t_phys + beta",
+    "where": "this claim protocol and phaino_claims.symbolic"
+   }
+  },
+  "decision_precedence": [
+   "claim is refuted by L1 (b/f0): status contradicted, independent of the trial fit and of evidence gates",
+   "L1 is incomplete (a required generator is missing): every evaluable claim is undetermined with reason l1_incomplete_missing_generator",
+   "certificate evidence reports a symbolic-invariant / numeric-refuted conflict for a claim: that claim is undetermined with reason certificate_symbolic_numeric_conflict",
+   "a nuisance probe contradicts a claim's declared nuisance assumption: that claim is undetermined with reason nuisance_assumption_contradicted",
+   "optimization_status != converged: undetermined (reason optimization_*)",
+   "adequacy_status == discrepancy: undetermined (reason model_discrepancy; acceleration trials are labelled model_misspecification and are never used to claim constant-velocity invariance)",
+   "adequacy_status in {insufficient_evidence, indeterminate}: undetermined",
+   "identifiability_status == insufficient_evidence: undetermined",
+   "uncertainty > claim L3 threshold: undetermined (reason uncertainty_exceeds_threshold)",
+   "otherwise: supported_conditional; supported_invariant is never emitted by this protocol version"
+  ],
+  "experiment": "pr4e-claims",
+  "gate": {
+   "completeness_rule": "every name in group.required_generators must be declared in group.generators with l1_status=proven; otherwise L1 is incomplete and all evaluable claims are withheld",
+   "evidence_rules": {
+    "certificate_conflict": "a certificate entry with symbolic_verdict=invariant and numeric_verdict=not_invariant withholds the mapped claim unless the claim is already contradicted (reconciled)",
+    "nuisance_contradiction": "a nuisance probe with evidence status contradicted withholds every claim it affects"
+   },
+   "layers": {
+    "L1": "invariance under the proven symbolic group G_clock",
+    "L2": "identifiability in the full declared model, including declared nuisances",
+    "L3": "statistical support on the frozen locked sample"
+   },
+   "max_status_rule": "supported_invariant requires L2 proven for the claim in the full declared model and the independent L1 certificate; L1 refuted => contradicted for the invariant proposition; otherwise the ceiling is supported_conditional",
+   "required_evidence": [
+    "certificate",
+    "symbolic_proof"
+   ],
+   "supported_invariant_allowed": false,
+   "supported_invariant_blockers": [
+    "no required claim has L2 proven in the full declared model with nuisances",
+    "the independent L1 numerical certificate covers v, t0, b, f0 and refutes b/f0, but not the composite f0*b"
+   ],
+   "table": [
+    {
+     "L1": "fail",
+     "L2": "any",
+     "L3": "any",
+     "max_status": "not_claimable (contradicted if a counterexample exists, else undetermined)"
+    },
+    {
+     "L1": "pass",
+     "L2": "unproven",
+     "L3": "any",
+     "max_status": "supported_conditional"
+    },
+    {
+     "L1": "pass",
+     "L2": "pass",
+     "L3": "not_met",
+     "max_status": "undetermined"
+    },
+    {
+     "L1": "pass",
+     "L2": "pass",
+     "L3": "met",
+     "max_status": "supported_invariant"
+    }
+   ]
+  },
+  "group": {
+   "action": "(f0,v,t0,b,c) -> (f0/k_m, v, k_m*t0 + beta, k_m*b, c)",
+   "composition": "(k2,beta2) o (k1,beta1) = (k2*k1, k2*beta1 + beta2)",
+   "domain_conditions": [
+    "k_m > 0",
+    "beta real",
+    "all parameter images stay in the declared domain (f0,v,b,c > 0)"
+   ],
+   "generators": [
+    {
+     "certificate_action": "(f0, v, t0, b, c) -> (f0, v, beta + t0, b, c)",
+     "l1_status": "proven",
+     "method_action": "(f0, v, t0, b, c) -> (f0, v, t0 + beta, b, c)",
+     "name": "clock_offset",
+     "note": "constant clock offset; shifts t0 exactly (beta <-> t0)",
+     "parameter": "beta",
+     "theorem": "T2_forward_invariance",
+     "time_map": "t_obs = k_m*t_phys + beta with k_m = 1"
+    },
+    {
+     "certificate_action": "(f0, v, t0, b, c) -> (k_c*f0, v, t0/k_c, b/k_c, c) with k_c = 1/k_m",
+     "l1_status": "proven",
+     "method_action": "(f0, v, t0, b, c) -> (f0/k_m, v, k_m*t0, k_m*b, c)",
+     "name": "clock_rate",
+     "note": "constant clock rate; v invariant, f0*b invariant, b/f0 -> k_m^2 b/f0",
+     "parameter": "k_m",
+     "theorem": "T2_forward_invariance",
+     "time_map": "t_obs = k_m*t_phys + beta with beta = 0"
+    }
+   ],
+   "identity": "(1, 0)",
+   "invalid_regions": [
+    {
+     "region": "k_m = 0",
+     "why": "singular time map; b'=0 leaves the model domain"
+    },
+    {
+     "region": "k_m < 0",
+     "why": "b' = k_m*b < 0 leaves the model domain and reverses time orientation"
+    }
+   ],
+   "inverse": "(1/k_m, -beta/k_m)",
+   "required_generators": [
+    "clock_offset",
+    "clock_rate"
+   ],
+   "set": "{(k_m, beta) : k_m > 0, beta in R}",
+   "symbol": "G_clock",
+   "undeclared_required_generators": []
+  },
+  "mechanism_audit": {
+   "audit": "P0 math audit (Lead verification) reconciled with C1-A",
+   "correct_actions": {
+    "certificate": {
+     "action": "(k_c*f0, v, beta + t0/k_c, b/k_c, c)",
+     "invariants": [
+      "v",
+      "f0*b"
+     ],
+     "mapping": "k_c = 1/k_m",
+     "max_relative_forward_mismatch_reported_by_audit": 8.5e-16,
+     "preserves_forward": true,
+     "time_map": "t_obs = t_phys/k_c + beta"
+    },
+    "method": {
+     "action": "(f0/k_m, v, k_m*t0 + beta, k_m*b, c)",
+     "invariants": [
+      "v",
+      "f0*b"
+     ],
+     "max_relative_forward_mismatch_reported_by_audit": 8.9e-16,
+     "non_invariants": {
+      "b": "k_m*b",
+      "b/f0": "k_m^2 * b/f0",
+      "f0": "f0/k_m",
+      "t0": "k_m*t0 + beta"
+     },
+     "preserves_forward": true,
+     "time_map": "t_obs = k_m*t_phys + beta"
+    }
+   },
+   "pr4d_misstatement": {
+    "correct_method_action": "(f0/k_m, v, k_m*t0 + beta, k_m*b, c)",
+    "diagnosis": "incorrect written parameter action in the frozen report, not a competing group element; PR-4d's clock-rate-is-observational-equivalence conclusion stands",
+    "max_relative_mismatch_reported_by_audit": 0.025,
+    "preserves_forward": false,
+    "source": "PR-4d report (frozen historical record; erratum to be written by the Lead)",
+    "used_by_this_protocol": false,
+    "written_rate_triple": "(f0' = k f0, b' = k b, t0' = t0/k)"
+   },
+   "reverification": {
+    "T4_f0b_invariance": "re-verified numerically at 8.9e-16",
+    "T5_b_over_f0_refuted": "re-verified numerically: (b/f0)' = k_m^2 (b/f0)",
+    "certificate_numeric_b_over_f0_mismatch": 0.049375
+   }
+  },
+  "model_declaration": {
+   "assumptions": [
+    "f0 > 0",
+    "v > 0",
+    "b > 0",
+    "c > 0",
+    "t0 real",
+    "time real"
+   ],
+   "forward_expression": "F(t) = f0 / (1 + v^2*tau/(c*sqrt(b^2 + v^2*tau^2))), tau = t - t0",
+   "model": "straight-line constant-velocity point source; stationary receiver; radial Doppler; no propagation delay, multipath, source directivity or acceleration",
+   "name": "e0-narrowband-doppler",
+   "parameters": [
+    "f0",
+    "v",
+    "t0",
+    "b",
+    "c"
+   ]
+  },
+  "nuisance_probes": [
+   {
+    "affects_claims": [
+     "v",
+     "f0_times_b",
+     "b"
+    ],
+    "assumption": "sound speed known to the declared tolerance",
+    "evidence_theorem": "T9_sound_speed_nuisance",
+    "family": "N_physical",
+    "probe": "exact scaling (v,b,c) -> (lambda v, lambda b, lambda c) leaves the forward observation unchanged",
+    "probe_id": "sound_speed_scaling"
+   },
+   {
+    "affects_claims": [
+     "v"
+    ],
+    "assumption": "straight-line constant-velocity trajectory",
+    "evidence_theorem": null,
+    "family": "N_physical",
+    "probe": "unmodelled trajectory direction; not algebraically formalised",
+    "probe_id": "direction_constraint"
+   },
+   {
+    "affects_claims": [
+     "v"
+    ],
+    "assumption": "no propagation delay or multipath",
+    "evidence_theorem": null,
+    "family": "N_physical",
+    "probe": "unmodelled propagation environment; not algebraically formalised",
+    "probe_id": "propagation_environment"
+   }
+  ],
+  "protocol_version": "pr4e-claims-1.3.0",
+  "revision_note": "1.3.0: thresholds in the frozen payload are canonicalised to THRESHOLD_PRECISION significant digits (declared in the payload); the full-precision selected values and development statistics live in evidence only. Fixes cross-architecture digest drift at ~1e-15 caused by BLAS/numpy last-bit differences in the development-selected thresholds. 1.2.0: frozen payload separated from evidence attachments; protocol_digest covers only the frozen payload (claims, generators/actions, conventions, thresholds, gate rules, precedence, model, nuisance-probe declarations) and is stable across certificate/environment/development statistics; evidence_digest covers them. Adds the P0 math-audit mechanism finding: correct clock action per convention, the frozen PR-4d report's incorrect written rate triple, and numeric re-verification of T4/T5 at 8.9e-16. 1.1.0 replaced the refuted b/f0 candidate with the verified composite f0*b.",
+  "schema": "pr4e-claims-protocol-v2",
+  "strata": {
+   "clock_offset": "constant clock offset (observational equivalence with t0); 20 dB",
+   "clock_rate": "constant clock rate error (source rescaling); 20 dB",
+   "control": "zero-perturbation control, 20 dB",
+   "geometry_stress": "unseen closest-approach distances; stress test, not an equal-accuracy claim",
+   "model_misspecification": "constant along-track acceleration; NOT used to claim constant-velocity invariance",
+   "near_identity": "near-identity clock transforms (group-axiom / stability control)",
+   "nominal_snr_control": "nominal-SNR control, no perturbation",
+   "null": "noise-only observation; no constant-velocity source"
+  },
+  "threshold_precision": 6,
+  "threshold_precision_note": "thresholds in frozen_payload are canonicalised to THRESHOLD_PRECISION significant decimal digits; full-precision development-selected thresholds and statistics are recorded in evidence.",
+  "threshold_selection": {
+   "candidate_quantiles": [
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    0.95,
+    0.99
+   ],
+   "canonicalisation": "thresholds in frozen_payload are canonicalised to THRESHOLD_PRECISION significant decimal digits; full-precision development-selected thresholds and statistics are recorded in evidence.",
+   "cap_fraction_of_claim_tolerance": 0.5,
+   "layer": "development",
+   "minimum_supported": 20,
+   "nominal_clock_strata": [
+    "control",
+    "near_identity",
+    "geometry_stress",
+    "nominal_snr_control"
+   ],
+   "note": "thresholds are selected on development data only; the locked layer never changes them",
+   "rule": "for each claim, consider the candidate thresholds at the declared quantiles of the development uncertainty distribution among nominal-clock trials that pass the gates; choose the largest candidate whose empirical validity (fraction of supported claims within claim tolerance) is >= 0.95 and which is <= 0.5 * claim tolerance; if no candidate is admissible, fall back to 0.5 * claim tolerance. The chosen value is frozen before the locked layer is opened.",
+   "threshold_precision": 6,
+   "validity_target": 0.95
+  },
+  "thresholds": {
+   "b": 6.75538e-05,
+   "f0": 2.32599e-05,
+   "f0_times_b": 7.14461e-05,
+   "t0": 0.000561192,
+   "v": 1.59622e-05
+  }
+ },
+ "protocol_digest": "193e70ab42cd1c953d89c735ee6fa4c19bc7aed98d11e2af8cba751c9191e52f",
+ "protocol_version": "pr4e-claims-1.3.0",
+ "schema": "pr4e-claims-protocol-v2"
+}

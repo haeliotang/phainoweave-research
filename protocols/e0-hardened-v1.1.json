@@ -1,0 +1,96 @@
+{
+  "protocol_id": "e0-hardened-cross-platform",
+  "version": "1.1.0",
+  "status": "candidate_frozen",
+  "estimator": {
+    "module": "phaino_acoustics.fit_hardened",
+    "version": "1.1.0",
+    "stalled_model_rejection_improvement": 0.25
+  },
+  "base_experiment": "e0",
+  "base_protocol": "protocols/e0-cross-platform.v2.json",
+  "targets": [
+    "macos-arm64",
+    "linux-arm64",
+    "linux-x86_64"
+  ],
+  "environment": {
+    "python": "3.14.9",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0"
+  },
+  "comparison": {
+    "identity": [
+      "condition",
+      "trial",
+      "seed"
+    ],
+    "primary_fields": [
+      "hardened.decision_status",
+      "hardened.decision_reason",
+      "hardened.parameter_identifiable",
+      "hardened.model_adequate"
+    ],
+    "diagnostic_fields": [
+      "hardened.optimization_status",
+      "hardened.optimization_reason",
+      "hardened.consecutive_confirmations",
+      "hardened.iterations"
+    ],
+    "indeterminate_semantics": "A primary match with a different decision_reason is a mismatch. An optimization-status difference is a diagnostic only when both sides decide the same status and reason.",
+    "boundary_band": {
+      "improvement_ratio_around": 0.5,
+      "width": 0.05
+    },
+    "materiality": "Any primary mismatch fails the candidate protocol. Diagnostics and boundary cases are reported, not hidden.",
+    "optimization_reason_class": {
+      "criteria_confirmed": "converged",
+      "fixed_point_verified": "converged",
+      "stalled_without_stationarity": "stalled",
+      "iteration_budget": "budget",
+      "numerical_failure": "failed"
+    },
+    "diagnostic_semantics": "Optimization-status exact differences and optimization-reason class differences are diagnostic; raw reason synonyms within the declared class map are reported as aliases, not primary mismatches."
+  },
+  "r1n": "unchanged; existing E0 check continues",
+  "r1d": "off_until_this_protocol_is_verified",
+  "r2": "reported_not_passed",
+  "expected": {
+    "trial_count": 2500,
+    "conditions": [
+      "accel_0.1",
+      "accel_0.25",
+      "accel_0.5",
+      "amp_geometric",
+      "amp_mod30pct",
+      "clock_1000ppm",
+      "clock_100ppm",
+      "clock_10ppm",
+      "clock_20000ppm",
+      "clock_50000ppm",
+      "geom_v100_b300",
+      "geom_v250_b30000",
+      "geom_v60_b120",
+      "null_noise_only",
+      "offset_0.3s",
+      "offset_2s",
+      "snr_+0dB",
+      "snr_+10dB",
+      "snr_+20dB",
+      "snr_+5dB",
+      "snr_-10dB",
+      "snr_-5dB",
+      "window_10s",
+      "window_20s",
+      "window_5s"
+    ],
+    "trials_per_condition": 100,
+    "seed_rule": "seed = 20261104 + 1000 * full_grid_condition_index + trial",
+    "trial_index_range": [
+      0,
+      99
+    ],
+    "identity_sha256": "7f8df702914bb4b7e962628c6e28a8b125999583de9868fa8588b4e07eb098b5"
+  }
+}

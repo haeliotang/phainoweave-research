@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "phaino-sdk"
+version = "0.0.1"
+description = "Inferencer SDK for the PhainoWeave inference engine"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+dependencies = []
+
+[project.optional-dependencies]
+# Acoustic vertical / E0 experiment package (PR-2). NumPy only: the Doppler fit
+# is an in-house deterministic Levenberg-Marquardt, so SciPy is not required.
+acoustics = ["numpy>=1.26"]
+dev = ["pytest>=8", "numpy>=1.26"]
+
+[tool.setuptools]
+packages = ["phaino_sdk", "phaino_acoustics", "phaino_e1raw"]

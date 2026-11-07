@@ -1,0 +1,48 @@
+# Candidate export finding dispositions
+
+Recorded findings: 42. Accepted public: 39. Transformed: 3. Requires review: 0. Current export review findings: 39.
+
+| ID | Source | Class | Disposition | Rationale |
+|---|---|---|---|---|
+| F001 | `release/phase1/RELEASE-AUDIT.md` | temporary_path | `transformed` | Audit wording was changed so the published report does not reproduce literal scan patterns; the underlying finding was reviewed and required no source deletion. |
+| F002 | `release/phase1/RELEASE-AUDIT.md` | environment_name | `transformed` | Audit wording was changed so the published report does not reproduce literal scan patterns; the underlying finding was reviewed and required no source deletion. |
+| F003 | `release/phase1/RELEASE-AUDIT.md` | historical_run_id | `transformed` | Audit wording was changed so the published report does not reproduce literal scan patterns; the underlying finding was reviewed and required no source deletion. |
+| F004 | `docs/experiments/2026-11-04-e0-synthetic-doppler.md` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F005 | `docs/experiments/2026-11-05-c2-diagnosis.md` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F006 | `docs/experiments/2026-11-05-c2-measurement-model.md` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F007 | `docs/experiments/2026-11-05-c2-repair-dev.md` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F008 | `docs/experiments/2026-11-05-c2-sealed-confirmation.md` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F009 | `docs/experiments/2026-11-05-c2-sealed-confirmation.md` | historical_run_id | `accepted_public` | Historical sealed-run identifier used by the frozen archive and reports for traceability; it is not a filesystem path or credential. |
+| F010 | `docs/experiments/2026-11-05-c2-selfcheck.md` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F011 | `docs/experiments/2026-11-05-c2m2-conditional-error.md` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F012 | `docs/experiments/2026-11-05-c3-risk-coverage.md` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F013 | `docs/experiments/2026-11-05-c3-risk-coverage.md` | historical_run_id | `accepted_public` | Historical sealed-run identifier used by the frozen archive and reports for traceability; it is not a filesystem path or credential. |
+| F014 | `docs/experiments/2026-11-05-e1-detection-consensus-rule.md` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F015 | `docs/experiments/2026-11-05-e1-detection-consensus-v2.md` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F016 | `docs/experiments/2026-11-05-e1-estimator-audit.md` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F017 | `docs/experiments/2026-11-06-refusal-audit-demo.md` | environment_name | `accepted_public` | Environment-variable name only; no secret value is embedded. |
+| F018 | `docs/roadmap/2026-11-07-project-review.md` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F019 | `docs/specs/inferencer-contract.md` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F020 | `evidence/c2c-sealed/ARCHIVE.json` | historical_run_id | `accepted_public` | Historical sealed-run identifier used by the frozen archive and reports for traceability; it is not a filesystem path or credential. |
+| F021 | `evidence/c2c-sealed/eval/report.json` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F022 | `evidence/c2c-sealed/eval/report.json` | historical_run_id | `accepted_public` | Historical sealed-run identifier used by the frozen archive and reports for traceability; it is not a filesystem path or credential. |
+| F023 | `protocols/c2c-freeze-v1.json` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F024 | `protocols/c2c-freeze-v1.md` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F025 | `protocols/c2c-freeze-v2.md` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F026 | `protocols/pr4e-claims-1.3.0.json` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F027 | `python/phaino_acoustics/audit_estimator.py` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F028 | `python/phaino_acoustics/diagnose.py` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F029 | `python/phaino_acoustics/experiment.py` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F030 | `python/phaino_acoustics/experiment_adequacy.py` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F031 | `python/phaino_acoustics/experiment_c2a.py` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F032 | `python/phaino_acoustics/experiment_c2m2.py` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F033 | `python/phaino_acoustics/experiment_hardened.py` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F034 | `python/phaino_acoustics/experiment_repair.py` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F035 | `python/phaino_acoustics/repair_selfcheck.py` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F036 | `python/phaino_claims/claims_protocol.py` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F037 | `python/phaino_claims/symbolic.py` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F038 | `python/tests/conftest.py` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F039 | `python/tests/test_bench.py` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F040 | `python/tests/test_c2_eval.py` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F041 | `python/tests/test_c2_modelcheck.py` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |
+| F042 | `python/tests/test_claims.py` | temporary_path | `accepted_public` | Generic POSIX temporary path in a code default, test fixture or documentation example; no username, credential or private locator. |

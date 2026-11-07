@@ -1,0 +1,261 @@
+{
+  "base_geometry": {
+    "accel": 0.0,
+    "amplitude": 1.0,
+    "amplitude_geometric": false,
+    "amplitude_mod_depth": 0.0,
+    "amplitude_mod_hz": 0.7,
+    "b": 3000.0,
+    "c": 343.0,
+    "clock_offset_s": 0.0,
+    "clock_scale_ppm": 0.0,
+    "duration": 60.0,
+    "emit_signal": true,
+    "f0": 500.0,
+    "fs": 8000.0,
+    "phase0": 0.0,
+    "seed": 20261104,
+    "snr_db": 20.0,
+    "t0": 20.0,
+    "v": 250.0
+  },
+  "conditions": [
+    {
+      "group": "snr",
+      "n_trials": 100,
+      "name": "snr_-10dB",
+      "note": "per-sample SNR; 60 s window; base geometry",
+      "scenario": {
+        "snr_db": -10.0
+      }
+    },
+    {
+      "group": "snr",
+      "n_trials": 100,
+      "name": "snr_-5dB",
+      "note": "per-sample SNR; 60 s window; base geometry",
+      "scenario": {
+        "snr_db": -5.0
+      }
+    },
+    {
+      "group": "snr",
+      "n_trials": 100,
+      "name": "snr_+0dB",
+      "note": "per-sample SNR; 60 s window; base geometry",
+      "scenario": {
+        "snr_db": 0.0
+      }
+    },
+    {
+      "group": "snr",
+      "n_trials": 100,
+      "name": "snr_+5dB",
+      "note": "per-sample SNR; 60 s window; base geometry",
+      "scenario": {
+        "snr_db": 5.0
+      }
+    },
+    {
+      "group": "snr",
+      "n_trials": 100,
+      "name": "snr_+10dB",
+      "note": "per-sample SNR; 60 s window; base geometry",
+      "scenario": {
+        "snr_db": 10.0
+      }
+    },
+    {
+      "group": "snr",
+      "n_trials": 100,
+      "name": "snr_+20dB",
+      "note": "per-sample SNR; 60 s window; base geometry",
+      "scenario": {}
+    },
+    {
+      "group": "window",
+      "n_trials": 100,
+      "name": "window_5s",
+      "note": "window length at 5 dB; shortest is 0.42 of the closest-approach time scale b/v",
+      "scenario": {
+        "duration": 5.0,
+        "snr_db": 5.0
+      }
+    },
+    {
+      "group": "window",
+      "n_trials": 100,
+      "name": "window_10s",
+      "note": "window length at 5 dB; shortest is 0.42 of the closest-approach time scale b/v",
+      "scenario": {
+        "duration": 10.0,
+        "snr_db": 5.0
+      }
+    },
+    {
+      "group": "window",
+      "n_trials": 100,
+      "name": "window_20s",
+      "note": "window length at 5 dB; shortest is 0.42 of the closest-approach time scale b/v",
+      "scenario": {
+        "duration": 20.0,
+        "snr_db": 5.0
+      }
+    },
+    {
+      "group": "accel",
+      "n_trials": 100,
+      "name": "accel_0.1",
+      "note": "constant along-track acceleration in the data, zero-acceleration model",
+      "scenario": {
+        "accel": 0.1
+      }
+    },
+    {
+      "group": "accel",
+      "n_trials": 100,
+      "name": "accel_0.25",
+      "note": "constant along-track acceleration in the data, zero-acceleration model",
+      "scenario": {
+        "accel": 0.25
+      }
+    },
+    {
+      "group": "accel",
+      "n_trials": 100,
+      "name": "accel_0.5",
+      "note": "constant along-track acceleration in the data, zero-acceleration model",
+      "scenario": {
+        "accel": 0.5
+      }
+    },
+    {
+      "group": "clock_scale",
+      "n_trials": 100,
+      "name": "clock_10ppm",
+      "note": "recorder clock runs fast by ppm; analyzer assumes nominal time",
+      "scenario": {
+        "clock_scale_ppm": 10.0
+      }
+    },
+    {
+      "group": "clock_scale",
+      "n_trials": 100,
+      "name": "clock_100ppm",
+      "note": "recorder clock runs fast by ppm; analyzer assumes nominal time",
+      "scenario": {
+        "clock_scale_ppm": 100.0
+      }
+    },
+    {
+      "group": "clock_scale",
+      "n_trials": 100,
+      "name": "clock_1000ppm",
+      "note": "recorder clock runs fast by ppm; analyzer assumes nominal time",
+      "scenario": {
+        "clock_scale_ppm": 1000.0
+      }
+    },
+    {
+      "group": "clock_scale",
+      "n_trials": 100,
+      "name": "clock_20000ppm",
+      "note": "recorder clock runs fast by ppm; analyzer assumes nominal time",
+      "scenario": {
+        "clock_scale_ppm": 20000.0
+      }
+    },
+    {
+      "group": "clock_scale",
+      "n_trials": 100,
+      "name": "clock_50000ppm",
+      "note": "recorder clock runs fast by ppm; analyzer assumes nominal time",
+      "scenario": {
+        "clock_scale_ppm": 50000.0
+      }
+    },
+    {
+      "group": "clock_offset",
+      "n_trials": 100,
+      "name": "offset_0.3s",
+      "note": "constant clock offset; expected exact degeneracy with t0",
+      "scenario": {
+        "clock_offset_s": 0.3
+      }
+    },
+    {
+      "group": "clock_offset",
+      "n_trials": 100,
+      "name": "offset_2s",
+      "note": "constant clock offset; expected exact degeneracy with t0",
+      "scenario": {
+        "clock_offset_s": 2.0
+      }
+    },
+    {
+      "group": "amplitude",
+      "n_trials": 100,
+      "name": "amp_geometric",
+      "note": "amplitude ~ b/r (1/r spreading), 5 dB",
+      "scenario": {
+        "amplitude_geometric": true,
+        "snr_db": 5.0
+      }
+    },
+    {
+      "group": "amplitude",
+      "n_trials": 100,
+      "name": "amp_mod30pct",
+      "note": "30% sinusoidal AM at 0.7 Hz, 5 dB",
+      "scenario": {
+        "amplitude_mod_depth": 0.3,
+        "snr_db": 5.0
+      }
+    },
+    {
+      "group": "geometry",
+      "n_trials": 100,
+      "name": "geom_v100_b300",
+      "note": "v=100 m/s, b=300 m, 5 dB",
+      "scenario": {
+        "b": 300.0,
+        "snr_db": 5.0,
+        "v": 100.0
+      }
+    },
+    {
+      "group": "geometry",
+      "n_trials": 100,
+      "name": "geom_v250_b30000",
+      "note": "v=250 m/s, b=30 km: window covers only +-0.25 closest-approach time scales",
+      "scenario": {
+        "b": 30000.0,
+        "snr_db": 5.0
+      }
+    },
+    {
+      "group": "geometry",
+      "n_trials": 100,
+      "name": "geom_v60_b120",
+      "note": "v=60 m/s, b=120 m, 5 dB",
+      "scenario": {
+        "b": 120.0,
+        "snr_db": 5.0,
+        "v": 60.0
+      }
+    },
+    {
+      "group": "null",
+      "n_trials": 100,
+      "name": "null_noise_only",
+      "note": "no signal; noise level equals a 0 dB reference signal",
+      "scenario": {
+        "emit_signal": false,
+        "snr_db": 0.0
+      }
+    }
+  ],
+  "experiment": "e0-synthetic-doppler",
+  "schema_version": 1,
+  "seed_base": 20261104
+}
