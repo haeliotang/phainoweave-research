@@ -1,10 +1,12 @@
-PhainoWeave — Open Physical-World Inference Infrastructure
+PhainoWeave Research — Reproducible Physical Inference Studies
 
 Copyright 2026 Inceptless
 
-This product includes software developed by Inceptless
+This research snapshot includes software developed by Inceptless
 (support@inceptless.com).
 
-Licensed under the Apache License, Version 2.0 (see LICENSE). The license
-does not grant trademark rights in the project name or marks (see section 6
-of the license).
+Research code is licensed under Apache-2.0. Documentation is licensed under
+CC-BY-4.0. Project-owned synthetic evidence bytes published under CC0-1.0 are
+identified in LICENSING.md. The project name, wordmark and logo are Inceptless
+assets and are not granted under the software or documentation licences.
+Questions: support@inceptless.com.

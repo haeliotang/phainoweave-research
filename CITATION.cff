@@ -6,9 +6,7 @@ date-released: 2026-11-07
 license: Apache-2.0
 repository-code: "https://github.com/haeliotang/phainoweave-research"
 authors:
-  - family-names: "Tang"
-    given-names: "Haelio"
-    affiliation: "Inceptless"
+  - name: "Inceptless"
 abstract: >-
   Synthetic studies, frozen protocols, negative results, and minimal
   reproduction code for a verifiable physical-world inference research
