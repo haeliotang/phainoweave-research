@@ -1,7 +1,10 @@
 # PhainoWeave Research — Reproducible Physical Inference Studies
 
 <p align="center">
-  <img src="assets/phainoweave-mono.svg" alt="PhainoWeave logo — Doppler in the spectrogram" width="110">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/phainoweave-mono-dark.svg">
+    <img src="assets/phainoweave-mono.svg" alt="PhainoWeave logo — Doppler in the spectrogram" width="110">
+  </picture>
 </p>
 
 **Status:** research release · 2026-11-07 · tag `research-2026-11-07` (not a product, not a physical inference system)
