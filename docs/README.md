@@ -6,6 +6,8 @@ Read in this order if you are new to the project.
 | --- | --- | --- |
 | 1 | [Product — founding brief](product/founding-brief.md) | What the project is, what it refuses to become, and the one capability that must work |
 | 1a | [Research program](research/research-program.md) | The scientific claim being tested: physics-grounded evidence fusion under incomplete observations |
+| 1b | [Observability program](research/observability-program.md) | Empirical limits of physical-world observability, Claim Certificates and gates |
+| 1c | [Studies index](../studies/README.md) | Five independent research series and their public evidence status |
 | 2 | [Roadmap — plan of record](roadmap/ROADMAP.md) | Milestones M0–M4, work breakdown, falsification criteria |
 | 3 | [Architecture overview](architecture/overview.md) | Layers, responsibilities, deployment modes |
 | 4 | [Spec — world ontology](specs/world-ontology.md) | The nine objects and the invariants enforced in code |
@@ -32,7 +34,8 @@ Read in this order if you are new to the project.
 | `architecture/` | System-level design |
 | `specs/` | Normative contracts (object model, inferencer interface) |
 | `roadmap/` | Plan of record and evaluation design |
-| `research/` | Prior art, data inventory, measurement notes |
+| `research/` | Prior art, data inventory, measurement notes, and the public observability program |
+| `studies/` | Public series indexes for PW-A/PW-H/PW-S/PW-R/PW-V; status and evidence-level labels |
 | `policy/` | Ethics, privacy, data governance, review records |
 | `decisions/` | ADRs (accepted decisions outrank everything else) |
 | `experiments/` | Pre-registered experiments and run reports (created when M1 starts) |
